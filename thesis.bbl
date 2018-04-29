@@ -1,0 +1,466 @@
+\begin{thebibliography}{66}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Balazs et~al.(2017)Balazs, Marrese-Taylor, Loyola, and
+  Matsuo}]{balazs2017refining}
+Jorge~A Balazs, Edison Marrese-Taylor, Pablo Loyola, and Yutaka Matsuo. 2017.
+\newblock Refining raw sentence representations for textual entailment
+  recognition via attention.
+\newblock \emph{arXiv preprint arXiv:1707.03103}.
+
+\bibitem[{Bengio et~al.(2013)Bengio, Courville, and
+  Vincent}]{bengio2013representation}
+Yoshua Bengio, Aaron Courville, and Pascal Vincent. 2013.
+\newblock Representation learning: A review and new perspectives.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 35(8):1798--1828.
+
+\bibitem[{Bos and Markert(2005)}]{bos2005recognising}
+Johan Bos and Katja Markert. 2005.
+\newblock Recognising textual entailment with logical inference.
+\newblock In \emph{Proceedings of the conference on Human Language Technology
+  and Empirical Methods in Natural Language Processing}, pages 628--635.
+  Association for Computational Linguistics.
+
+\bibitem[{Bowman et~al.(2015)Bowman, Angeli, Potts, and
+  Manning}]{bowman2015large}
+Samuel~R Bowman, Gabor Angeli, Christopher Potts, and Christopher~D Manning.
+  2015.
+\newblock A large annotated corpus for learning natural language inference.
+\newblock \emph{arXiv preprint arXiv:1508.05326}.
+
+\bibitem[{Bowman et~al.(2016)Bowman, Gauthier, Rastogi, Gupta, Manning, and
+  Potts}]{bowman2016fast}
+Samuel~R Bowman, Jon Gauthier, Abhinav Rastogi, Raghav Gupta, Christopher~D
+  Manning, and Christopher Potts. 2016.
+\newblock A fast unified model for parsing and sentence understanding.
+\newblock \emph{arXiv preprint arXiv:1603.06021}.
+
+\bibitem[{Bromley et~al.(1994)Bromley, Guyon, LeCun, S{\"a}ckinger, and
+  Shah}]{bromley1994signature}
+Jane Bromley, Isabelle Guyon, Yann LeCun, Eduard S{\"a}ckinger, and Roopak
+  Shah. 1994.
+\newblock Signature verification using a" siamese" time delay neural network.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  737--744.
+
+\bibitem[{Celikyilmaz et~al.(2010)Celikyilmaz, Hakkani-Tur, Pasupat, and
+  Sarikaya}]{celikyilmaz2010enriching}
+Asli Celikyilmaz, Dilek Hakkani-Tur, Panupong Pasupat, and Ruhi Sarikaya. 2010.
+\newblock Enriching word embeddings using knowledge graph for semantic tagging
+  in conversational dialog systems.
+\newblock \emph{genre}.
+
+\bibitem[{Chatzikyriakidis et~al.(2017)Chatzikyriakidis, Cooper, Dobnik, and
+  Larsson}]{chatzikyriakidis2017overview}
+Stergios Chatzikyriakidis, Robin Cooper, Simon Dobnik, and Staffan Larsson.
+  2017.
+\newblock An overview of natural language inference data collection: The way
+  forward?
+\newblock In \emph{Proceedings of the Computing Natural Language Inference
+  Workshop}.
+
+\bibitem[{Chen et~al.(2017{\natexlab{a}})Chen, Zhu, Ling, and
+  Inkpen}]{chen2017natural}
+Qian Chen, Xiaodan Zhu, Zhen-Hua Ling, and Diana Inkpen. 2017{\natexlab{a}}.
+\newblock Natural language inference with external knowledge.
+\newblock \emph{arXiv preprint arXiv:1711.04289}.
+
+\bibitem[{Chen et~al.(2017{\natexlab{b}})Chen, Zhu, Ling, Wei, Jiang, and
+  Inkpen}]{chen2017enhanced}
+Qian Chen, Xiaodan Zhu, Zhen-Hua Ling, Si~Wei, Hui Jiang, and Diana Inkpen.
+  2017{\natexlab{b}}.
+\newblock Enhanced lstm for natural language inference.
+\newblock In \emph{Proceedings of the 55th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, volume~1, pages
+  1657--1668.
+
+\bibitem[{Chen et~al.(2017{\natexlab{c}})Chen, Zhu, Ling, Wei, Jiang, and
+  Inkpen}]{chen2017recurrent}
+Qian Chen, Xiaodan Zhu, Zhen-Hua Ling, Si~Wei, Hui Jiang, and Diana Inkpen.
+  2017{\natexlab{c}}.
+\newblock Recurrent neural network-based sentence encoder with gated attention
+  for natural language inference.
+\newblock \emph{arXiv preprint arXiv:1708.01353}.
+
+\bibitem[{Cheng et~al.(2016)Cheng, Dong, and Lapata}]{cheng2016long}
+Jianpeng Cheng, Li~Dong, and Mirella Lapata. 2016.
+\newblock Long short-term memory-networks for machine reading.
+\newblock \emph{arXiv preprint arXiv:1601.06733}.
+
+\bibitem[{Clark et~al.(2016)Clark, Etzioni, Khot, Sabharwal, Tafjord, Turney,
+  and Khashabi}]{clark2016combining}
+Peter Clark, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Oyvind Tafjord,
+  Peter~D Turney, and Daniel Khashabi. 2016.
+\newblock Combining retrieval, statistics, and inference to answer elementary
+  science questions.
+\newblock In \emph{AAAI}, pages 2580--2586.
+
+\bibitem[{Cooper et~al.(1996)Cooper, Crouch, Van~Eijck, Fox, Van~Genabith,
+  Jaspars, Kamp, Milward, Pinkal, Poesio et~al.}]{cooper1996using}
+Robin Cooper, Dick Crouch, Jan Van~Eijck, Chris Fox, Johan Van~Genabith, Jan
+  Jaspars, Hans Kamp, David Milward, Manfred Pinkal, Massimo Poesio, et~al.
+  1996.
+\newblock Using the framework.
+\newblock Technical report, Technical Report LRE 62-051 D-16, The FraCaS
+  Consortium.
+
+\bibitem[{Dagan et~al.(2006)Dagan, Glickman, and Magnini}]{dagan2006pascal}
+Ido Dagan, Oren Glickman, and Bernardo Magnini. 2006.
+\newblock The pascal recognising textual entailment challenge.
+\newblock In \emph{Machine learning challenges. evaluating predictive
+  uncertainty, visual object classification, and recognising tectual
+  entailment}, pages 177--190. Springer.
+
+\bibitem[{Faruqui et~al.(2015)Faruqui, Dodge, Jauhar, Dyer, Hovy, and
+  Smith}]{faruqui2015retrofitting}
+Manaal Faruqui, Jesse Dodge, Sujay~Kumar Jauhar, Chris Dyer, Eduard Hovy, and
+  Noah~A Smith. 2015.
+\newblock Retrofitting word vectors to semantic lexicons.
+\newblock In \emph{Proceedings of the 2015 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 1606--1615.
+
+\bibitem[{Ghaeini et~al.(2018)Ghaeini, Hasan, Datla, Liu, Lee, Qadir, Ling,
+  Prakash, Fern, and Farri}]{ghaeini2018dr}
+Reza Ghaeini, Sadid~A Hasan, Vivek Datla, Joey Liu, Kathy Lee, Ashequl Qadir,
+  Yuan Ling, Aaditya Prakash, Xiaoli~Z Fern, and Oladimeji Farri. 2018.
+\newblock Dr-bilstm: Dependent reading bidirectional lstm for natural language
+  inference.
+\newblock \emph{arXiv preprint arXiv:1802.05577}.
+
+\bibitem[{Goldberg(2017)}]{goldberg2017Apr}
+Yoav Goldberg. 2017.
+\newblock \emph{{Neural Network Methods in Natural Language Processing
+  (Synthesis Lectures on Human Language Technologies, Band 37)}}.
+\newblock Morgan {\&} Claypool Publishers.
+
+\bibitem[{Gong et~al.(2017)Gong, Luo, and Zhang}]{gong2017natural}
+Yichen Gong, Heng Luo, and Jian Zhang. 2017.
+\newblock Natural language inference over interaction space.
+\newblock \emph{arXiv preprint arXiv:1709.04348}.
+
+\bibitem[{Graves and Schmidhuber(2005)}]{graves2005framewise}
+Alex Graves and J{\"u}rgen Schmidhuber. 2005.
+\newblock Framewise phoneme classification with bidirectional lstm and other
+  neural network architectures.
+\newblock \emph{Neural Networks}, 18(5-6):602--610.
+
+\bibitem[{Gurevych et~al.(2012)Gurevych, Eckle-Kohler, Hartmann, Matuschek,
+  Meyer, and Wirth}]{gurevych2012uby}
+Iryna Gurevych, Judith Eckle-Kohler, Silvana Hartmann, Michael Matuschek,
+  Christian~M Meyer, and Christian Wirth. 2012.
+\newblock Uby: A large-scale unified lexical-semantic resource based on lmf.
+\newblock In \emph{Proceedings of the 13th Conference of the European Chapter
+  of the Association for Computational Linguistics}, pages 580--590.
+  Association for Computational Linguistics.
+
+\bibitem[{Gurevych et~al.(2016)Gurevych, Eckle-Kohler, and
+  Matuschek}]{gurevych2016linked}
+Iryna Gurevych, Judith Eckle-Kohler, and Michael Matuschek. 2016.
+\newblock Linked lexical knowledge bases: Foundations and applications.
+\newblock \emph{Synthesis Lectures on Human Language Technologies},
+  9(3):1--146.
+
+\bibitem[{Gururangan et~al.(2018)Gururangan, Swayamdipta, Levy, Schwartz,
+  Bowman, and Smith}]{gururangan2018annotation}
+Suchin Gururangan, Swabha Swayamdipta, Omer Levy, Roy Schwartz, Samuel~R
+  Bowman, and Noah~A Smith. 2018.
+\newblock Annotation artifacts in natural language inference data.
+\newblock \emph{arXiv preprint arXiv:1803.02324}.
+
+\bibitem[{Hochreiter and Schmidhuber(1997)}]{hochreiter1997long}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber. 1997.
+\newblock Long short-term memory.
+\newblock \emph{Neural computation}, 9(8):1735--1780.
+
+\bibitem[{Hu et~al.(2016)Hu, Yang, Salakhutdinov, and Xing}]{hu2016deep}
+Zhiting Hu, Zichao Yang, Ruslan Salakhutdinov, and Eric Xing. 2016.
+\newblock Deep neural networks with massive learned knowledge.
+\newblock In \emph{Proceedings of the 2016 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1670--1679.
+
+\bibitem[{Ide and Macleod(2001)}]{ide2001american}
+Nancy Ide and Catherine Macleod. 2001.
+\newblock The american national corpus: A standardized resource of american
+  english.
+\newblock In \emph{Proceedings of Corpus Linguistics}, volume~3, pages 1--7.
+  Lancaster University Centre for Computer Corpus Research on Language
+  Lancaster, UK.
+
+\bibitem[{Ide and Suderman(2004)}]{ide2004american}
+Nancy Ide and Keith Suderman. 2004.
+\newblock The american national corpus first release.
+\newblock In \emph{LREC}.
+
+\bibitem[{Ide and Suderman(2006)}]{ide2006integrating}
+Nancy Ide and Keith Suderman. 2006.
+\newblock Integrating linguistic resources: The american national corpus model.
+\newblock In \emph{Proceedings of the 6th International Conference on Language
+  Resources and Evaluation}. Citeseer.
+
+\bibitem[{Im and Cho(2017)}]{im2017distance}
+Jinbae Im and Sungzoon Cho. 2017.
+\newblock Distance-based self-attention network for natural language inference.
+\newblock \emph{arXiv preprint arXiv:1712.02047}.
+
+\bibitem[{Jurafsky and Martin(2008)}]{Jurafsky2008May}
+Daniel Jurafsky and James~H. Martin. 2008.
+\newblock \emph{{Speech and Language Processing, 2nd Edition}}.
+\newblock Prentice Hall.
+
+\bibitem[{Khot et~al.(2018)Khot, Sabharwal, and Clark}]{scitail}
+Tushar Khot, Ashish Sabharwal, and Peter Clark. 2018.
+\newblock {SciTail}: A textual entailment dataset from science question
+  answering.
+\newblock In \emph{AAAI}.
+
+\bibitem[{Kingma and Ba(2014)}]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba. 2014.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}.
+
+\bibitem[{Levy et~al.(2015)Levy, Goldberg, and Dagan}]{levy2015improving}
+Omer Levy, Yoav Goldberg, and Ido Dagan. 2015.
+\newblock Improving distributional similarity with lessons learned from word
+  embeddings.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  3:211--225.
+
+\bibitem[{Liu et~al.(2015)Liu, Jiang, Wei, Ling, and Hu}]{liu2015learning}
+Quan Liu, Hui Jiang, Si~Wei, Zhen-Hua Ling, and Yu~Hu. 2015.
+\newblock Learning semantic word embeddings based on ordinal knowledge
+  constraints.
+\newblock In \emph{Proceedings of the 53rd Annual Meeting of the Association
+  for Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 1: Long Papers)}, volume~1, pages
+  1501--1511.
+
+\bibitem[{MacCartney et~al.(2008)MacCartney, Galley, and
+  Manning}]{maccartney2008phrase}
+Bill MacCartney, Michel Galley, and Christopher~D Manning. 2008.
+\newblock A phrase-based alignment model for natural language inference.
+\newblock In \emph{Proceedings of the conference on empirical methods in
+  natural language processing}, pages 802--811. Association for Computational
+  Linguistics.
+
+\bibitem[{MacCartney and Manning(2007)}]{maccartney2007natural}
+Bill MacCartney and Christopher~D Manning. 2007.
+\newblock Natural logic for textual inference.
+\newblock In \emph{Proceedings of the ACL-PASCAL Workshop on Textual Entailment
+  and Paraphrasing}, pages 193--200. Association for Computational Linguistics.
+
+\bibitem[{Marelli et~al.(2014)Marelli, Bentivogli, Baroni, Bernardi, Menini,
+  and Zamparelli}]{marelli2014semeval}
+Marco Marelli, Luisa Bentivogli, Marco Baroni, Raffaella Bernardi, Stefano
+  Menini, and Roberto Zamparelli. 2014.
+\newblock Semeval-2014 task 1: Evaluation of compositional distributional
+  semantic models on full sentences through semantic relatedness and textual
+  entailment.
+\newblock In \emph{Proceedings of the 8th international workshop on semantic
+  evaluation (SemEval 2014)}, pages 1--8.
+
+\bibitem[{McCarthy et~al.(2004)McCarthy, Koeling, Weeds, and
+  Carroll}]{mccarthy2004using}
+Diana McCarthy, Rob Koeling, Julie Weeds, and John Carroll. 2004.
+\newblock Using automatically acquired predominant senses for word sense
+  disambiguation.
+\newblock In \emph{Proceedings of SENSEVAL-3, the Third International Workshop
+  on the Evaluation of Systems for the Semantic Analysis of Text}.
+
+\bibitem[{Mikolov et~al.(2013)Mikolov, Sutskever, Chen, Corrado, and
+  Dean}]{mikolov2013distributed}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, and Jeff Dean. 2013.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  3111--3119.
+
+\bibitem[{Miller(1995)}]{miller1995wordnet}
+George~A Miller. 1995.
+\newblock Wordnet: a lexical database for english.
+\newblock \emph{Communications of the ACM}, 38(11):39--41.
+
+\bibitem[{Mou et~al.(2015)Mou, Men, Li, Xu, Zhang, Yan, and
+  Jin}]{mou2015natural}
+Lili Mou, Rui Men, Ge~Li, Yan Xu, Lu~Zhang, Rui Yan, and Zhi Jin. 2015.
+\newblock Natural language inference by tree-based convolution and heuristic
+  matching.
+\newblock \emph{arXiv preprint arXiv:1512.08422}.
+
+\bibitem[{Mrk{\v{s}}i{\'c} et~al.(2017)Mrk{\v{s}}i{\'c}, Vuli{\'c},
+  S{\'e}aghdha, Leviant, Reichart, Ga{\v{s}}i{\'c}, Korhonen, and
+  Young}]{mrkvsic2017semantic}
+Nikola Mrk{\v{s}}i{\'c}, Ivan Vuli{\'c}, Diarmuid~{\'O} S{\'e}aghdha, Ira
+  Leviant, Roi Reichart, Milica Ga{\v{s}}i{\'c}, Anna Korhonen, and Steve
+  Young. 2017.
+\newblock Semantic specialization of distributional word vector spaces using
+  monolingual and cross-lingual constraints.
+\newblock \emph{Transactions of the Association of Computational Linguistics},
+  5(1):309--324.
+
+\bibitem[{Munkhdalai and Yu(2017)}]{munkhdalai2017neural}
+Tsendsuren Munkhdalai and Hong Yu. 2017.
+\newblock Neural semantic encoders.
+\newblock In \emph{Proceedings of the conference. Association for Computational
+  Linguistics. Meeting}, volume~1, page 397. NIH Public Access.
+
+\bibitem[{Murphy(2003)}]{murphy2003semantic}
+M~Lynne Murphy. 2003.
+\newblock \emph{Semantic relations and the lexicon: Antonymy, synonymy and
+  other paradigms}.
+\newblock Cambridge University Press.
+
+\bibitem[{Nangia et~al.(2017)Nangia, Williams, Lazaridou, and
+  Bowman}]{nangia2017repeval}
+Nikita Nangia, Adina Williams, Angeliki Lazaridou, and Samuel~R Bowman. 2017.
+\newblock The repeval 2017 shared task: Multi-genre natural language inference
+  with sentence representations.
+\newblock \emph{arXiv preprint arXiv:1707.08172}.
+
+\bibitem[{Nie and Bansal(2017)}]{nie2017shortcut}
+Yixin Nie and Mohit Bansal. 2017.
+\newblock Shortcut-stacked sentence encoders for multi-domain inference.
+\newblock \emph{arXiv preprint arXiv:1708.02312}.
+
+\bibitem[{Parikh et~al.(2016)Parikh, T{\"a}ckstr{\"o}m, Das, and
+  Uszkoreit}]{parikh2016decomposable}
+Ankur~P Parikh, Oscar T{\"a}ckstr{\"o}m, Dipanjan Das, and Jakob Uszkoreit.
+  2016.
+\newblock A decomposable attention model for natural language inference.
+\newblock \emph{arXiv preprint arXiv:1606.01933}.
+
+\bibitem[{Pennington et~al.(2014)Pennington, Socher, and
+  Manning}]{pennington2014glove}
+Jeffrey Pennington, Richard Socher, and Christopher Manning. 2014.
+\newblock Glove: Global vectors for word representation.
+\newblock In \emph{Proceedings of the 2014 conference on empirical methods in
+  natural language processing (EMNLP)}, pages 1532--1543.
+
+\bibitem[{Peters et~al.(2018)Peters, Neumann, Iyyer, Gardner, Clark, Lee, and
+  Zettlemoyer}]{peters2018deep}
+Matthew~E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark,
+  Kenton Lee, and Luke Zettlemoyer. 2018.
+\newblock Deep contextualized word representations.
+\newblock \emph{arXiv preprint arXiv:1802.05365}.
+
+\bibitem[{Prakash et~al.(2007)Prakash, Jurafsky, and Ng}]{prakash2007learning}
+Rion Snow~Sushant Prakash, Daniel Jurafsky, and Andrew~Y Ng. 2007.
+\newblock Learning to merge word senses.
+\newblock \emph{EMNLP-CoNLL 2007}, page 1005.
+
+\bibitem[{Resnik(1995)}]{resnik1995using}
+Philip Resnik. 1995.
+\newblock Using information content to evaluate semantic similarity in a
+  taxonomy.
+\newblock In \emph{Proceedings of the 14th international joint conference on
+  Artificial intelligence-Volume 1}, pages 448--453. Morgan Kaufmann Publishers
+  Inc.
+
+\bibitem[{Rockt{\"a}schel et~al.(2015)Rockt{\"a}schel, Grefenstette, Hermann,
+  Ko{\v{c}}isk{\`y}, and Blunsom}]{rocktaschel2015reasoning}
+Tim Rockt{\"a}schel, Edward Grefenstette, Karl~Moritz Hermann, Tom{\'a}{\v{s}}
+  Ko{\v{c}}isk{\`y}, and Phil Blunsom. 2015.
+\newblock Reasoning about entailment with neural attention.
+\newblock \emph{arXiv preprint arXiv:1509.06664}.
+
+\bibitem[{Rubinstein et~al.(2015)Rubinstein, Levi, Schwartz, and
+  Rappoport}]{rubinstein2015well}
+Dana Rubinstein, Effi Levi, Roy Schwartz, and Ari Rappoport. 2015.
+\newblock How well do distributional models capture different types of semantic
+  knowledge?
+\newblock In \emph{Proceedings of the 53rd Annual Meeting of the Association
+  for Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 2: Short Papers)}, volume~2, pages
+  726--730.
+
+\bibitem[{R{\"u}ckl{\'e} et~al.(2018)R{\"u}ckl{\'e}, Eger, Peyrard, and
+  Gurevych}]{ruckle2018concatenated}
+Andreas R{\"u}ckl{\'e}, Steffen Eger, Maxime Peyrard, and Iryna Gurevych. 2018.
+\newblock Concatenated $ p $-mean word embeddings as universal cross-lingual
+  sentence representations.
+\newblock \emph{arXiv preprint arXiv:1803.01400}.
+
+\bibitem[{Shen et~al.(2018)Shen, Zhou, Long, Jiang, Wang, and
+  Zhang}]{shen2018reinforced}
+Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, Sen Wang, and Chengqi Zhang.
+  2018.
+\newblock Reinforced self-attention network: a hybrid of hard and soft
+  attention for sequence modeling.
+\newblock \emph{arXiv preprint arXiv:1801.10296}.
+
+\bibitem[{Suchanek et~al.(2007)Suchanek, Kasneci, and
+  Weikum}]{suchanek2007yago}
+Fabian~M Suchanek, Gjergji Kasneci, and Gerhard Weikum. 2007.
+\newblock Yago: a core of semantic knowledge.
+\newblock In \emph{Proceedings of the 16th international conference on World
+  Wide Web}, pages 697--706. ACM.
+
+\bibitem[{Tatu and Moldovan(2005)}]{tatu2005semantic}
+Marta Tatu and Dan Moldovan. 2005.
+\newblock A semantic approach to recognizing textual entailment.
+\newblock In \emph{Proceedings of the conference on Human Language Technology
+  and Empirical Methods in Natural Language Processing}, pages 371--378.
+  Association for Computational Linguistics.
+
+\bibitem[{Tay et~al.(2017)Tay, Tuan, and Hui}]{tay2017compare}
+Yi~Tay, Luu~Anh Tuan, and Siu~Cheung Hui. 2017.
+\newblock A compare-propagate architecture with alignment factorization for
+  natural language inference.
+\newblock \emph{arXiv preprint arXiv:1801.00102}.
+
+\bibitem[{Vuli{\'c} and Mrk{\v{s}}i{\'c}(2017)}]{vulic2017specialising}
+Ivan Vuli{\'c} and Nikola Mrk{\v{s}}i{\'c}. 2017.
+\newblock Specialising word vectors for lexical entailment.
+\newblock \emph{arXiv preprint arXiv:1710.06371}.
+
+\bibitem[{Vuli{\'c} et~al.(2017)Vuli{\'c}, Mrk{\v{s}}i{\'c}, Reichart,
+  S{\'e}aghdha, Young, and Korhonen}]{vulic2017morph}
+Ivan Vuli{\'c}, Nikola Mrk{\v{s}}i{\'c}, Roi Reichart, Diarmuid~{\'O}
+  S{\'e}aghdha, Steve Young, and Anna Korhonen. 2017.
+\newblock Morph-fitting: Fine-tuning word vector spaces with simple
+  language-specific rules.
+\newblock \emph{arXiv preprint arXiv:1706.00377}.
+
+\bibitem[{Welbl et~al.(2017)Welbl, Liu, and Gardner}]{welbl2017crowdsourcing}
+Johannes Welbl, Nelson~F Liu, and Matt Gardner. 2017.
+\newblock Crowdsourcing multiple choice science questions.
+\newblock \emph{arXiv preprint arXiv:1707.06209}.
+
+\bibitem[{Williams et~al.(2017)Williams, Nangia, and
+  Bowman}]{williams2017broad}
+Adina Williams, Nikita Nangia, and Samuel~R Bowman. 2017.
+\newblock A broad-coverage challenge corpus for sentence understanding through
+  inference.
+\newblock \emph{arXiv preprint arXiv:1704.05426}.
+
+\bibitem[{Xu et~al.(2014)Xu, Bai, Bian, Gao, Wang, Liu, and Liu}]{xu2014rc}
+Chang Xu, Yalong Bai, Jiang Bian, Bin Gao, Gang Wang, Xiaoguang Liu, and
+  Tie-Yan Liu. 2014.
+\newblock Rc-net: A general framework for incorporating knowledge into word
+  representations.
+\newblock In \emph{Proceedings of the 23rd ACM International Conference on
+  Conference on Information and Knowledge Management}, pages 1219--1228. ACM.
+
+\bibitem[{Yang et~al.(2017)Yang, Costa-juss{\`a}, and
+  Fonollosa}]{yang2017character}
+Han Yang, Marta~R Costa-juss{\`a}, and Jos{\'e}~AR Fonollosa. 2017.
+\newblock Character-level intra attention network for natural language
+  inference.
+\newblock \emph{arXiv preprint arXiv:1707.07469}.
+
+\bibitem[{Young et~al.(2014)Young, Lai, Hodosh, and
+  Hockenmaier}]{young2014image}
+Peter Young, Alice Lai, Micah Hodosh, and Julia Hockenmaier. 2014.
+\newblock From image descriptions to visual denotations: New similarity metrics
+  for semantic inference over event descriptions.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  2:67--78.
+
+\bibitem[{Zesch et~al.(2008)Zesch, M{\"u}ller, and
+  Gurevych}]{zesch2008extracting}
+Torsten Zesch, Christof M{\"u}ller, and Iryna Gurevych. 2008.
+\newblock Extracting lexical semantic knowledge from wikipedia and wiktionary.
+\newblock In \emph{LREC}, volume~8, pages 1646--1652.
+
+\end{thebibliography}

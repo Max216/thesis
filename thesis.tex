@@ -1,0 +1,100 @@
+\documentclass[article,type=msc,colorback,accentcolor=tud9c]{tudthesis}
+\usepackage[english]{babel}
+\usepackage{titlesec}
+\usepackage{natbib}
+\bibliographystyle{acl_natbib}
+%\setcitestyle{authoryear,open={((},close={))}}
+\setcounter{secnumdepth}{4}
+\usepackage{acronym}
+\usepackage{multirow}
+\usepackage{booktabs,tabularx}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\usepackage{setspace} 
+\AtBeginEnvironment{quote}{\singlespacing\normalfont}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\newcommand{\getmydate}{%
+  \ifcase\month%
+    \or Januar\or Februar\or M\"arz%
+    \or April\or Mai\or Juni\or Juli%
+    \or August\or September\or Oktober%
+    \or November\or Dezember%
+  \fi\ \number\year%
+}
+
+\newcommand{\mx}[1]{\textcolor{red}{max: #1}}
+
+\begin{document}
+  \thesistitle{Understanding and Improving Neural Models for Natural Language Interference}%
+    {Verständnis und Verbesserung Neuronaler Modelle für Natural languge inference}
+  \author{Max Glockner}
+  \referee{Prof. Dr. Iryna Gurevych}{Dr. Yoav Goldberg}[Dr. Andreas R\"ucké]
+  \department{Fachbereich Physik}
+  \group{Institut f"ur Angewandte Festkernphysik\\Speerspitze der Elite}
+  \dateofexam{\today}{\today}
+  \tuprints{12345}{1234}
+  \makethesistitle
+  \affidavit{J. Walker}
+
+\section*{Abstract}
+\addtocounter{section}{0}
+TODO in English...
+\section*{Zusammenfassung}
+\addtocounter{section}{0}
+TODO in Deutsch...
+
+\section*{List of abbreviations}
+\addtocounter{section}{0}
+
+\begin{acronym}[Bash]
+ \acro{biLSTM}{bidirectional Long-Short-Term Memory Network}
+ \acro{BoW}{Bag of Words}
+ \acro{ESIM}{Enhanced Sequential Inference Model}
+ \acro{IE}{Information Extraction}
+ \acro{IR}{Information Retrieval}
+ \acro{KIM}{Knowledge-based Inference Model}
+ \acro{LSTM}{Long-Short-Term-Memory}
+ \acro{MLP}{Multi Layer Perceptron}
+ \acro{MultiNLI}{MultiGenre Natural Language Inference Corpus}
+ \acro{NLI}{Natural Language Inference}
+ \acro{NLP}{Natural Language Processing}
+ \acro{NLU}{Natural Language Understanding}
+ \acro{POS}{Part of Speech}
+ \acro{OANC}{Open American National Corpus}
+ \acro{QA}{Question Answering}
+ \acro{RNN}{Recurrent Neural Network}
+ \acro{RTE}{Recognizing Textual Entailment}
+ \acro{SICK}{Sentences Involving Compositional Knowledge}
+ \acro{SNLI}{The Stanford Natural Language Inference Corpus}
+ \acro{WSD}{Word Sense Disambiguation}
+ \acro{YAGO}{Yet Another Great Ontology}
+
+
+\end{acronym}
+\tableofcontents
+\newpage\cleardoublepage
+\input{tex/introduction}\newpage\cleardoublepage
+\input{tex/basics}\newpage\cleardoublepage
+\input{tex/related_work}\newpage\cleardoublepage
+\input{tex/understanding}\newpage\cleardoublepage
+\input{tex/additional_testset}\newpage\cleardoublepage
+\input{tex/approaches_ext_res}\newpage\cleardoublepage
+\input{tex/conclusion}\newpage\cleardoublepage
+
+	
+\bibliography{bib/literature}\newpage\cleardoublepage
+
+
+\listoffigures\newpage\cleardoublepage
+
+\listoftables\newpage\cleardoublepage
+
+\end{document}

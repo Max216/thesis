@@ -1,0 +1,6 @@
+\babel@toc {english}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces A sample ontology of animals to illustrate the lexical relations \textit {Hypernomy} and \textit {Holonymy}.}}{7}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces The architecture of the sentence-encoding component within the Shortcut-Stacked-Encoder, taken from \cite {nie2017shortcut}.}}{8}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Example of different synsets of the lemma ``table'' (only noun senses) within WordNet, taken from \href {http://wordnetweb.princeton.edu}{http://wordnetweb.princeton.edu}.}}{11}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces General architecture of a \ac {RNN} (left). Example sentence in an unrolled \ac {RNN} (right).}}{19}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Visualized example of extracting interpretable information of the max-pooled seentence representations with a dimensionality of 3.}}{20}{figure.5}

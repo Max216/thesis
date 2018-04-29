@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\contentsline {table}{\numberline {1}{\ignorespaces Accuracy in percent of different implementations of the model from \cite {nie2017shortcut}, achieved on the SNLI dataset compared with human performance.}}{9}{table.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Example sentence pairs, taken from \ac {SNLI}, showing typical sentences within the dataset.}}{13}{table.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Example sentence pairs from \ac {MultiNLI}, taken from RepEval 2017 Shared Task, showing samples of different genres.}}{15}{table.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Example sentence pairs from SciTail Task, different premises retrieved for two hypothesis.}}{16}{table.4}
