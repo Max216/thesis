@@ -4,3 +4,5 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces Example of different synsets of the lemma ``table'' (only noun senses) within WordNet, taken from \href {http://wordnetweb.princeton.edu}{http://wordnetweb.princeton.edu}.}}{11}{figure.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces General architecture of a \ac {RNN} (left). Example sentence in an unrolled \ac {RNN} (right).}}{19}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Visualized example of extracting interpretable information of the max-pooled seentence representations with a dimensionality of 3.}}{20}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces The standard deviation within a dimension of sentence representations (x-axis) by the amount of dimensions with the given standard deviation.}}{21}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value.}}{22}{figure.7}

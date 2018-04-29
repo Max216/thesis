@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{68}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Balazs et~al.(2017)Balazs, Marrese-Taylor, Loyola, and
@@ -14,6 +14,12 @@ Yoshua Bengio, Aaron Courville, and Pascal Vincent. 2013.
 \newblock Representation learning: A review and new perspectives.
 \newblock \emph{IEEE transactions on pattern analysis and machine
   intelligence}, 35(8):1798--1828.
+
+\bibitem[{Bishop(2007)}]{Bishop2007}
+Christopher~M. Bishop. 2007.
+\newblock \emph{{Pattern Recognition and Machine Learning (Information Science
+  and Statistics)}}.
+\newblock Springer.
 
 \bibitem[{Bos and Markert(2005)}]{bos2005recognising}
 Johan Bos and Katja Markert. 2005.
@@ -104,6 +110,11 @@ Robin Cooper, Dick Crouch, Jan Van~Eijck, Chris Fox, Johan Van~Genabith, Jan
 \newblock Using the framework.
 \newblock Technical report, Technical Report LRE 62-051 D-16, The FraCaS
   Consortium.
+
+\bibitem[{Dagan(2000)}]{dagan2000contextual}
+Ido Dagan. 2000.
+\newblock Contextual word similarity.
+\newblock \emph{Handbook of Natural Language Processing}, pages 459--475.
 
 \bibitem[{Dagan et~al.(2006)Dagan, Glickman, and Magnini}]{dagan2006pascal}
 Ido Dagan, Oren Glickman, and Bernardo Magnini. 2006.

@@ -37,6 +37,7 @@
 \newacro{QA}[\AC@hyperlink{QA}{QA}]{Question Answering}
 \newacro{RNN}[\AC@hyperlink{RNN}{RNN}]{Recurrent Neural Network}
 \newacro{RTE}[\AC@hyperlink{RTE}{RTE}]{Recognizing Textual Entailment}
+\newacro{SD}[\AC@hyperlink{SD}{SD}]{Standard Deviation}
 \newacro{SICK}[\AC@hyperlink{SICK}{SICK}]{Sentences Involving Compositional Knowledge}
 \newacro{SNLI}[\AC@hyperlink{SNLI}{SNLI}]{The Stanford Natural Language Inference Corpus}
 \newacro{WSD}[\AC@hyperlink{WSD}{WSD}]{Word Sense Disambiguation}
@@ -393,132 +394,153 @@
 \acronymused{RNN}
 \acronymused{RNN}
 \newlabel{fig:rnn}{{4}{19}{General architecture of a \ac {RNN} (left). Example sentence in an unrolled \ac {RNN} (right)}{figure.4}{}}
+\citation{Bishop2007}
 \acronymused{LSTM}
 \acronymused{RNN}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Visualized example of extracting interpretable information of the max-pooled seentence representations with a dimensionality of 3.}}{20}{figure.5}}
 \newlabel{fig:example_process_understanding}{{5}{20}{Visualized example of extracting interpretable information of the max-pooled seentence representations with a dimensionality of 3}{figure.5}{}}
 \acronymused{biLSTM}
+\newlabel{sec:understanding1_analysed_data}{{4.2.1}{20}{}{figure.5}{}}
 \acronymused{SNLI}
 \acronymused{POS}
 \acronymused{POS}
 \acronymused{POS}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Detection of relevant dimensions}{20}{subsubsection.4.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Dimension-wise Analysis}{21}{subsubsection.4.2.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.1}Positional information}{21}{paragraph.4.2.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.2}Semantic information}{21}{paragraph.4.2.3.2}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.3}Syntactic information}{21}{paragraph.4.2.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.4}Evaluation of the impact of female and male dimensions}{21}{paragraph.4.2.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Conclusion}{21}{subsubsection.4.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Insights on the sentence alignment}{21}{subsection.4.3}}
-\newlabel{sec:insights_sent_alignment}{{4.3}{21}{Insights on the sentence alignment}{subsection.4.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Approach}{21}{subsubsection.4.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Entailment analysis}{21}{subsubsection.4.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Neutral and contradiction analysis}{21}{subsubsection.4.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Experiments}{21}{subsubsection.4.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Conclusion}{21}{subsubsection.4.3.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Errors of the base model}{21}{subsection.4.4}}
+\AC@undonewlabel{acro:SD}
+\newlabel{acro:SD}{{4.2.2}{20}{Detection of relevant dimensions}{section*.22}{}}
+\acronymused{SD}
+\citation{dagan2000contextual}
+\acronymused{SD}
+\acronymused{SD}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The standard deviation within a dimension of sentence representations (x-axis) by the amount of dimensions with the given standard deviation.}}{21}{figure.6}}
+\newlabel{fig:sd}{{6}{21}{The standard deviation within a dimension of sentence representations (x-axis) by the amount of dimensions with the given standard deviation}{figure.6}{}}
+\acronymused{SD}
+\acronymused{SD}
+\acronymused{NLI}
+\acronymused{SD}
+\acronymused{SD}
+\acronymused{SD}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value.}}{22}{figure.7}}
+\newlabel{fig:find_position_1}{{7}{22}{An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Dimension-wise Analysis}{22}{subsubsection.4.2.3}}
+\newlabel{sec:understanding2}{{4.2.3}{22}{Dimension-wise Analysis}{subsubsection.4.2.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.1}Positional information}{22}{paragraph.4.2.3.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.2}Semantic information}{22}{paragraph.4.2.3.2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.3}Syntactic information}{22}{paragraph.4.2.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.4}Evaluation of the impact of female and male dimensions}{22}{paragraph.4.2.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Conclusion}{22}{subsubsection.4.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Insights on the sentence alignment}{22}{subsection.4.3}}
+\newlabel{sec:insights_sent_alignment}{{4.3}{22}{Insights on the sentence alignment}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Approach}{22}{subsubsection.4.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Entailment analysis}{22}{subsubsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Neutral and contradiction analysis}{22}{subsubsection.4.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Experiments}{22}{subsubsection.4.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Conclusion}{22}{subsubsection.4.3.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Errors of the base model}{22}{subsection.4.4}}
 \citation{maccartney2007natural}
 \citation{cooper1996role}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Additional SNLI test-set}{22}{section.5}}
-\newlabel{sec:additional_snli_set}{{5}{22}{Additional SNLI test-set}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Motivation}{22}{subsection.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dataset}{22}{subsection.5.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Creation}{22}{subsubsection.5.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Validation}{22}{subsubsection.5.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Final dataset}{22}{subsubsection.5.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Other models}{22}{subsection.5.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}ESIM}{22}{subsubsection.5.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Decomposable Attention}{22}{subsubsection.5.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Evaluation}{22}{subsection.5.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Analysis}{22}{subsection.5.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Additional SNLI test-set}{23}{section.5}}
+\newlabel{sec:additional_snli_set}{{5}{23}{Additional SNLI test-set}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Motivation}{23}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dataset}{23}{subsection.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Creation}{23}{subsubsection.5.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Validation}{23}{subsubsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Final dataset}{23}{subsubsection.5.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Other models}{23}{subsection.5.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}ESIM}{23}{subsubsection.5.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Decomposable Attention}{23}{subsubsection.5.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Evaluation}{23}{subsection.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Analysis}{23}{subsection.5.5}}
 \citation{rubinstein2015well}
 \citation{levy2015improving}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{23}{section.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{23}{subsection.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{23}{subsection.6.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{23}{subsubsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{23}{subsubsection.6.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{23}{subsubsection.6.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{23}{subsubsection.6.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multitask Learning}{23}{subsection.6.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{23}{subsubsection.6.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{23}{subsubsection.6.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{23}{subsubsection.6.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{23}{paragraph.6.3.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{23}{paragraph.6.3.3.2}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{23}{paragraph.6.3.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{23}{paragraph.6.3.3.4}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{23}{paragraph.6.3.3.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{23}{subsubsection.6.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{23}{subsubsection.6.3.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{24}{section.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{24}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{24}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{24}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{24}{subsubsection.6.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{24}{subsubsection.6.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{24}{subsubsection.6.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{24}{subsubsection.6.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multitask Learning}{24}{subsection.6.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{24}{subsubsection.6.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{24}{subsubsection.6.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{24}{subsubsection.6.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{24}{paragraph.6.3.3.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{24}{paragraph.6.3.3.2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{24}{paragraph.6.3.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{24}{paragraph.6.3.3.4}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{24}{paragraph.6.3.3.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{24}{subsubsection.6.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{24}{subsubsection.6.3.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{25}{section.7}}
 \bibdata{bib/literature}
 \bibcite{balazs2017refining}{{1}{2017}{{Balazs et~al.}}{{Balazs, Marrese-Taylor, Loyola, and Matsuo}}}
 \bibcite{bengio2013representation}{{2}{2013}{{Bengio et~al.}}{{Bengio, Courville, and Vincent}}}
-\bibcite{bos2005recognising}{{3}{2005}{{Bos and Markert}}{{}}}
-\bibcite{bowman2015large}{{4}{2015}{{Bowman et~al.}}{{Bowman, Angeli, Potts, and Manning}}}
-\bibcite{bowman2016fast}{{5}{2016}{{Bowman et~al.}}{{Bowman, Gauthier, Rastogi, Gupta, Manning, and Potts}}}
-\bibcite{bromley1994signature}{{6}{1994}{{Bromley et~al.}}{{Bromley, Guyon, LeCun, S{\"a}ckinger, and Shah}}}
-\bibcite{celikyilmaz2010enriching}{{7}{2010}{{Celikyilmaz et~al.}}{{Celikyilmaz, Hakkani-Tur, Pasupat, and Sarikaya}}}
-\bibcite{chatzikyriakidis2017overview}{{8}{2017}{{Chatzikyriakidis et~al.}}{{Chatzikyriakidis, Cooper, Dobnik, and Larsson}}}
-\bibcite{chen2017natural}{{9}{2017{a}}{{Chen et~al.}}{{Chen, Zhu, Ling, and Inkpen}}}
-\bibcite{chen2017enhanced}{{10}{2017{b}}{{Chen et~al.}}{{Chen, Zhu, Ling, Wei, Jiang, and Inkpen}}}
-\bibcite{chen2017recurrent}{{11}{2017{c}}{{Chen et~al.}}{{Chen, Zhu, Ling, Wei, Jiang, and Inkpen}}}
-\bibcite{cheng2016long}{{12}{2016}{{Cheng et~al.}}{{Cheng, Dong, and Lapata}}}
-\bibcite{clark2016combining}{{13}{2016}{{Clark et~al.}}{{Clark, Etzioni, Khot, Sabharwal, Tafjord, Turney, and Khashabi}}}
-\bibcite{cooper1996using}{{14}{1996}{{Cooper et~al.}}{{Cooper, Crouch, Van~Eijck, Fox, Van~Genabith, Jaspars, Kamp, Milward, Pinkal, Poesio et~al.}}}
-\bibcite{dagan2006pascal}{{15}{2006}{{Dagan et~al.}}{{Dagan, Glickman, and Magnini}}}
-\bibcite{faruqui2015retrofitting}{{16}{2015}{{Faruqui et~al.}}{{Faruqui, Dodge, Jauhar, Dyer, Hovy, and Smith}}}
-\bibcite{ghaeini2018dr}{{17}{2018}{{Ghaeini et~al.}}{{Ghaeini, Hasan, Datla, Liu, Lee, Qadir, Ling, Prakash, Fern, and Farri}}}
-\bibcite{goldberg2017Apr}{{18}{2017}{{Goldberg}}{{}}}
-\bibcite{gong2017natural}{{19}{2017}{{Gong et~al.}}{{Gong, Luo, and Zhang}}}
-\bibcite{graves2005framewise}{{20}{2005}{{Graves and Schmidhuber}}{{}}}
-\bibcite{gurevych2012uby}{{21}{2012}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, Hartmann, Matuschek, Meyer, and Wirth}}}
-\bibcite{gurevych2016linked}{{22}{2016}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, and Matuschek}}}
-\bibcite{gururangan2018annotation}{{23}{2018}{{Gururangan et~al.}}{{Gururangan, Swayamdipta, Levy, Schwartz, Bowman, and Smith}}}
-\bibcite{hochreiter1997long}{{24}{1997}{{Hochreiter and Schmidhuber}}{{}}}
-\bibcite{hu2016deep}{{25}{2016}{{Hu et~al.}}{{Hu, Yang, Salakhutdinov, and Xing}}}
-\bibcite{ide2001american}{{26}{2001}{{Ide and Macleod}}{{}}}
-\bibcite{ide2004american}{{27}{2004}{{Ide and Suderman}}{{}}}
-\bibcite{ide2006integrating}{{28}{2006}{{Ide and Suderman}}{{}}}
-\bibcite{im2017distance}{{29}{2017}{{Im and Cho}}{{}}}
-\bibcite{Jurafsky2008May}{{30}{2008}{{Jurafsky and Martin}}{{}}}
-\bibcite{scitail}{{31}{2018}{{Khot et~al.}}{{Khot, Sabharwal, and Clark}}}
-\bibcite{kingma2014adam}{{32}{2014}{{Kingma and Ba}}{{}}}
-\bibcite{levy2015improving}{{33}{2015}{{Levy et~al.}}{{Levy, Goldberg, and Dagan}}}
-\bibcite{liu2015learning}{{34}{2015}{{Liu et~al.}}{{Liu, Jiang, Wei, Ling, and Hu}}}
-\bibcite{maccartney2008phrase}{{35}{2008}{{MacCartney et~al.}}{{MacCartney, Galley, and Manning}}}
-\bibcite{maccartney2007natural}{{36}{2007}{{MacCartney and Manning}}{{}}}
-\bibcite{marelli2014semeval}{{37}{2014}{{Marelli et~al.}}{{Marelli, Bentivogli, Baroni, Bernardi, Menini, and Zamparelli}}}
-\bibcite{mccarthy2004using}{{38}{2004}{{McCarthy et~al.}}{{McCarthy, Koeling, Weeds, and Carroll}}}
-\bibcite{mikolov2013distributed}{{39}{2013}{{Mikolov et~al.}}{{Mikolov, Sutskever, Chen, Corrado, and Dean}}}
-\bibcite{miller1995wordnet}{{40}{1995}{{Miller}}{{}}}
-\bibcite{mou2015natural}{{41}{2015}{{Mou et~al.}}{{Mou, Men, Li, Xu, Zhang, Yan, and Jin}}}
-\bibcite{mrkvsic2017semantic}{{42}{2017}{{Mrk{\v {s}}i{\'c} et~al.}}{{Mrk{\v {s}}i{\'c}, Vuli{\'c}, S{\'e}aghdha, Leviant, Reichart, Ga{\v {s}}i{\'c}, Korhonen, and Young}}}
-\bibcite{munkhdalai2017neural}{{43}{2017}{{Munkhdalai and Yu}}{{}}}
-\bibcite{murphy2003semantic}{{44}{2003}{{Murphy}}{{}}}
-\bibcite{nangia2017repeval}{{45}{2017}{{Nangia et~al.}}{{Nangia, Williams, Lazaridou, and Bowman}}}
-\bibcite{nie2017shortcut}{{46}{2017}{{Nie and Bansal}}{{}}}
-\bibcite{parikh2016decomposable}{{47}{2016}{{Parikh et~al.}}{{Parikh, T{\"a}ckstr{\"o}m, Das, and Uszkoreit}}}
-\bibcite{pennington2014glove}{{48}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
-\bibcite{peters2018deep}{{49}{2018}{{Peters et~al.}}{{Peters, Neumann, Iyyer, Gardner, Clark, Lee, and Zettlemoyer}}}
-\bibcite{prakash2007learning}{{50}{2007}{{Prakash et~al.}}{{Prakash, Jurafsky, and Ng}}}
-\bibcite{resnik1995using}{{51}{1995}{{Resnik}}{{}}}
-\bibcite{rocktaschel2015reasoning}{{52}{2015}{{Rockt{\"a}schel et~al.}}{{Rockt{\"a}schel, Grefenstette, Hermann, Ko{\v {c}}isk{\`y}, and Blunsom}}}
-\bibcite{rubinstein2015well}{{53}{2015}{{Rubinstein et~al.}}{{Rubinstein, Levi, Schwartz, and Rappoport}}}
-\bibcite{ruckle2018concatenated}{{54}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
-\bibcite{shen2018reinforced}{{55}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
-\bibcite{suchanek2007yago}{{56}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
-\bibcite{tatu2005semantic}{{57}{2005}{{Tatu and Moldovan}}{{}}}
-\bibcite{tay2017compare}{{58}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
-\bibcite{vulic2017specialising}{{59}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
-\bibcite{vulic2017morph}{{60}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
-\bibcite{welbl2017crowdsourcing}{{61}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
-\bibcite{williams2017broad}{{62}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
-\bibcite{xu2014rc}{{63}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
-\bibcite{yang2017character}{{64}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
-\bibcite{young2014image}{{65}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
-\bibcite{zesch2008extracting}{{66}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
+\bibcite{Bishop2007}{{3}{2007}{{Bishop}}{{}}}
+\bibcite{bos2005recognising}{{4}{2005}{{Bos and Markert}}{{}}}
+\bibcite{bowman2015large}{{5}{2015}{{Bowman et~al.}}{{Bowman, Angeli, Potts, and Manning}}}
+\bibcite{bowman2016fast}{{6}{2016}{{Bowman et~al.}}{{Bowman, Gauthier, Rastogi, Gupta, Manning, and Potts}}}
+\bibcite{bromley1994signature}{{7}{1994}{{Bromley et~al.}}{{Bromley, Guyon, LeCun, S{\"a}ckinger, and Shah}}}
+\bibcite{celikyilmaz2010enriching}{{8}{2010}{{Celikyilmaz et~al.}}{{Celikyilmaz, Hakkani-Tur, Pasupat, and Sarikaya}}}
+\bibcite{chatzikyriakidis2017overview}{{9}{2017}{{Chatzikyriakidis et~al.}}{{Chatzikyriakidis, Cooper, Dobnik, and Larsson}}}
+\bibcite{chen2017natural}{{10}{2017{a}}{{Chen et~al.}}{{Chen, Zhu, Ling, and Inkpen}}}
+\bibcite{chen2017enhanced}{{11}{2017{b}}{{Chen et~al.}}{{Chen, Zhu, Ling, Wei, Jiang, and Inkpen}}}
+\bibcite{chen2017recurrent}{{12}{2017{c}}{{Chen et~al.}}{{Chen, Zhu, Ling, Wei, Jiang, and Inkpen}}}
+\bibcite{cheng2016long}{{13}{2016}{{Cheng et~al.}}{{Cheng, Dong, and Lapata}}}
+\bibcite{clark2016combining}{{14}{2016}{{Clark et~al.}}{{Clark, Etzioni, Khot, Sabharwal, Tafjord, Turney, and Khashabi}}}
+\bibcite{cooper1996using}{{15}{1996}{{Cooper et~al.}}{{Cooper, Crouch, Van~Eijck, Fox, Van~Genabith, Jaspars, Kamp, Milward, Pinkal, Poesio et~al.}}}
+\bibcite{dagan2000contextual}{{16}{2000}{{Dagan}}{{}}}
+\bibcite{dagan2006pascal}{{17}{2006}{{Dagan et~al.}}{{Dagan, Glickman, and Magnini}}}
+\bibcite{faruqui2015retrofitting}{{18}{2015}{{Faruqui et~al.}}{{Faruqui, Dodge, Jauhar, Dyer, Hovy, and Smith}}}
+\bibcite{ghaeini2018dr}{{19}{2018}{{Ghaeini et~al.}}{{Ghaeini, Hasan, Datla, Liu, Lee, Qadir, Ling, Prakash, Fern, and Farri}}}
+\bibcite{goldberg2017Apr}{{20}{2017}{{Goldberg}}{{}}}
+\bibcite{gong2017natural}{{21}{2017}{{Gong et~al.}}{{Gong, Luo, and Zhang}}}
+\bibcite{graves2005framewise}{{22}{2005}{{Graves and Schmidhuber}}{{}}}
+\bibcite{gurevych2012uby}{{23}{2012}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, Hartmann, Matuschek, Meyer, and Wirth}}}
+\bibcite{gurevych2016linked}{{24}{2016}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, and Matuschek}}}
+\bibcite{gururangan2018annotation}{{25}{2018}{{Gururangan et~al.}}{{Gururangan, Swayamdipta, Levy, Schwartz, Bowman, and Smith}}}
+\bibcite{hochreiter1997long}{{26}{1997}{{Hochreiter and Schmidhuber}}{{}}}
+\bibcite{hu2016deep}{{27}{2016}{{Hu et~al.}}{{Hu, Yang, Salakhutdinov, and Xing}}}
+\bibcite{ide2001american}{{28}{2001}{{Ide and Macleod}}{{}}}
+\bibcite{ide2004american}{{29}{2004}{{Ide and Suderman}}{{}}}
+\bibcite{ide2006integrating}{{30}{2006}{{Ide and Suderman}}{{}}}
+\bibcite{im2017distance}{{31}{2017}{{Im and Cho}}{{}}}
+\bibcite{Jurafsky2008May}{{32}{2008}{{Jurafsky and Martin}}{{}}}
+\bibcite{scitail}{{33}{2018}{{Khot et~al.}}{{Khot, Sabharwal, and Clark}}}
+\bibcite{kingma2014adam}{{34}{2014}{{Kingma and Ba}}{{}}}
+\bibcite{levy2015improving}{{35}{2015}{{Levy et~al.}}{{Levy, Goldberg, and Dagan}}}
+\bibcite{liu2015learning}{{36}{2015}{{Liu et~al.}}{{Liu, Jiang, Wei, Ling, and Hu}}}
+\bibcite{maccartney2008phrase}{{37}{2008}{{MacCartney et~al.}}{{MacCartney, Galley, and Manning}}}
+\bibcite{maccartney2007natural}{{38}{2007}{{MacCartney and Manning}}{{}}}
+\bibcite{marelli2014semeval}{{39}{2014}{{Marelli et~al.}}{{Marelli, Bentivogli, Baroni, Bernardi, Menini, and Zamparelli}}}
+\bibcite{mccarthy2004using}{{40}{2004}{{McCarthy et~al.}}{{McCarthy, Koeling, Weeds, and Carroll}}}
+\bibcite{mikolov2013distributed}{{41}{2013}{{Mikolov et~al.}}{{Mikolov, Sutskever, Chen, Corrado, and Dean}}}
+\bibcite{miller1995wordnet}{{42}{1995}{{Miller}}{{}}}
+\bibcite{mou2015natural}{{43}{2015}{{Mou et~al.}}{{Mou, Men, Li, Xu, Zhang, Yan, and Jin}}}
+\bibcite{mrkvsic2017semantic}{{44}{2017}{{Mrk{\v {s}}i{\'c} et~al.}}{{Mrk{\v {s}}i{\'c}, Vuli{\'c}, S{\'e}aghdha, Leviant, Reichart, Ga{\v {s}}i{\'c}, Korhonen, and Young}}}
+\bibcite{munkhdalai2017neural}{{45}{2017}{{Munkhdalai and Yu}}{{}}}
+\bibcite{murphy2003semantic}{{46}{2003}{{Murphy}}{{}}}
+\bibcite{nangia2017repeval}{{47}{2017}{{Nangia et~al.}}{{Nangia, Williams, Lazaridou, and Bowman}}}
+\bibcite{nie2017shortcut}{{48}{2017}{{Nie and Bansal}}{{}}}
+\bibcite{parikh2016decomposable}{{49}{2016}{{Parikh et~al.}}{{Parikh, T{\"a}ckstr{\"o}m, Das, and Uszkoreit}}}
+\bibcite{pennington2014glove}{{50}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
+\bibcite{peters2018deep}{{51}{2018}{{Peters et~al.}}{{Peters, Neumann, Iyyer, Gardner, Clark, Lee, and Zettlemoyer}}}
+\bibcite{prakash2007learning}{{52}{2007}{{Prakash et~al.}}{{Prakash, Jurafsky, and Ng}}}
+\bibcite{resnik1995using}{{53}{1995}{{Resnik}}{{}}}
+\bibcite{rocktaschel2015reasoning}{{54}{2015}{{Rockt{\"a}schel et~al.}}{{Rockt{\"a}schel, Grefenstette, Hermann, Ko{\v {c}}isk{\`y}, and Blunsom}}}
+\bibcite{rubinstein2015well}{{55}{2015}{{Rubinstein et~al.}}{{Rubinstein, Levi, Schwartz, and Rappoport}}}
+\bibcite{ruckle2018concatenated}{{56}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
+\bibcite{shen2018reinforced}{{57}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
+\bibcite{suchanek2007yago}{{58}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
+\bibcite{tatu2005semantic}{{59}{2005}{{Tatu and Moldovan}}{{}}}
+\bibcite{tay2017compare}{{60}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
+\bibcite{vulic2017specialising}{{61}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
+\bibcite{vulic2017morph}{{62}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
+\bibcite{welbl2017crowdsourcing}{{63}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
+\bibcite{williams2017broad}{{64}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
+\bibcite{xu2014rc}{{65}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
+\bibcite{yang2017character}{{66}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
+\bibcite{young2014image}{{67}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
+\bibcite{zesch2008extracting}{{68}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
 \citation{nie2017shortcut}
 \acronymused{RNN}
 \acronymused{RNN}

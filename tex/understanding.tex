@@ -30,7 +30,7 @@ Maintaining an internal state $s \in \mathbb{R}^m$, for $m$-dimensional represen
 \end{figure}
 Additiobnally to creating the sentence representation $r$ by applying wor-wise max-pooling on $M$, we collect the vector $a$, containing the column indizes, that are responsible for the values within $r$. These can directly be mapped to the word of the source sentence and thus be interpreted by humans. It should be notted that due to the nature of the multi layer \ac{biLSTM} each $y_t$ does not only contain the word at $x_t$ but its context. While this somehow may lead to less accurate mapping, we found that the chosen method is sufficient to gain some meaningful insights on sentence encoding.
 
-\paragraph*{Analysed data}
+\paragraph*{Analysed data}\label{sec:understanding1_analysed_data}
 To reduce noise and aming for sentences that Shortcut-Stacked Encoder\textsuperscript{$\dagger$} seems to have a proper understanging about, we sample 1000 sentence representations from the \ac{SNLI} train data in the following strategy. We group all sentence pairs ($p$, $h$) sharing the same premise and only keep groups if all samples belonging to the same group are classified correctly. Thus, we reduce the amount of sentences that are definetly misunderstood by the model, that would be harder to interpret. For now we are not interested in the actual relation between $p$ and $h$ and therefore create a pool of the remaining sentences, by treating $p$ and $h$ equally and splitting their connections apart. After removing duplicate sentences, the most frequent sentence length for the remaining representations is 8. To reduce noise that may arise from different sentence lengths, we only consider sentences of a length of 8 and randomly sample 1000 sentence representations. All experiments in this chapter are based on the same instances, unless otherwise stated.
 \newline
 
@@ -43,18 +43,38 @@ In addition to the representation values each sample contains the following info
 \item \textbf{\ac{POS}:} The \ac{POS} tags of the responsible tokens.
 \item \textbf{Dependency Parse:} The tags of the responsible tokens within the dependency parse tree.
 \end{itemize}
-Lemmatizing, \ac{POS}-Tagging and dependency parsing were conducted using spaCy.
+Lemmatizing, \ac{POS}-Tagging and dependency parsing were conducted using spaCy\footnote{\href{https://spacy.io/}{https://spacy.io/}}.
 
 \subsubsection{Detection of relevant dimensions}
-manual research
-identify relevant information
-get understanding of the representation and how to interret it
+As commonly done when analysing data we start by showing a rough look into the sentence representations at hand. Typically, the \ac{SD} within a dimension correlates with the with the relevance for decision making. Naturally, a dimension that does not change its value and thus being close to a constant is not informative, while a value with a high \ac{SD} can be considered informative \citep{Bishop2007}. We calculate \ac{SD} over all dimensions, depicted as a histogram in Figure \ref{fig:sd}.
+\begin{figure}[tph!]
+\centering
+	\includegraphics[totalheight=8cm]{fig/sd.png}
+	\caption{The standard deviation within a dimension of sentence representations (x-axis) by the amount of dimensions with the given standard deviation.}
+	\label{fig:sd}
+\end{figure}
+We plot the standard deviations in a discrete space using a bin size 0.05. For each if the 2048 dimensions we calculate its \ac{SD} to assign them to the correct bin. The amount of dimensions with the given \ac{SD} is shown on the y-axis, note that the upper part of the plot is truncated for the sake of compactness. As can be seen, only a very tiny fraction of the dimension shows a large variation, the vast majority contains more or less the same value, regardless of the sentence. This obviously  does not mean, they contain no information at all, as they may only be used to encode information that is rarly present within the data, however itserves as a reliable source, what dimensions are relevant to the model.
+
+\paragraph*{A naive approach to identify dimensional encoding}
+An intuitive approach to identify, what is encoded within the sentence representation, is to find common similarities between the words across all sentences, that are responsible for the according dimmension. Especially the task of \ac{NLI} we assume \textit{semantic}, \textit{syntactic} or \textit{positional} information to be required. Those can all be inferred using the features we extraced in Section §\ref{sec:understanding1_analysed_data}. Similarities between words heavily depend on the context they appear in \citep{dagan2000contextual}. For instance one could consider a car and an identical recunstruction in original size of the same car as similar, whereas a horse is very distinct. Adding additional information that one needs to reach a destination in short time, he or she is more likely to consider the horse similar to the car, desicing between these two option. This essentially comes to a major problem when investigating semantic encoding without prior knowledge of what attributes may be considered relevant. We therefore investigate the sentence representation using excessive manual analyses in a top down manner, by first searching for patterns across all dimensions. In Section §\ref{sec:understanding2} we will look into some dimensions in detail.
+\paragraph*{A tool for sentence representation visualization}
+In order to evaluate many patterns with minimal time effort, we create a visualitazion tool, capable of dynamically generating any labelling scheme for responsible words based on the features descried previously. A sample visualitation is shown in Figure \ref{fig:find_position_1}.
+\begin{figure}[tph!]
+\centering
+	\includegraphics[totalheight=4cm]{fig/finpone.png}
+	\caption{An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value.}
+	\label{fig:find_position_1}
+\end{figure}
+This grid-plot visualizes for each row the responsible words for one dimension, listed on the right side as (<rank in terms of \ac{SD}\footnote{All dimensions are ranked by their \ac{SD}, giving an intuition of the expressiveness of the dimension.}>, <dimension index>), colored based on the attributes of interest. In this particular case words are colored by their position within the sentence.  Each column refers to the same sentence along different dimensions. As a trade-off between explanatory power and clarity we always plot 300 sentences on 300 dimensions, which are eigther oredered by \ac{SD} or already pre-sorted by the frequency\footnote{Even though we only use 300 sentences and dimensions for plotting, calculatiions are based on all the selected data.} of a label of interest. In this particular case, dimensions are ordered by their frequency of words on the üposition 1, meaning the upmost dimension received its values from the second word (index $1$) more than any other dimension. Looking for patterns across many sentences, we focus on horizontal lines with the same coloring. Vertical lines indicate different differences across sentences w.r.t. the attribute of interest.
+
+Filtern + Select by SD, Search
+
 
 create tool
 label data and sort by label freqency + SD + dimension positions
 
 responsible word i nitcht genug, value is immer wichtig
-\subsubsection{Dimension-wise Analysis}
+\subsubsection{Dimension-wise Analysis}\label{sec:understanding2}
 \paragraph{Positional information}
 \paragraph{Semantic information}
 \paragraph{Syntactic information}
