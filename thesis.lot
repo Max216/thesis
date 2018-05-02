@@ -3,3 +3,6 @@
 \contentsline {table}{\numberline {2}{\ignorespaces Example sentence pairs, taken from \ac {SNLI}, showing typical sentences within the dataset.}}{13}{table.2}
 \contentsline {table}{\numberline {3}{\ignorespaces Example sentence pairs from \ac {MultiNLI}, taken from RepEval 2017 Shared Task, showing samples of different genres.}}{15}{table.3}
 \contentsline {table}{\numberline {4}{\ignorespaces Example sentence pairs from SciTail Task, different premises retrieved for two hypothesis.}}{16}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Accuracies achieved on \ac {SNLI} using $|r|$-dimensional sentence representations of gender-specific dimensions.}}{26}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Results in terms of accuracy of inverted gender-specific dimensions on \ac {SNLI} train and dev set.}}{27}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Comparison of samples between their predictions based on the original and gender-inverted sentence representations.}}{27}{table.7}

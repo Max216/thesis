@@ -6,3 +6,18 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Visualized example of extracting interpretable information of the max-pooled seentence representations with a dimensionality of 3.}}{20}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces The standard deviation within a dimension of sentence representations (x-axis) by the amount of dimensions with the given standard deviation.}}{21}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value.}}{22}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces An extraction of a grid-plot, showing syntatical information using the \ac {POS} tag with pre-sorted rows to have a single dominant label.}}{23}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces An extraction of a grid-plot, gender specific female using only sentences with words of pre-defined wordlists.}}{24}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Representation visualitation with respect to genders of dimension 199 (left) and dimension 602 (right).}}{24}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Detailed representation visualitation of different terms for human males of dimension 199 (left) and dimension 602 (right).}}{25}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Detailed representation visualitation of different terms for human females of dimension 845 (left) and dimension 311 (right).}}{25}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Dimension 713 encoding verbs (left) and dimension 2020 encoding adjectives.}}{29}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Dimension 757, encoding the subjects (left), and dimension 1840 encoding objects (right) of sentences.}}{30}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Word alignments of an entailing sentence pair either by counting all shared dimensions (left) or only dimensions with at least a value of 0.2 (right).}}{31}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Visualitation of an entailing sample with applied element-wise multiplication either using the mean (left) or maximum (right) product of all shared dimensions for each word pair.}}{31}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Visualitation of a contradicting sample by counting meaningful shared dimensions (left) and meaningful distinct dimensions 8right) amongst pairs of words.}}{32}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Dimension-wise visualitation of distinct information represented by \textit {sitting} in the premise and \textit {standing} in the hypothesis.}}{33}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Visualitation of a sample sentence pair with explanatory guides for interpretation.}}{34}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Visualitation of 150 sentence pairs ($p$, $h$), correctly labelled as entailment.}}{34}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Visualization of samples predicted as entailment (left) and neutral (right) after swapping $p$ and $h$.}}{35}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Visualitazion of 150 sentence pairs ($p$, $h$) correctly labelled as \textit {neutral} (left) and \textit {contradiction} (right).}}{36}{figure.22}

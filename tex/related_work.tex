@@ -31,7 +31,7 @@ Wikipedia has successfully been used in many applications for \ac{NLP} and even 
 
 \subsection{Datasets for NLI}\label{sec:basics_datasets}
 As neural models usually require a huge amount of data for their training, they were not successfully applicable to \ac{NLI} tasks until the release of \ac{SNLI}, reaching state-of-the-art results. Previous \ac{NLI} tasks like FraCas \citep{cooper1996using} or the PASCAL challenge \citep{dagan2006pascal} only had very limited amount of training data, such that neural models could not be used. Some datasets like \ac{SICK} \citep{marelli2014semeval} or the Denotation Graph entailment set \citep{young2014image} increased the amount of samples at the expense of using artificially created sentences and/or automatically labeling, reducing the textual quality and adding noise. Since the focus in this work is on neural models, only the relevant datasets for this purpose are introduced.
-\subsubsection{SNLI}
+\subsubsection{SNLI}\label{sec:snli}
 With the release of \ac{SNLI} \citep{bowman2015large} researchers were able to apply neural models for the task of \ac{NLI} using distributed word and phrase representations. The corpus consists of 570,152 human written sentence pairs and differentiates between the labels \textit{entailment}, \textit{neutral} and \textit{contradiction}. 
 \paragraph*{Event co-reference}
 A drawback of all previsously existing resources for \ac{NLI} that is handled by \cite{bowman2015large}, is the fact that even humans may assign different labels to a sentence pair, based on their subjective interpretation of a sentence, that all can be valid. This issue can be demonstrated using the following sentence pair:

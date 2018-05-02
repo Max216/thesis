@@ -234,6 +234,7 @@
 \newlabel{acro:SICK}{{3.2}{12}{Datasets for NLI}{section*.15}{}}
 \acronymused{SICK}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}SNLI}{12}{subsubsection.3.2.1}}
+\newlabel{sec:snli}{{3.2.1}{12}{SNLI}{subsubsection.3.2.1}{}}
 \acronymused{SNLI}
 \acronymused{NLI}
 \acronymused{NLI}
@@ -420,58 +421,120 @@
 \acronymused{SD}
 \acronymused{SD}
 \acronymused{SD}
+\citation{marcus1993building}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value.}}{22}{figure.7}}
 \newlabel{fig:find_position_1}{{7}{22}{An extraction of a grid-plot, showing dimensions with the position within the sentence of the word, responsible for the dimensional value}{figure.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Dimension-wise Analysis}{22}{subsubsection.4.2.3}}
-\newlabel{sec:understanding2}{{4.2.3}{22}{Dimension-wise Analysis}{subsubsection.4.2.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.1}Positional information}{22}{paragraph.4.2.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.2}Semantic information}{22}{paragraph.4.2.3.2}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.3}Syntactic information}{22}{paragraph.4.2.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {4.2.3.4}Evaluation of the impact of female and male dimensions}{22}{paragraph.4.2.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Conclusion}{22}{subsubsection.4.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Insights on the sentence alignment}{22}{subsection.4.3}}
-\newlabel{sec:insights_sent_alignment}{{4.3}{22}{Insights on the sentence alignment}{subsection.4.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Approach}{22}{subsubsection.4.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Entailment analysis}{22}{subsubsection.4.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Neutral and contradiction analysis}{22}{subsubsection.4.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Experiments}{22}{subsubsection.4.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Conclusion}{22}{subsubsection.4.3.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Errors of the base model}{22}{subsection.4.4}}
+\acronymused{SNLI}
+\acronymused{POS}
+\acronymused{POS}
+\acronymused{POS}
+\acronymused{SD}
+\citation{gururangan2018annotation}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces An extraction of a grid-plot, showing syntatical information using the \ac {POS} tag with pre-sorted rows to have a single dominant label.}}{23}{figure.8}}
+\acronymused{POS}
+\newlabel{fig:find_syntax}{{8}{23}{An extraction of a grid-plot, showing syntatical information using the \ac {POS} tag with pre-sorted rows to have a single dominant label}{figure.8}{}}
+\acronymused{SD}
+\acronymused{SD}
+\acronymused{SNLI}
+\citation{mikolov2013linguistic}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces An extraction of a grid-plot, gender specific female using only sentences with words of pre-defined wordlists.}}{24}{figure.9}}
+\newlabel{fig:find_male_female}{{9}{24}{An extraction of a grid-plot, gender specific female using only sentences with words of pre-defined wordlists}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Female and male dimensions}{24}{subsubsection.4.2.3}}
+\newlabel{sec:understanding2}{{4.2.3}{24}{Female and male dimensions}{subsubsection.4.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Representation visualitation with respect to genders of dimension 199 (left) and dimension 602 (right).}}{24}{figure.10}}
+\newlabel{fig:mf_basic}{{10}{24}{Representation visualitation with respect to genders of dimension 199 (left) and dimension 602 (right)}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Detailed representation visualitation of different terms for human males of dimension 199 (left) and dimension 602 (right).}}{25}{figure.11}}
+\newlabel{fig:mf_detailed_m}{{11}{25}{Detailed representation visualitation of different terms for human males of dimension 199 (left) and dimension 602 (right)}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Detailed representation visualitation of different terms for human females of dimension 845 (left) and dimension 311 (right).}}{25}{figure.12}}
+\newlabel{fig:mf_detailed_f}{{12}{25}{Detailed representation visualitation of different terms for human females of dimension 845 (left) and dimension 311 (right)}{figure.12}{}}
+\newlabel{tab:relevance_mf_nn}{{4.2.3}{26}{}{figure.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Accuracies achieved on \ac {SNLI} using $|r|$-dimensional sentence representations of gender-specific dimensions.}}{26}{table.5}}
+\acronymused{SNLI}
+\acronymused{SNLI}
+\acronymused{MLP}
+\newlabel{eq:invert}{{8}{26}{}{equation.4.8}{}}
+\acronymused{SNLI}
+\newlabel{tab:inverted_mf_results_acc}{{4.2.3}{27}{}{equation.4.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Results in terms of accuracy of inverted gender-specific dimensions on \ac {SNLI} train and dev set.}}{27}{table.6}}
+\acronymused{SNLI}
+\newlabel{tab:inverted_mf_results_samples}{{4.2.3}{27}{}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Comparison of samples between their predictions based on the original and gender-inverted sentence representations.}}{27}{table.7}}
+\acronymused{SNLI}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Other semantic dimensions}{28}{subsubsection.4.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5}Syntactic dimensions}{28}{subsubsection.4.2.5}}
+\acronymused{POS}
+\acronymused{POS}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Dimension 713 encoding verbs (left) and dimension 2020 encoding adjectives.}}{29}{figure.13}}
+\newlabel{fig:find_syntax_vb}{{13}{29}{Dimension 713 encoding verbs (left) and dimension 2020 encoding adjectives}{figure.13}{}}
+\acronymused{SNLI}
+\acronymused{SNLI}
+\acronymused{POS}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Dimension 757, encoding the subjects (left), and dimension 1840 encoding objects (right) of sentences.}}{30}{figure.14}}
+\newlabel{fig:find_syntax_subj_obj}{{14}{30}{Dimension 757, encoding the subjects (left), and dimension 1840 encoding objects (right) of sentences}{figure.14}{}}
+\acronymused{SNLI}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Insights on the sentence alignment}{30}{subsection.4.3}}
+\newlabel{sec:insights_sent_alignment}{{4.3}{30}{Insights on the sentence alignment}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Alignment analysis on a single sample}{30}{subsubsection.4.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Word alignments of an entailing sentence pair either by counting all shared dimensions (left) or only dimensions with at least a value of 0.2 (right).}}{31}{figure.15}}
+\newlabel{fig:alignment_entailment_sample_general}{{15}{31}{Word alignments of an entailing sentence pair either by counting all shared dimensions (left) or only dimensions with at least a value of 0.2 (right)}{figure.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Visualitation of an entailing sample with applied element-wise multiplication either using the mean (left) or maximum (right) product of all shared dimensions for each word pair.}}{31}{figure.16}}
+\newlabel{fig:alignment_entailment_sample_mult}{{16}{31}{Visualitation of an entailing sample with applied element-wise multiplication either using the mean (left) or maximum (right) product of all shared dimensions for each word pair}{figure.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Visualitation of a contradicting sample by counting meaningful shared dimensions (left) and meaningful distinct dimensions 8right) amongst pairs of words.}}{32}{figure.17}}
+\newlabel{fig:alignment_contr_sample_general}{{17}{32}{Visualitation of a contradicting sample by counting meaningful shared dimensions (left) and meaningful distinct dimensions 8right) amongst pairs of words}{figure.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Dimension-wise visualitation of distinct information represented by \textit  {sitting} in the premise and \textit  {standing} in the hypothesis.}}{33}{figure.18}}
+\newlabel{fig:contradiction_alignment_unshared_dimwise}{{18}{33}{Dimension-wise visualitation of distinct information represented by \textit {sitting} in the premise and \textit {standing} in the hypothesis}{figure.18}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Approach for a general alignment understanding}{33}{subsubsection.4.3.2}}
+\newlabel{sec:approach_general_alignment_understanding}{{4.3.2}{33}{Approach for a general alignment understanding}{subsubsection.4.3.2}{}}
+\acronymused{MLP}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Visualitation of a sample sentence pair with explanatory guides for interpretation.}}{34}{figure.19}}
+\newlabel{fig:sample_coverage_prob}{{19}{34}{Visualitation of a sample sentence pair with explanatory guides for interpretation}{figure.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Entailment analysis}{34}{subsubsection.4.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Visualitation of 150 sentence pairs ($p$, $h$), correctly labelled as entailment.}}{34}{figure.20}}
+\newlabel{fig:entailment_uninversed}{{20}{34}{Visualitation of 150 sentence pairs ($p$, $h$), correctly labelled as entailment}{figure.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Visualization of samples predicted as entailment (left) and neutral (right) after swapping $p$ and $h$.}}{35}{figure.21}}
+\newlabel{fig:alignment_entailment_inversed}{{21}{35}{Visualization of samples predicted as entailment (left) and neutral (right) after swapping $p$ and $h$}{figure.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Neutral and contradiction analysis}{35}{subsubsection.4.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Visualitazion of 150 sentence pairs ($p$, $h$) correctly labelled as \textit  {neutral} (left) and \textit  {contradiction} (right).}}{36}{figure.22}}
+\newlabel{fig:neutr_contr_uninversed}{{22}{36}{Visualitazion of 150 sentence pairs ($p$, $h$) correctly labelled as \textit {neutral} (left) and \textit {contradiction} (right)}{figure.22}{}}
+\acronymused{MLP}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Summarizing the inisghts onmMax-pooled sentence representations}{36}{subsubsection.4.3.5}}
+\acronymused{SNLI}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Errors of the base model}{36}{subsection.4.4}}
 \citation{maccartney2007natural}
 \citation{cooper1996role}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Additional SNLI test-set}{23}{section.5}}
-\newlabel{sec:additional_snli_set}{{5}{23}{Additional SNLI test-set}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Motivation}{23}{subsection.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dataset}{23}{subsection.5.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Creation}{23}{subsubsection.5.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Validation}{23}{subsubsection.5.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Final dataset}{23}{subsubsection.5.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Other models}{23}{subsection.5.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}ESIM}{23}{subsubsection.5.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Decomposable Attention}{23}{subsubsection.5.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Evaluation}{23}{subsection.5.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Analysis}{23}{subsection.5.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Additional SNLI test-set}{37}{section.5}}
+\newlabel{sec:additional_snli_set}{{5}{37}{Additional SNLI test-set}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Motivation}{37}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dataset}{37}{subsection.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Creation}{37}{subsubsection.5.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Validation}{37}{subsubsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Final dataset}{37}{subsubsection.5.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Other models}{37}{subsection.5.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}ESIM}{37}{subsubsection.5.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Decomposable Attention}{37}{subsubsection.5.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Evaluation}{37}{subsection.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Analysis}{37}{subsection.5.5}}
 \citation{rubinstein2015well}
 \citation{levy2015improving}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{24}{section.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{24}{subsection.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{24}{subsection.6.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{24}{subsubsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{24}{subsubsection.6.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{24}{subsubsection.6.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{24}{subsubsection.6.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multitask Learning}{24}{subsection.6.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{24}{subsubsection.6.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{24}{subsubsection.6.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{24}{subsubsection.6.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{24}{paragraph.6.3.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{24}{paragraph.6.3.3.2}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{24}{paragraph.6.3.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{24}{paragraph.6.3.3.4}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{24}{paragraph.6.3.3.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{24}{subsubsection.6.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{24}{subsubsection.6.3.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{25}{section.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{38}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{38}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{38}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{38}{subsubsection.6.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{38}{subsubsection.6.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{38}{subsubsection.6.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{38}{subsubsection.6.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multitask Learning}{38}{subsection.6.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{38}{subsubsection.6.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{38}{subsubsection.6.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{38}{subsubsection.6.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{38}{paragraph.6.3.3.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{38}{paragraph.6.3.3.2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{38}{paragraph.6.3.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{38}{paragraph.6.3.3.4}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{38}{paragraph.6.3.3.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{38}{subsubsection.6.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{38}{subsubsection.6.3.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{39}{section.7}}
 \bibdata{bib/literature}
 \bibcite{balazs2017refining}{{1}{2017}{{Balazs et~al.}}{{Balazs, Marrese-Taylor, Loyola, and Matsuo}}}
 \bibcite{bengio2013representation}{{2}{2013}{{Bengio et~al.}}{{Bengio, Courville, and Vincent}}}
@@ -511,44 +574,49 @@
 \bibcite{liu2015learning}{{36}{2015}{{Liu et~al.}}{{Liu, Jiang, Wei, Ling, and Hu}}}
 \bibcite{maccartney2008phrase}{{37}{2008}{{MacCartney et~al.}}{{MacCartney, Galley, and Manning}}}
 \bibcite{maccartney2007natural}{{38}{2007}{{MacCartney and Manning}}{{}}}
-\bibcite{marelli2014semeval}{{39}{2014}{{Marelli et~al.}}{{Marelli, Bentivogli, Baroni, Bernardi, Menini, and Zamparelli}}}
-\bibcite{mccarthy2004using}{{40}{2004}{{McCarthy et~al.}}{{McCarthy, Koeling, Weeds, and Carroll}}}
-\bibcite{mikolov2013distributed}{{41}{2013}{{Mikolov et~al.}}{{Mikolov, Sutskever, Chen, Corrado, and Dean}}}
-\bibcite{miller1995wordnet}{{42}{1995}{{Miller}}{{}}}
-\bibcite{mou2015natural}{{43}{2015}{{Mou et~al.}}{{Mou, Men, Li, Xu, Zhang, Yan, and Jin}}}
-\bibcite{mrkvsic2017semantic}{{44}{2017}{{Mrk{\v {s}}i{\'c} et~al.}}{{Mrk{\v {s}}i{\'c}, Vuli{\'c}, S{\'e}aghdha, Leviant, Reichart, Ga{\v {s}}i{\'c}, Korhonen, and Young}}}
-\bibcite{munkhdalai2017neural}{{45}{2017}{{Munkhdalai and Yu}}{{}}}
-\bibcite{murphy2003semantic}{{46}{2003}{{Murphy}}{{}}}
-\bibcite{nangia2017repeval}{{47}{2017}{{Nangia et~al.}}{{Nangia, Williams, Lazaridou, and Bowman}}}
-\bibcite{nie2017shortcut}{{48}{2017}{{Nie and Bansal}}{{}}}
-\bibcite{parikh2016decomposable}{{49}{2016}{{Parikh et~al.}}{{Parikh, T{\"a}ckstr{\"o}m, Das, and Uszkoreit}}}
-\bibcite{pennington2014glove}{{50}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
-\bibcite{peters2018deep}{{51}{2018}{{Peters et~al.}}{{Peters, Neumann, Iyyer, Gardner, Clark, Lee, and Zettlemoyer}}}
-\bibcite{prakash2007learning}{{52}{2007}{{Prakash et~al.}}{{Prakash, Jurafsky, and Ng}}}
-\bibcite{resnik1995using}{{53}{1995}{{Resnik}}{{}}}
-\bibcite{rocktaschel2015reasoning}{{54}{2015}{{Rockt{\"a}schel et~al.}}{{Rockt{\"a}schel, Grefenstette, Hermann, Ko{\v {c}}isk{\`y}, and Blunsom}}}
-\bibcite{rubinstein2015well}{{55}{2015}{{Rubinstein et~al.}}{{Rubinstein, Levi, Schwartz, and Rappoport}}}
-\bibcite{ruckle2018concatenated}{{56}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
-\bibcite{shen2018reinforced}{{57}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
-\bibcite{suchanek2007yago}{{58}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
-\bibcite{tatu2005semantic}{{59}{2005}{{Tatu and Moldovan}}{{}}}
-\bibcite{tay2017compare}{{60}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
-\bibcite{vulic2017specialising}{{61}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
-\bibcite{vulic2017morph}{{62}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
-\bibcite{welbl2017crowdsourcing}{{63}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
-\bibcite{williams2017broad}{{64}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
-\bibcite{xu2014rc}{{65}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
-\bibcite{yang2017character}{{66}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
-\bibcite{young2014image}{{67}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
-\bibcite{zesch2008extracting}{{68}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
+\bibcite{marcus1993building}{{39}{1993}{{Marcus et~al.}}{{Marcus, Marcinkiewicz, and Santorini}}}
+\bibcite{marelli2014semeval}{{40}{2014}{{Marelli et~al.}}{{Marelli, Bentivogli, Baroni, Bernardi, Menini, and Zamparelli}}}
+\bibcite{mccarthy2004using}{{41}{2004}{{McCarthy et~al.}}{{McCarthy, Koeling, Weeds, and Carroll}}}
+\bibcite{mikolov2013distributed}{{42}{2013{a}}{{Mikolov et~al.}}{{Mikolov, Sutskever, Chen, Corrado, and Dean}}}
+\bibcite{mikolov2013linguistic}{{43}{2013{b}}{{Mikolov et~al.}}{{Mikolov, Yih, and Zweig}}}
+\bibcite{miller1995wordnet}{{44}{1995}{{Miller}}{{}}}
+\bibcite{mou2015natural}{{45}{2015}{{Mou et~al.}}{{Mou, Men, Li, Xu, Zhang, Yan, and Jin}}}
+\bibcite{mrkvsic2017semantic}{{46}{2017}{{Mrk{\v {s}}i{\'c} et~al.}}{{Mrk{\v {s}}i{\'c}, Vuli{\'c}, S{\'e}aghdha, Leviant, Reichart, Ga{\v {s}}i{\'c}, Korhonen, and Young}}}
+\bibcite{munkhdalai2017neural}{{47}{2017}{{Munkhdalai and Yu}}{{}}}
+\bibcite{murphy2003semantic}{{48}{2003}{{Murphy}}{{}}}
+\bibcite{nangia2017repeval}{{49}{2017}{{Nangia et~al.}}{{Nangia, Williams, Lazaridou, and Bowman}}}
+\bibcite{nie2017shortcut}{{50}{2017}{{Nie and Bansal}}{{}}}
+\bibcite{parikh2016decomposable}{{51}{2016}{{Parikh et~al.}}{{Parikh, T{\"a}ckstr{\"o}m, Das, and Uszkoreit}}}
+\bibcite{pennington2014glove}{{52}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
+\bibcite{peters2018deep}{{53}{2018}{{Peters et~al.}}{{Peters, Neumann, Iyyer, Gardner, Clark, Lee, and Zettlemoyer}}}
+\bibcite{prakash2007learning}{{54}{2007}{{Prakash et~al.}}{{Prakash, Jurafsky, and Ng}}}
+\bibcite{resnik1995using}{{55}{1995}{{Resnik}}{{}}}
+\bibcite{rocktaschel2015reasoning}{{56}{2015}{{Rockt{\"a}schel et~al.}}{{Rockt{\"a}schel, Grefenstette, Hermann, Ko{\v {c}}isk{\`y}, and Blunsom}}}
+\bibcite{rubinstein2015well}{{57}{2015}{{Rubinstein et~al.}}{{Rubinstein, Levi, Schwartz, and Rappoport}}}
+\bibcite{ruckle2018concatenated}{{58}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
+\bibcite{shen2018reinforced}{{59}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
+\bibcite{suchanek2007yago}{{60}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
+\bibcite{tatu2005semantic}{{61}{2005}{{Tatu and Moldovan}}{{}}}
+\bibcite{tay2017compare}{{62}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
+\bibcite{vulic2017specialising}{{63}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
+\bibcite{vulic2017morph}{{64}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
+\bibcite{welbl2017crowdsourcing}{{65}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
+\bibcite{williams2017broad}{{66}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
+\bibcite{xu2014rc}{{67}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
+\bibcite{yang2017character}{{68}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
+\bibcite{young2014image}{{69}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
+\bibcite{zesch2008extracting}{{70}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
 \citation{nie2017shortcut}
 \acronymused{RNN}
 \acronymused{RNN}
+\acronymused{POS}
 \citation{nie2017shortcut}
 \acronymused{SNLI}
 \acronymused{MultiNLI}
+\acronymused{SNLI}
+\acronymused{SNLI}
 \global\@namedef{scr@dte@section@lastmaxnumwidth}{9.35994pt}
 \global\@namedef{scr@dte@subsection@lastmaxnumwidth}{17.00493pt}
 \global\@namedef{scr@dte@subsubsection@lastmaxnumwidth}{24.92792pt}
 \global\@namedef{scr@dte@table@lastmaxnumwidth}{9.08194pt}
-\global\@namedef{scr@dte@figure@lastmaxnumwidth}{9.08194pt}
+\global\@namedef{scr@dte@figure@lastmaxnumwidth}{14.36394pt}
