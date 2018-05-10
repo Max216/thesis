@@ -1,27 +1,25 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: acl_natbib.bst
 Database file #1: bib/literature.bib
-Repeated entry---line 101 of file bib/literature.bib
+Repeated entry---line 111 of file bib/literature.bib
  : @article{young2014image
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 272 of file bib/literature.bib
+Repeated entry---line 290 of file bib/literature.bib
  : @inproceedings{bos2005recognising
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 335 of file bib/literature.bib
+Repeated entry---line 353 of file bib/literature.bib
  : @article{chen2017recurrent
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 347 of file bib/literature.bib
+Repeated entry---line 365 of file bib/literature.bib
  : @article{im2017distance
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 386 of file bib/literature.bib
+Repeated entry---line 404 of file bib/literature.bib
  : @article{chen2017natural
  :                         ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "dagan2009recognizing"
-Warning--I didn't find a database entry for "cooper1996role"
 Warning--can't use both volume and number fields in zesch2008extracting
 (There were 5 error messages)

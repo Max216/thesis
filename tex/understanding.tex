@@ -408,4 +408,69 @@ We have shown that it is possible to identify the general meaning of a dimension
 
 \noindent
 All these results are based on a rather small amount of rather small sentences, stemming from \ac{SNLI} and thus merely show experimental results. For a general claim similar experiments should be conducted on larger size and range of data, especially containing longer text, using different models (all with max-pooled sentence representation) to see if those claims still holds. 
-\subsection{Errors of the base model}
+\subsection{Identification of missing knowledge}
+In order to see what information is not captured by the model and can be helpful for integration we analyse the errors made on \ac{SNLI}. This analyses uses Shortcut-Stacked Encoder\textsuperscript{$\dagger\dagger$}, being closer to the reported accuracy by \cite{nie2017shortcut}. 
+\subsubsection{Approach}
+Aiming for missing knowledge and not for a general error analysis we focus on misclassified samples with gold label contradiction, predicted as entailment and vice versa, as we find that the label neutral was overall not that well understood by the \ac{SNLI} annotators. To simplify the process we sample according to this constraint sentence-pairs having a high lexical overlap\footnote{Only considering a sentence pair if at least 50\% of the words within the shorter sentence are contained in the other sentence in a \ac{BoW} perspective. Casing is ignored.} and look for the knowledge required by a human to predict the correct label. In total we look at 196 samples incorrectly predicted as entailment and 163 samples incorrectly predicted as entailment identify common categories of missing knowledge. Note that by prefiltering the samples this way, our results exclude certain aspects. For instance many contradicting samples have multiple exclusive elements, resulting in a low lexical overlap.
+\subsubsection{Quantitative results}
+We show our quantitative results with the identified categories incuding sample sentence pairs for both labels in this section.
+
+\paragraph*{Misclassified contradicting samples}
+Table \ref{tab:misclassified_orig_contr} shows the misclassifications of samples labelled incorrectly as entailment.
+\begin{table}[tph!]\label{tab:misclassified_orig_contr}
+\centering
+\begin{tabular}{cccl}
+\textbf{Problem} & \textbf{Type} & \textbf{Amount} & \textbf{Example} \\
+\toprule
+cohyponym & Nouns & 29 & \specialcell{A \textit{creek} runs through the grassy area.\\A \textit{lake} appears in the grassy area.}\\
+cohyponym & Verbs & 32 & \specialcell{The boy is \textit{riding} his skateboard.\\The boy is \textit{carrying} his skateboard with him.}\\
+cohyponym & Amounts & 33 & \specialcell{\textit{Three} people resting on a snowy mountain.\\\textit{Four} people are on a snowy mountain.}\\
+antonym & Adjectives & 13 & \specialcell{The ground is \textit{covered} in snow.\\The ground is \textit{visible}.}\\
+antonym & Verbs & 14 & \specialcell{boy \textit{pushing} wagon with two pumpkins in it\\A boy is \textit{pulling} a wagon with two pumpkins in it.}\\
+antonym & Prepositions & 17 & \specialcell{A man walking \textit{down} stairs.\\The man is walking \textit{up} the stairs.}\\
+\midrule
+structure & All & 15 & \specialcell{a sheep chases a dog.\\There is a dog chasing a sheep.}\\
+common sense & All & 20 & \specialcell{Someone in a 3ft swimming pool.\\A person is in a very large and deep pool.}\\
+\midrule
+\textit{ignored} & \textit{ignored} & 23 & \specialcell{A man climbing a rock wall.\\A man climbs the wall.}\\
+\midrule
+\textbf{Total} & - & \textbf{196} & - \\
+\bottomrule      
+\end{tabular}
+\caption{Misclassified samples with gold label \textit{contradiction}, predicted as \textit{entailment}.}
+\end{table}
+We find that most problems arise from words sharing lexical relations, namely antonomy or cohyponomy for different kind of \ac{POS}. We opt to show \textit{Amounts} as a seperate category, due to its high frequence. While Verb antonyms may also be considered as cohyponyms, we also list them seperately, if they refer to the opposite meaning. Some samples, listed under \textit{structure} require the model to take word order into consideration, and is mostly represented by semantic role reversal. We assign all samples to \textit{common sense}, that requires information that cannot be retrieved using lexical semantic relations and usually need additional information, implied by the described entity or activity. Any sentence pair were we could not identify the required knowledge, due to not agreeing with the label, highly ungrammatical  sentences or some rare very specific details are ignored in our results, categorized as \textit{ignored}.
+
+\paragraph*{Misclassified entailing samples}
+Analysing the required knowledge for misclassified entailing samples as contradtiong, we identify different categories, depicted in Table \ref{tab:misclassified_orig_ent}.
+\begin{table}[tph!]
+\centering
+\label{tab:misclassified_orig_ent}
+\begin{tabular}{cccl}
+\textbf{Problem} & \textbf{Required knowledge} & \textbf{Amount} & \textbf{Example} \\
+\toprule
+Paraphrasing & lexical knowledge & 16 & \specialcell{Two people play \textit{foosball}.\\Two people are playing \textit{table soccer}.}\\
+\specialcellc{Paraphrasing\\(negated opposite)} & lexical knowledge & 19 & \specialcell{A young boy is \textit{sleeping}.\\A child is \textit{not awake}.}\\
+Paraphrasing & world knowledge & 20 & \specialcell{girl \textit{opening} cosmetics \textit{bottle}\\The girl is \textit{removing the top} off the \textit{bottle}.}\\
+Generalization & lexical knowledge & 30 & \specialcell{The two \textit{boxers} are females.\\There are two female \textit{athletes}.}\\
+Implication & world knowledge & 53 & \specialcell{A hockey player makes a shot.\\A hockey player \textit{is on ice}.}\\
+\midrule
+\textit{ignored} & \textit{ignored} & 25 & \specialcell{two people sit on a bench.\\two people sit on sand near water.} \\
+\midrule
+\textbf{Total} & - & \textbf{163} & - \\
+\bottomrule      
+\end{tabular}
+\caption{Misclassified samples with gold label \textit{entailment}, predicted as \textit{contradiction}.}
+\end{table}
+Essentially we find three different ways, of how the relation between $p$ and $h$ can be described and we differentiate between lexical- and world-knowldge being required for the correct prediction. In the example of paraphrasing, for \textit{foosball} and \textit{table soccer} or \textit{sleeping} and \textit{awake} it is sufficient to detect that they are synonyms or antonyms respectively. The third case required some actual understanding of the process of \textit{opening} in the context with a \textit{bottle}. While some of these samples may be understood by lknowing several meronyms, we consider them to require a deeper conceptual understanding of how thing work. The largest group also is interesting, as all $h$ contain additional information, not directly given by $p$. While this case should usually be labelled as neutral, in this case the additional information is automatically implied\footnote{For the given sample, we assume that Americans see \textit{hockey} in the sense of \textit{ice-hockey}.} (even though not textual) by $p$. This implication also required other external knowledge than lexical relations.
+
+\subsubsection{Conclusions}
+We observe that especially the classification of contradicting samples can be improved by using lexical relations, which are available in WordNet, as described in Section §\ref{sec:wordnet}. While those may partially be helpful for the entailing samples, in their case world-knowledge seems more relevant, as could be gained from resources like Wikipedia (see Section §\ref{sec:wikipedia}). While obviously the goal of \ac{NLI} is, to have proper reasonng capabilities, capable of dealing with world knowledge, we emphasize the aspect of lexical knowledge, arguing that any insights on how to incporporate this (simpler) information may later be applied used to include world-knowledge.
+\newline
+
+\noindent
+Note that the identified problems with lexical relations, especially \textit{antonomy} and \textit{cohyponomy} in Table \ref{tab:misclassified_orig_contr}, refer to the same problem, stemming from the nature of distributed representations. Essentially, they follow the distributional hypothesis, described by \cite{pantel2005inducing} as 
+\begin{quotation}
+\textit{``[...] words that occur in the same contexts tend to have similar meaning.''}\citep{pantel2005inducing}
+\end{quotation}
+Considering a sentence like ``The president of Italy hopes to get re-elected.'', one can easily conclude that \textit{Italy} is a country based on its context. Even replacing \textit{Italy} by any made-up country would intuitively result in the same conclusion. Subsequently to being represented by their context words, distributed embeddings supposedly have better generalization abilities \citep{lecun2015deep} due to encoding this phenomen. However also mutually exclusive co-hyponyms or antonyms often share similar contexts (like most countries could replace \textit{Italy} in the given example), resulting in very similar vector representation despite opposite meanings. This is a known problem \citep{sahlgren2008distributional} of distributed word representations and several approaches, as explained in Section \ref{sec:embeddings_improvements_relwork}, aim to fix these problems in the embedding space.

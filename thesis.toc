@@ -39,34 +39,38 @@
 \contentsline {subsubsection}{\numberline {4.3.3}Entailment analysis}{34}{subsubsection.4.3.3}
 \contentsline {subsubsection}{\numberline {4.3.4}Neutral and contradiction analysis}{35}{subsubsection.4.3.4}
 \contentsline {subsubsection}{\numberline {4.3.5}Summarizing the inisghts onmMax-pooled sentence representations}{36}{subsubsection.4.3.5}
-\contentsline {subsection}{\numberline {4.4}Errors of the base model}{36}{subsection.4.4}
-\contentsline {section}{\numberline {5}Additional SNLI test-set}{37}{section.5}
-\contentsline {subsection}{\numberline {5.1}Motivation}{37}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Dataset}{37}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Creation}{37}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Validation}{37}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Final dataset}{37}{subsubsection.5.2.3}
-\contentsline {subsection}{\numberline {5.3}Other models}{37}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}ESIM}{37}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Decomposable Attention}{37}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}Evaluation}{37}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Analysis}{37}{subsection.5.5}
-\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{38}{section.6}
-\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{38}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{38}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{38}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{38}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{38}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{38}{subsubsection.6.2.4}
-\contentsline {subsection}{\numberline {6.3}Multitask Learning}{38}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{38}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{38}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{38}{subsubsection.6.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{38}{paragraph.6.3.3.1}
-\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{38}{paragraph.6.3.3.2}
-\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{38}{paragraph.6.3.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{38}{paragraph.6.3.3.4}
-\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{38}{paragraph.6.3.3.5}
-\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{38}{subsubsection.6.3.4}
-\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{38}{subsubsection.6.3.5}
-\contentsline {section}{\numberline {7}Conclusion}{39}{section.7}
+\contentsline {subsection}{\numberline {4.4}Identification of missing knowledge}{36}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Approach}{37}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Quantitative results}{37}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Conclusions}{38}{subsubsection.4.4.3}
+\contentsline {section}{\numberline {5}Additional SNLI test-set}{39}{section.5}
+\contentsline {subsection}{\numberline {5.1}Goal of the new test-set}{39}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Dataset}{40}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Creation of adversarial samples}{40}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Validation}{42}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Evaluation}{44}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Experimental setup}{44}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Models with external knowledge}{45}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Results}{45}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Analysis}{46}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Accuracy by category}{46}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Impact on the word embeddings}{47}{subsubsection.5.4.2}
+\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{48}{section.6}
+\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{48}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{48}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{48}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{48}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{48}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{48}{subsubsection.6.2.4}
+\contentsline {subsection}{\numberline {6.3}Multitask Learning}{48}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{48}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{48}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{48}{subsubsection.6.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{48}{paragraph.6.3.3.1}
+\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{48}{paragraph.6.3.3.2}
+\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{48}{paragraph.6.3.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{48}{paragraph.6.3.3.4}
+\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{48}{paragraph.6.3.3.5}
+\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{48}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{48}{subsubsection.6.3.5}
+\contentsline {section}{\numberline {7}Conclusion}{49}{section.7}

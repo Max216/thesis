@@ -21,3 +21,5 @@
 \contentsline {figure}{\numberline {20}{\ignorespaces Visualitation of 150 sentence pairs ($p$, $h$), correctly labelled as entailment.}}{34}{figure.20}
 \contentsline {figure}{\numberline {21}{\ignorespaces Visualization of samples predicted as entailment (left) and neutral (right) after swapping $p$ and $h$.}}{35}{figure.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces Visualitazion of 150 sentence pairs ($p$, $h$) correctly labelled as \textit {neutral} (left) and \textit {contradiction} (right).}}{36}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Example of a \ac {HIT} in Amazon Mechanical Turk.}}{43}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces TODO.}}{47}{figure.24}

@@ -6,3 +6,12 @@
 \contentsline {table}{\numberline {5}{\ignorespaces Accuracies achieved on \ac {SNLI} using $|r|$-dimensional sentence representations of gender-specific dimensions.}}{26}{table.5}
 \contentsline {table}{\numberline {6}{\ignorespaces Results in terms of accuracy of inverted gender-specific dimensions on \ac {SNLI} train and dev set.}}{27}{table.6}
 \contentsline {table}{\numberline {7}{\ignorespaces Comparison of samples between their predictions based on the original and gender-inverted sentence representations.}}{27}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Misclassified samples with gold label \textit {contradiction}, predicted as \textit {entailment}.}}{37}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Misclassified samples with gold label \textit {entailment}, predicted as \textit {contradiction}.}}{38}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Correctly classified examples.}}{39}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Examples from the newly generated test set.}}{40}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Comparison of co-hyponyms in upward-monotone and downward-monone sentences.}}{42}{table.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Statistics of \ac {SNLI} testset compared with the newly generated testset.}}{44}{table.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Architectural comparison of tested neural models without external knowledge.}}{45}{table.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Results of models on the new test set compared with the original \ac {SNLI} test set.}}{46}{table.15}
+\contentsline {table}{\numberline {16}{\ignorespaces Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}}{47}{table.16}

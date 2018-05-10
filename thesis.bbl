@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{79}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Balazs et~al.(2017)Balazs, Marrese-Taylor, Loyola, and
@@ -116,12 +116,25 @@ Ido Dagan. 2000.
 \newblock Contextual word similarity.
 \newblock \emph{Handbook of Natural Language Processing}, pages 459--475.
 
+\bibitem[{Dagan et~al.(2009)Dagan, Dolan, Magnini, and
+  Roth}]{dagan2009recognizing}
+Ido Dagan, Bill Dolan, Bernardo Magnini, and Dan Roth. 2009.
+\newblock Recognizing textual entailment: Rational, evaluation and approaches.
+\newblock \emph{Natural Language Engineering}, 15(4):i--xvii.
+
 \bibitem[{Dagan et~al.(2006)Dagan, Glickman, and Magnini}]{dagan2006pascal}
 Ido Dagan, Oren Glickman, and Bernardo Magnini. 2006.
 \newblock The pascal recognising textual entailment challenge.
 \newblock In \emph{Machine learning challenges. evaluating predictive
   uncertainty, visual object classification, and recognising tectual
   entailment}, pages 177--190. Springer.
+
+\bibitem[{Dasgupta et~al.(2018)Dasgupta, Guo, Stuhlm{\"u}ller, Gershman, and
+  Goodman}]{dasgupta2018evaluating}
+Ishita Dasgupta, Demi Guo, Andreas Stuhlm{\"u}ller, Samuel~J Gershman, and
+  Noah~D Goodman. 2018.
+\newblock Evaluating compositionality in sentence embeddings.
+\newblock \emph{arXiv preprint arXiv:1802.04302}.
 
 \bibitem[{Faruqui et~al.(2015)Faruqui, Dodge, Jauhar, Dyer, Hovy, and
   Smith}]{faruqui2015retrofitting}
@@ -139,6 +152,14 @@ Reza Ghaeini, Sadid~A Hasan, Vivek Datla, Joey Liu, Kathy Lee, Ashequl Qadir,
 \newblock Dr-bilstm: Dependent reading bidirectional lstm for natural language
   inference.
 \newblock \emph{arXiv preprint arXiv:1802.05577}.
+
+\bibitem[{Glockner et~al.(2018)Glockner, Shwartz, and
+  Goldberg}]{glockner_acl18}
+Max Glockner, Vered Shwartz, and Yoav Goldberg. 2018.
+\newblock Breaking nli systems with sentences that require simple lexical
+  inferences.
+\newblock In \emph{The 56th Annual Meeting of the Association for Computational
+  Linguistics (ACL)}, Melbourne, Australia.
 
 \bibitem[{Goldberg(2017)}]{goldberg2017Apr}
 Yoav Goldberg. 2017.
@@ -215,6 +236,14 @@ Jinbae Im and Sungzoon Cho. 2017.
 \newblock Distance-based self-attention network for natural language inference.
 \newblock \emph{arXiv preprint arXiv:1712.02047}.
 
+\bibitem[{Jia and Liang(2017)}]{jia-liang:2017:EMNLP2017}
+Robin Jia and Percy Liang. 2017.
+\newblock \href {https://www.aclweb.org/anthology/D17-1215} {Adversarial
+  examples for evaluating reading comprehension systems}.
+\newblock In \emph{Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2021--2031, Copenhagen, Denmark.
+  Association for Computational Linguistics.
+
 \bibitem[{Jurafsky and Martin(2008)}]{Jurafsky2008May}
 Daniel Jurafsky and James~H. Martin. 2008.
 \newblock \emph{{Speech and Language Processing, 2nd Edition}}.
@@ -230,6 +259,19 @@ Tushar Khot, Ashish Sabharwal, and Peter Clark. 2018.
 Diederik~P Kingma and Jimmy Ba. 2014.
 \newblock Adam: A method for stochastic optimization.
 \newblock \emph{arXiv preprint arXiv:1412.6980}.
+
+\bibitem[{Kruszewski and Baroni(2015)}]{kruszewski2015so}
+Germ{\'a}n Kruszewski and Marco Baroni. 2015.
+\newblock So similar and yet incompatible: Toward the automated identification
+  of semantically compatible words.
+\newblock In \emph{Proceedings of the 2015 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 964--969.
+
+\bibitem[{LeCun et~al.(2015)LeCun, Bengio, and Hinton}]{lecun2015deep}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. 2015.
+\newblock Deep learning.
+\newblock \emph{nature}, 521(7553):436.
 
 \bibitem[{Levy et~al.(2015)Levy, Goldberg, and Dagan}]{levy2015improving}
 Omer Levy, Yoav Goldberg, and Ido Dagan. 2015.
@@ -349,6 +391,13 @@ Yixin Nie and Mohit Bansal. 2017.
 \newblock Shortcut-stacked sentence encoders for multi-domain inference.
 \newblock \emph{arXiv preprint arXiv:1708.02312}.
 
+\bibitem[{Pantel(2005)}]{pantel2005inducing}
+Patrick Pantel. 2005.
+\newblock Inducing ontological co-occurrence vectors.
+\newblock In \emph{Proceedings of the 43rd Annual Meeting on Association for
+  Computational Linguistics}, pages 125--132. Association for Computational
+  Linguistics.
+
 \bibitem[{Parikh et~al.(2016)Parikh, T{\"a}ckstr{\"o}m, Das, and
   Uszkoreit}]{parikh2016decomposable}
 Ankur~P Parikh, Oscar T{\"a}ckstr{\"o}m, Dipanjan Das, and Jakob Uszkoreit.
@@ -407,6 +456,11 @@ Andreas R{\"u}ckl{\'e}, Steffen Eger, Maxime Peyrard, and Iryna Gurevych. 2018.
   sentence representations.
 \newblock \emph{arXiv preprint arXiv:1803.01400}.
 
+\bibitem[{Sahlgren(2008)}]{sahlgren2008distributional}
+Magnus Sahlgren. 2008.
+\newblock The distributional hypothesis.
+\newblock \emph{Italian Journal of Disability Studies}, 20:33--53.
+
 \bibitem[{Shen et~al.(2018)Shen, Zhou, Long, Jiang, Wang, and
   Zhang}]{shen2018reinforced}
 Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, Sen Wang, and Chengqi Zhang.
@@ -414,6 +468,13 @@ Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, Sen Wang, and Chengqi Zhang.
 \newblock Reinforced self-attention network: a hybrid of hard and soft
   attention for sequence modeling.
 \newblock \emph{arXiv preprint arXiv:1801.10296}.
+
+\bibitem[{Shwartz et~al.(2015)Shwartz, Levy, Dagan, and
+  Goldberger}]{shwartz2015learning}
+Vered Shwartz, Omer Levy, Ido Dagan, and Jacob Goldberger. 2015.
+\newblock Learning to exploit structured resources for lexical inference.
+\newblock In \emph{Proceedings of the Nineteenth Conference on Computational
+  Natural Language Learning}, pages 175--184.
 
 \bibitem[{Suchanek et~al.(2007)Suchanek, Kasneci, and
   Weikum}]{suchanek2007yago}
