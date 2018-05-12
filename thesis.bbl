@@ -1,4 +1,4 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{81}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Balazs et~al.(2017)Balazs, Marrese-Taylor, Loyola, and
@@ -71,6 +71,14 @@ Stergios Chatzikyriakidis, Robin Cooper, Simon Dobnik, and Staffan Larsson.
 Qian Chen, Xiaodan Zhu, Zhen-Hua Ling, and Diana Inkpen. 2017{\natexlab{a}}.
 \newblock Natural language inference with external knowledge.
 \newblock \emph{arXiv preprint arXiv:1711.04289}.
+
+\bibitem[{Chen et~al.(2018)Chen, Zhu, Ling, Inkpen, and
+  Wei}]{chen-EtAl:2017b:natural}
+Qian Chen, Xiaodan Zhu, Zhen-Hua Ling, Diana Inkpen, and Si~Wei. 2018.
+\newblock Neural natural language inference models enhanced with external
+  knowledge.
+\newblock In \emph{The 56th Annual Meeting of the Association for Computational
+  Linguistics (ACL)}, Melbourne, Australia.
 
 \bibitem[{Chen et~al.(2017{\natexlab{b}})Chen, Zhu, Ling, Wei, Jiang, and
   Inkpen}]{chen2017enhanced}
@@ -267,6 +275,11 @@ Germ{\'a}n Kruszewski and Marco Baroni. 2015.
 \newblock In \emph{Proceedings of the 2015 Conference of the North American
   Chapter of the Association for Computational Linguistics: Human Language
   Technologies}, pages 964--969.
+
+\bibitem[{Landis and Koch(1977)}]{landis1977measurement}
+J~Richard Landis and Gary~G Koch. 1977.
+\newblock The measurement of observer agreement for categorical data.
+\newblock \emph{biometrics}, pages 159--174.
 
 \bibitem[{LeCun et~al.(2015)LeCun, Bengio, and Hinton}]{lecun2015deep}
 Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. 2015.

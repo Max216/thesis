@@ -1,70 +1,73 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Theoretical Background}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Natural Language Inference}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Lexical Semantic Relations}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Synonymy and antonomy}{subsection.2.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Hypernomy}{subsection.2.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Holonomy}{subsection.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.3}{Shortcut-Stacked-Encoder and Residual Encoder}{section.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Sentence Encoding for Shortcut-Stacked-Encoder}{subsection.2.3}% 9
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Classification}{subsection.2.3}% 10
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Training}{subsection.2.3}% 11
-\BOOKMARK [3][-]{subsubsection.2.3.4}{Residual Encoder and Reimplementation Variants}{subsection.2.3}% 12
-\BOOKMARK [1][-]{section.3}{Related Work}{}% 13
-\BOOKMARK [2][-]{subsection.3.1}{External Resources}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.1.1}{WordNet}{subsection.3.1}% 15
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Wikipedia}{subsection.3.1}% 16
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Derived from multiple Knowledge Bases}{subsection.3.1}% 17
-\BOOKMARK [2][-]{subsection.3.2}{Datasets for NLI}{section.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.2.1}{SNLI}{subsection.3.2}% 19
-\BOOKMARK [3][-]{subsubsection.3.2.2}{MultiNLI}{subsection.3.2}% 20
-\BOOKMARK [3][-]{subsubsection.3.2.3}{SciTail}{subsection.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.3}{Neural Models for NLI}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Sentence Encoding Models}{subsection.3.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Inter-Sentence-Attention-based Models}{subsection.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.4}{Integration of external Resources into Neural Networks}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Improving word-embeddings}{subsection.3.4}% 26
-\BOOKMARK [1][-]{section.4}{Understanding Shortcut-Stacked-Encoder}{}% 27
-\BOOKMARK [2][-]{subsection.4.1}{Motivation}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.2}{Insights on the sentence representation}{section.4}% 29
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Approach}{subsection.4.2}% 30
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Detection of relevant dimensions}{subsection.4.2}% 31
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Female and male dimensions}{subsection.4.2}% 32
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Other semantic dimensions}{subsection.4.2}% 33
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Syntactic dimensions}{subsection.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.3}{Insights on the sentence alignment}{section.4}% 35
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Alignment analysis on a single sample}{subsection.4.3}% 36
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Approach for a general alignment understanding}{subsection.4.3}% 37
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Entailment analysis}{subsection.4.3}% 38
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Neutral and contradiction analysis}{subsection.4.3}% 39
-\BOOKMARK [3][-]{subsubsection.4.3.5}{Summarizing the inisghts onmMax-pooled sentence representations}{subsection.4.3}% 40
-\BOOKMARK [2][-]{subsection.4.4}{Identification of missing knowledge}{section.4}% 41
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Approach}{subsection.4.4}% 42
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Quantitative results}{subsection.4.4}% 43
-\BOOKMARK [3][-]{subsubsection.4.4.3}{Conclusions}{subsection.4.4}% 44
-\BOOKMARK [1][-]{section.5}{Additional SNLI test-set}{}% 45
-\BOOKMARK [2][-]{subsection.5.1}{Goal of the new test-set}{section.5}% 46
-\BOOKMARK [2][-]{subsection.5.2}{Dataset}{section.5}% 47
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Creation of adversarial samples}{subsection.5.2}% 48
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Validation}{subsection.5.2}% 49
-\BOOKMARK [2][-]{subsection.5.3}{Evaluation}{section.5}% 50
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Experimental setup}{subsection.5.3}% 51
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Models with external knowledge}{subsection.5.3}% 52
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Results}{subsection.5.3}% 53
-\BOOKMARK [2][-]{subsection.5.4}{Analysis}{section.5}% 54
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Accuracy by category}{subsection.5.4}% 55
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Impact on the word embeddings}{subsection.5.4}% 56
-\BOOKMARK [1][-]{section.6}{Approaches to incorporate WordNet information}{}% 57
-\BOOKMARK [2][-]{subsection.6.1}{Extraction of WordNet data}{section.6}% 58
-\BOOKMARK [2][-]{subsection.6.2}{Integrating information into word-embeddings}{section.6}% 59
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Motivation}{subsection.6.2}% 60
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Concatenating pre-trained word-embeddings}{subsection.6.2}% 61
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Concatenation categorical information}{subsection.6.2}% 62
-\BOOKMARK [3][-]{subsubsection.6.2.4}{Analysis}{subsection.6.2}% 63
-\BOOKMARK [2][-]{subsection.6.3}{Multitask Learning}{section.6}% 64
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Motivation}{subsection.6.3}% 65
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Architecture}{subsection.6.3}% 66
-\BOOKMARK [3][-]{subsubsection.6.3.3}{Approaches}{subsection.6.3}% 67
-\BOOKMARK [3][-]{subsubsection.6.3.4}{Analysis}{subsection.6.3}% 68
-\BOOKMARK [3][-]{subsubsection.6.3.5}{Evaluation}{subsection.6.3}% 69
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 70
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Relatedness to other NLP tasks}{subsection.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Lexical Semantic Relations}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Synonymy and antonomy}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Hypernomy}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Holonomy}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Lexical semantic realtions for NLI}{subsection.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Shortcut-Stacked-Encoder and Residual Encoder}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Sentence Encoding for Shortcut-Stacked-Encoder}{subsection.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Classification}{subsection.2.3}% 12
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Training}{subsection.2.3}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Residual Encoder and Reimplementation Variants}{subsection.2.3}% 14
+\BOOKMARK [1][-]{section.3}{Related Work}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{External Resources}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.1}{WordNet}{subsection.3.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Wikipedia}{subsection.3.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Derived from multiple Knowledge Bases}{subsection.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Datasets for NLI}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.1}{SNLI}{subsection.3.2}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.2}{MultiNLI}{subsection.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.3}{SciTail}{subsection.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.3}{Neural Models for NLI}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Sentence Encoding Models}{subsection.3.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Inter-sentence-attention-based models}{subsection.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.4}{Integration of external Resources into Neural Networks}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Improving word-embeddings}{subsection.3.4}% 28
+\BOOKMARK [1][-]{section.4}{Understanding Shortcut-Stacked-Encoder}{}% 29
+\BOOKMARK [2][-]{subsection.4.1}{Motivation}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.2}{Insights on the sentence representation}{section.4}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Approach}{subsection.4.2}% 32
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Detection of relevant dimensions}{subsection.4.2}% 33
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Female and male dimensions}{subsection.4.2}% 34
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Other semantic dimensions}{subsection.4.2}% 35
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Syntactic dimensions}{subsection.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.3}{Insights on the sentence alignment}{section.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Alignment analysis on a single sample}{subsection.4.3}% 38
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Approach for a general alignment understanding}{subsection.4.3}% 39
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Entailment analysis}{subsection.4.3}% 40
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Neutral and contradiction analysis}{subsection.4.3}% 41
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Summarizing the inisghts onmMax-pooled sentence representations}{subsection.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.4}{Identification of missing knowledge}{section.4}% 43
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Approach}{subsection.4.4}% 44
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Quantitative results}{subsection.4.4}% 45
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Conclusions}{subsection.4.4}% 46
+\BOOKMARK [1][-]{section.5}{Additional SNLI test-set}{}% 47
+\BOOKMARK [2][-]{subsection.5.1}{Goal of the new test-set}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.2}{Dataset}{section.5}% 49
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Creation of adversarial samples}{subsection.5.2}% 50
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Validation}{subsection.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.3}{Evaluation}{section.5}% 52
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Experimental setup}{subsection.5.3}% 53
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Models with external knowledge}{subsection.5.3}% 54
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Results}{subsection.5.3}% 55
+\BOOKMARK [2][-]{subsection.5.4}{Analysis}{section.5}% 56
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Accuracy by category}{subsection.5.4}% 57
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Impact on the word embeddings}{subsection.5.4}% 58
+\BOOKMARK [2][-]{subsection.5.5}{Conclusion of the adversarial dataset}{section.5}% 59
+\BOOKMARK [1][-]{section.6}{Approaches to incorporate WordNet information}{}% 60
+\BOOKMARK [2][-]{subsection.6.1}{Extraction of WordNet data}{section.6}% 61
+\BOOKMARK [2][-]{subsection.6.2}{Integrating information into word-embeddings}{section.6}% 62
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Motivation}{subsection.6.2}% 63
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Concatenating pre-trained word-embeddings}{subsection.6.2}% 64
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Concatenation categorical information}{subsection.6.2}% 65
+\BOOKMARK [3][-]{subsubsection.6.2.4}{Analysis}{subsection.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.3}{Multitask Learning}{section.6}% 67
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Motivation}{subsection.6.3}% 68
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Architecture}{subsection.6.3}% 69
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Approaches}{subsection.6.3}% 70
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Analysis}{subsection.6.3}% 71
+\BOOKMARK [3][-]{subsubsection.6.3.5}{Evaluation}{subsection.6.3}% 72
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 73

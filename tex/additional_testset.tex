@@ -264,19 +264,36 @@ Figure \ref{fig:decomp_acc_per_cos_sim} visualizes the performance of all contra
 \begin{figure}[tph!]
 \centering
 	\includegraphics[totalheight=5cm]{fig/acc_by_cos.png}
-	\caption{TODO.}
+	\caption{Accuracy by cosine similarity reached by Decomposable Attention (without fine-tuned embeddings).}
 	\label{fig:decomp_acc_per_cos_sim}
 \end{figure}
 We exclude any multi-word expressions in this analysis. Let $v_p$ and $v_h$ be the word vectors of the GloVe embeddings used by Decomposable Attention, the according cosine simmilarity $\cos(v_p,v_h)$ is calculated as follows:
 \begin{equation}
 \cos(v_p,v_h) = \frac{v_p v_h}{|v_p| |v_h|}
 \end{equation}
-Even though Decomposable Attention uses only the lower-cased word embeddings and thus relatively contains more samples per word-vector than the other two models relying on cased word embeddings, Residual-Stacked Encoder\textsuperscript{$\Diamond$} and ESIM,  did not show any correlation, as they fine-tune their word representations during training.
+We observe that without fine-tuned embeddings, the reached accuracy highly correlates with the similarity of the word representations, even though Decomposable Attention uses only the lower-cased word embeddings and thus contains comparably more samples per word-vector than the other two models, ESIM and Residual-Stacked Encoder. Those models rely on cased word embeddings, and we could not find the same correlation between the accuracy and word-similarity. We assume this stems from the fact that both models fine-tune embeddings and thus push contradicting words, as seen in the training, further apart in the embedding space. 
 \paragraph*{With fine-tuned embeddings}
+We evaluate the accuracy of both models with fine-tuned embeddings w.r.t. the amount $w_p$ and $w_h$ seen during training on \ac{SNLI} and visualize the results in Figure \ref{fig:esim_res_acc_by_freq}.
+\begin{figure}[tph!]
+\centering
+	\includegraphics[totalheight=6cm]{fig/esim_res_acc_by_freq.png}
+	\caption{Accuracy by word freqency for Residual-Stacked Encoder and ESIM.}
+	\label{fig:esim_res_acc_by_freq}
+\end{figure}
+The numbers on the x-axis show the upper bound of word occurences $a_{(w_p,w_h)}$ of the word-pair, responsible for creating each sentence-pair. Specifically, we calculate the $a_{(w_p,w_h)}$ by taking the more frequent word within \ac{SNLI} train data, thus $a_{(w_p,w_h)} = \max(a_{w_p},a_{w_h})$, with $a_{w_p}$ and $a_{w_h}$ being the amount of sentences seen containing $w_p$ and $w_h$ respectively. In case one of $w_p$ or $w_h$ is an expression containing multiple words, denoted as $e = [w_1, \ldots , w_{n-1}, w_{n}]$, we calculate the according amount $a_e$ by considering the least frequent word: $a_e = \min(w_1, \ldots , w_{n-1}, w_n)$. intuitively this will ignore added function words and in most cases focus on the meaning carrying word within the expression. Both models depend on the same underlying GloVe word embeddings, yet it seems that Residual-Stacked Encoder\textsuperscript{$\Diamond$} achieves better results on less frequent words.  While still performing considerably worse with fewer examples seen, the more general sentence representations, as trained in this model, generalize better for sparcely present lexical relations. As opposed to the Residual-Stacked Encoder, ESIM seems to heavily depends on a high frequency of the words to classify sentence-pairs correctly.  While ESIM performs very poor for less frequent words, it shows to quickly increase in performance with an increasing mount of samples, containing the same words, within the train data. This presumeably arises from the inter sentence attention, aligning words from both sentences with each other. The resulting sentence representations are therefore less general and suited for the individual word relations of both sentences, resulting in a higher performance if similar word relations have previously been seen in training, but reducing the generalization capabilites. Subsequentially we take a closer look into the performance of ESIM, the best of all three evaluated neural models without external knowledge, compared to the amount of similar samples seen during training. We count samples ($p$, $h$) from the train data with the gold label contradiction and consider them, if they contain $w_p$ in $p$ and $w_h$ in $h$, \textit{similar} to all samples in the new dataset, arising from ($w_p$,$w_h$). the results are shown in Table \ref{tab:esim_acc_by_sim_samples}
+\begin{table}[tph!]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+\toprule
+\textbf{Frequency} & 0 & 1 -- 4 & 5 -- 9 & 10 -- 49 & 50 -- 99 & 100+ \\
+\midrule
+\textbf{Accuracy} & 40.2\% & 70.6\% & 91.4\% & 92.1\% & 97.5\% & 98.5\% \\
+\bottomrule
+\end{tabular}
+\label{tab:esim_acc_by_sim_samples}
+\caption{Accuracy by the amount of similar samples in \ac{SNLI} train data for ESIM on contradicting samples.}
+\end{table}
+It can be seen, that indeed, the performance of \ac{ESIM} is high, if it has seen $w_p$ and $w_h$ in a contrdicting context in a sufficiently high amount, whereas it performs poorly, if it has not seen both words within a contradiction-labelled sample at least once. This shows that the comparably higher performance of ESIM is matter of memorizing more ($w_p$,$w_h$) as being contradictive, rather than generalization. Similarily, this explains the increase in accuracy when adding \ac{MultiNLI}, not because it learns to generalize better, but because it has seen slightly more contradictive word-pairs in a contradicting context. While this is sufficient to achievee a high performance on \ac{SNLI}, we show that the main goal of machine learning, to generalize over unseen textual constructions, in this case is not met. 
 
-
-- embeddings
-- embeddings finetune
-\mx{The performance gain on MultiNLI+SNLI most likely arises from the fact that almost 50\% of the replacement words used to generate the new dataset occur in MultiNLI in a way 612/1277 phrase replacement pairs ($p_p$, $p_h$) occur in the MultiNLI training data in contradiction pairs such that $p_p$ is in the premise and $p_h$ is in the hypothesis.}
--words
-esim -wp
+\subsection{Conclusion of the adversarial dataset}
+TODO

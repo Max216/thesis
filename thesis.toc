@@ -2,75 +2,78 @@
 \contentsline {section}{\numberline {1}Introduction}{5}{section.1}
 \contentsline {section}{\numberline {2}Theoretical Background}{6}{section.2}
 \contentsline {subsection}{\numberline {2.1}Natural Language Inference}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Lexical Semantic Relations}{6}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Synonymy and antonomy}{6}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Relatedness to other NLP tasks}{6}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Lexical Semantic Relations}{7}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Synonymy and antonomy}{7}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Hypernomy}{7}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Holonomy}{7}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Shortcut-Stacked-Encoder and Residual Encoder}{7}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3}Holonomy}{8}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Lexical semantic realtions for \ac {NLI}}{8}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Shortcut-Stacked-Encoder and Residual Encoder}{8}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Sentence Encoding for Shortcut-Stacked-Encoder}{8}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Classification}{9}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Training}{9}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Residual Encoder and Reimplementation Variants}{9}{subsubsection.2.3.4}
-\contentsline {section}{\numberline {3}Related Work}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}External Resources}{11}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}WordNet}{11}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Wikipedia}{12}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Derived from multiple Knowledge Bases}{12}{subsubsection.3.1.3}
-\contentsline {subsection}{\numberline {3.2}Datasets for NLI}{12}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}SNLI}{12}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}MultiNLI}{14}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}SciTail}{15}{subsubsection.3.2.3}
-\contentsline {subsection}{\numberline {3.3}Neural Models for NLI}{16}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Sentence Encoding Models}{16}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Inter-Sentence-Attention-based Models}{17}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Integration of external Resources into Neural Networks}{17}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Improving word-embeddings}{17}{subsubsection.3.4.1}
-\contentsline {section}{\numberline {4}Understanding Shortcut-Stacked-Encoder}{19}{section.4}
-\contentsline {subsection}{\numberline {4.1}Motivation}{19}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Insights on the sentence representation}{19}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Approach}{19}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Detection of relevant dimensions}{20}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Female and male dimensions}{24}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Other semantic dimensions}{28}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}Syntactic dimensions}{28}{subsubsection.4.2.5}
-\contentsline {subsection}{\numberline {4.3}Insights on the sentence alignment}{30}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Alignment analysis on a single sample}{30}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Approach for a general alignment understanding}{33}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Entailment analysis}{34}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}Neutral and contradiction analysis}{35}{subsubsection.4.3.4}
-\contentsline {subsubsection}{\numberline {4.3.5}Summarizing the inisghts onmMax-pooled sentence representations}{36}{subsubsection.4.3.5}
-\contentsline {subsection}{\numberline {4.4}Identification of missing knowledge}{36}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Approach}{37}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Quantitative results}{37}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Conclusions}{38}{subsubsection.4.4.3}
-\contentsline {section}{\numberline {5}Additional SNLI test-set}{39}{section.5}
-\contentsline {subsection}{\numberline {5.1}Goal of the new test-set}{39}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Dataset}{40}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Creation of adversarial samples}{40}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Validation}{42}{subsubsection.5.2.2}
-\contentsline {subsection}{\numberline {5.3}Evaluation}{44}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Experimental setup}{44}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Models with external knowledge}{45}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Results}{45}{subsubsection.5.3.3}
-\contentsline {subsection}{\numberline {5.4}Analysis}{46}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Accuracy by category}{46}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Impact on the word embeddings}{47}{subsubsection.5.4.2}
-\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{48}{section.6}
-\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{48}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{48}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{48}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{48}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{48}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{48}{subsubsection.6.2.4}
-\contentsline {subsection}{\numberline {6.3}Multitask Learning}{48}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{48}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{48}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{48}{subsubsection.6.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{48}{paragraph.6.3.3.1}
-\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{48}{paragraph.6.3.3.2}
-\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{48}{paragraph.6.3.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{48}{paragraph.6.3.3.4}
-\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{48}{paragraph.6.3.3.5}
-\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{48}{subsubsection.6.3.4}
-\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{48}{subsubsection.6.3.5}
-\contentsline {section}{\numberline {7}Conclusion}{49}{section.7}
+\contentsline {subsubsection}{\numberline {2.3.3}Training}{10}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Residual Encoder and Reimplementation Variants}{10}{subsubsection.2.3.4}
+\contentsline {section}{\numberline {3}Related Work}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}External Resources}{12}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}WordNet}{12}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Wikipedia}{13}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Derived from multiple Knowledge Bases}{13}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}Datasets for NLI}{13}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}SNLI}{13}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}MultiNLI}{15}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}SciTail}{16}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Neural Models for NLI}{17}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Sentence Encoding Models}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Inter-sentence-attention-based models}{18}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Integration of external Resources into Neural Networks}{19}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Improving word-embeddings}{19}{subsubsection.3.4.1}
+\contentsline {section}{\numberline {4}Understanding Shortcut-Stacked-Encoder}{20}{section.4}
+\contentsline {subsection}{\numberline {4.1}Motivation}{20}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Insights on the sentence representation}{20}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Approach}{20}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Detection of relevant dimensions}{22}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Female and male dimensions}{25}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Other semantic dimensions}{29}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Syntactic dimensions}{30}{subsubsection.4.2.5}
+\contentsline {subsection}{\numberline {4.3}Insights on the sentence alignment}{31}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Alignment analysis on a single sample}{31}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Approach for a general alignment understanding}{34}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Entailment analysis}{35}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Neutral and contradiction analysis}{37}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Summarizing the inisghts onmMax-pooled sentence representations}{38}{subsubsection.4.3.5}
+\contentsline {subsection}{\numberline {4.4}Identification of missing knowledge}{38}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Approach}{38}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Quantitative results}{38}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Conclusions}{40}{subsubsection.4.4.3}
+\contentsline {section}{\numberline {5}Additional SNLI test-set}{41}{section.5}
+\contentsline {subsection}{\numberline {5.1}Goal of the new test-set}{41}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Dataset}{42}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Creation of adversarial samples}{42}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Validation}{44}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Evaluation}{46}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Experimental setup}{46}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Models with external knowledge}{47}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Results}{47}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Analysis}{48}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Accuracy by category}{48}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Impact on the word embeddings}{49}{subsubsection.5.4.2}
+\contentsline {subsection}{\numberline {5.5}Conclusion of the adversarial dataset}{51}{subsection.5.5}
+\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{52}{section.6}
+\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{52}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{52}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{52}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{52}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{52}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{52}{subsubsection.6.2.4}
+\contentsline {subsection}{\numberline {6.3}Multitask Learning}{52}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{52}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{52}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{52}{subsubsection.6.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{52}{paragraph.6.3.3.1}
+\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{52}{paragraph.6.3.3.2}
+\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{52}{paragraph.6.3.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{52}{paragraph.6.3.3.4}
+\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{52}{paragraph.6.3.3.5}
+\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{52}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{52}{subsubsection.6.3.5}
+\contentsline {section}{\numberline {7}Conclusion}{53}{section.7}
