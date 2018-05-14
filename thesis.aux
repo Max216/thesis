@@ -715,31 +715,48 @@
 \acronymused{KIM}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Drawbacks of using insights of max-pooled sentence representations}{52}{subsubsection.6.1.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Fuse WordNet information within the embedding-layer}{52}{subsubsection.6.1.2}}
+\citation{bengio2013representation}
+\citation{gururangan2018annotation}
+\citation{gulccehre2016knowledge}
+\citation{nangia2017repeval}
+\citation{vulic2017specialising}
 \acronymused{MLP}
-\citation{rubinstein2015well}
-\citation{levy2015improving}
 \AC@undonewlabel{acro:MSE}
 \newlabel{acro:MSE}{{6.1.2}{53}{}{section*.25}{}}
 \acronymused{MSE}
+\newlabel{eq:loss_embd}{{13}{53}{}{equation.6.13}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}Fuse WordNet information within the sentence-representations}{53}{subsubsection.6.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Extraction of WordNet data}{53}{subsection.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Integrating information into word-embeddings}{53}{subsection.6.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{53}{subsubsection.6.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Concatenating pre-trained word-embeddings}{53}{subsubsection.6.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Concatenation categorical information}{53}{subsubsection.6.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{53}{subsubsection.6.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Multitask Learning}{53}{subsection.6.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}Motivation}{53}{subsubsection.6.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}Architecture}{53}{subsubsection.6.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}Approaches}{53}{subsubsection.6.4.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.1}Different sizes of multitask MLP}{53}{paragraph.6.4.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.2}Introducing Dropout}{53}{paragraph.6.4.3.2}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.3}Introducing an additional shared layer}{53}{paragraph.6.4.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.4}Fixing multitasking network during training}{53}{paragraph.6.4.3.4}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.5}Focusing on original words within sentence representation}{53}{paragraph.6.4.3.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}Analysis}{53}{subsubsection.6.4.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}Evaluation}{53}{subsubsection.6.4.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{54}{section.7}}
+\acronymused{NLU}
+\acronymused{NLP}
+\acronymused{NLI}
+\acronymused{MLP}
+\acronymused{MLP}
+\acronymused{BoW}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Architecture of the Residual-Stacked Encoder with multitask learning for the sentence-representations.}}{54}{figure.26}}
+\newlabel{fig:mt_architecture}{{26}{54}{Architecture of the Residual-Stacked Encoder with multitask learning for the sentence-representations}{figure.26}{}}
+\newlabel{eq:multitask_aggregate}{{14}{54}{}{equation.6.14}{}}
+\citation{rubinstein2015well}
+\citation{levy2015improving}
+\acronymused{MLP}
+\acronymused{MLP}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Extraction of WordNet data}{55}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Integrating information into word-embeddings}{55}{subsection.6.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{55}{subsubsection.6.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Concatenating pre-trained word-embeddings}{55}{subsubsection.6.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Concatenation categorical information}{55}{subsubsection.6.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{55}{subsubsection.6.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Multitask Learning}{55}{subsection.6.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}Motivation}{55}{subsubsection.6.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}Architecture}{55}{subsubsection.6.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}Approaches}{55}{subsubsection.6.4.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.1}Different sizes of multitask MLP}{55}{paragraph.6.4.3.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.2}Introducing Dropout}{55}{paragraph.6.4.3.2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.3}Introducing an additional shared layer}{55}{paragraph.6.4.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.4}Fixing multitasking network during training}{55}{paragraph.6.4.3.4}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.5}Focusing on original words within sentence representation}{55}{paragraph.6.4.3.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}Analysis}{55}{subsubsection.6.4.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}Evaluation}{55}{subsubsection.6.4.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{56}{section.7}}
 \bibdata{bib/literature}
 \bibcite{balazs2017refining}{{1}{2017}{{Balazs et~al.}}{{Balazs, Marrese-Taylor, Loyola, and Matsuo}}}
 \bibcite{bengio2013representation}{{2}{2013}{{Bengio et~al.}}{{Bengio, Courville, and Vincent}}}
@@ -767,62 +784,63 @@
 \bibcite{goldberg2017Apr}{{24}{2017}{{Goldberg}}{{}}}
 \bibcite{gong2017natural}{{25}{2017}{{Gong et~al.}}{{Gong, Luo, and Zhang}}}
 \bibcite{graves2005framewise}{{26}{2005}{{Graves and Schmidhuber}}{{}}}
-\bibcite{gurevych2012uby}{{27}{2012}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, Hartmann, Matuschek, Meyer, and Wirth}}}
-\bibcite{gurevych2016linked}{{28}{2016}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, and Matuschek}}}
-\bibcite{gururangan2018annotation}{{29}{2018}{{Gururangan et~al.}}{{Gururangan, Swayamdipta, Levy, Schwartz, Bowman, and Smith}}}
-\bibcite{hochreiter1997long}{{30}{1997}{{Hochreiter and Schmidhuber}}{{}}}
-\bibcite{hu2016deep}{{31}{2016}{{Hu et~al.}}{{Hu, Yang, Salakhutdinov, and Xing}}}
-\bibcite{ide2001american}{{32}{2001}{{Ide and Macleod}}{{}}}
-\bibcite{ide2004american}{{33}{2004}{{Ide and Suderman}}{{}}}
-\bibcite{ide2006integrating}{{34}{2006}{{Ide and Suderman}}{{}}}
-\bibcite{im2017distance}{{35}{2017}{{Im and Cho}}{{}}}
-\bibcite{jia-liang:2017:EMNLP2017}{{36}{2017}{{Jia and Liang}}{{}}}
-\bibcite{Jurafsky2008May}{{37}{2008}{{Jurafsky and Martin}}{{}}}
-\bibcite{scitail}{{38}{2018}{{Khot et~al.}}{{Khot, Sabharwal, and Clark}}}
-\bibcite{kingma2014adam}{{39}{2014}{{Kingma and Ba}}{{}}}
-\bibcite{kruszewski2015so}{{40}{2015}{{Kruszewski and Baroni}}{{}}}
-\bibcite{landis1977measurement}{{41}{1977}{{Landis and Koch}}{{}}}
-\bibcite{lecun2015deep}{{42}{2015}{{LeCun et~al.}}{{LeCun, Bengio, and Hinton}}}
-\bibcite{levy2015improving}{{43}{2015}{{Levy et~al.}}{{Levy, Goldberg, and Dagan}}}
-\bibcite{liu2015learning}{{44}{2015}{{Liu et~al.}}{{Liu, Jiang, Wei, Ling, and Hu}}}
-\bibcite{maccartney2008phrase}{{45}{2008}{{MacCartney et~al.}}{{MacCartney, Galley, and Manning}}}
-\bibcite{maccartney2007natural}{{46}{2007}{{MacCartney and Manning}}{{}}}
-\bibcite{marcus1993building}{{47}{1993}{{Marcus et~al.}}{{Marcus, Marcinkiewicz, and Santorini}}}
-\bibcite{marelli2014semeval}{{48}{2014}{{Marelli et~al.}}{{Marelli, Bentivogli, Baroni, Bernardi, Menini, and Zamparelli}}}
-\bibcite{mccarthy2004using}{{49}{2004}{{McCarthy et~al.}}{{McCarthy, Koeling, Weeds, and Carroll}}}
-\bibcite{mikolov2013distributed}{{50}{2013{a}}{{Mikolov et~al.}}{{Mikolov, Sutskever, Chen, Corrado, and Dean}}}
-\bibcite{mikolov2013linguistic}{{51}{2013{b}}{{Mikolov et~al.}}{{Mikolov, Yih, and Zweig}}}
-\bibcite{miller1995wordnet}{{52}{1995}{{Miller}}{{}}}
-\bibcite{mou2015natural}{{53}{2015}{{Mou et~al.}}{{Mou, Men, Li, Xu, Zhang, Yan, and Jin}}}
-\bibcite{mrkvsic2017semantic}{{54}{2017}{{Mrk{\v {s}}i{\'c} et~al.}}{{Mrk{\v {s}}i{\'c}, Vuli{\'c}, S{\'e}aghdha, Leviant, Reichart, Ga{\v {s}}i{\'c}, Korhonen, and Young}}}
-\bibcite{munkhdalai2017neural}{{55}{2017}{{Munkhdalai and Yu}}{{}}}
-\bibcite{murphy2003semantic}{{56}{2003}{{Murphy}}{{}}}
-\bibcite{nangia2017repeval}{{57}{2017}{{Nangia et~al.}}{{Nangia, Williams, Lazaridou, and Bowman}}}
-\bibcite{nie2017shortcut}{{58}{2017}{{Nie and Bansal}}{{}}}
-\bibcite{pantel2005inducing}{{59}{2005}{{Pantel}}{{}}}
-\bibcite{parikh2016decomposable}{{60}{2016}{{Parikh et~al.}}{{Parikh, T{\"a}ckstr{\"o}m, Das, and Uszkoreit}}}
-\bibcite{pennington2014glove}{{61}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
-\bibcite{peters2018deep}{{62}{2018}{{Peters et~al.}}{{Peters, Neumann, Iyyer, Gardner, Clark, Lee, and Zettlemoyer}}}
-\bibcite{prakash2007learning}{{63}{2007}{{Prakash et~al.}}{{Prakash, Jurafsky, and Ng}}}
-\bibcite{resnik1995using}{{64}{1995}{{Resnik}}{{}}}
-\bibcite{rocktaschel2015reasoning}{{65}{2015}{{Rockt{\"a}schel et~al.}}{{Rockt{\"a}schel, Grefenstette, Hermann, Ko{\v {c}}isk{\`y}, and Blunsom}}}
-\bibcite{rubinstein2015well}{{66}{2015}{{Rubinstein et~al.}}{{Rubinstein, Levi, Schwartz, and Rappoport}}}
-\bibcite{ruckle2018concatenated}{{67}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
-\bibcite{sahlgren2008distributional}{{68}{2008}{{Sahlgren}}{{}}}
-\bibcite{shen2018reinforced}{{69}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
-\bibcite{shwartz2016adding}{{70}{2016}{{Shwartz and Dagan}}{{}}}
-\bibcite{shwartz2015learning}{{71}{2015}{{Shwartz et~al.}}{{Shwartz, Levy, Dagan, and Goldberger}}}
-\bibcite{suchanek2007yago}{{72}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
-\bibcite{tatu2005semantic}{{73}{2005}{{Tatu and Moldovan}}{{}}}
-\bibcite{tay2017compare}{{74}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
-\bibcite{vulic2017specialising}{{75}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
-\bibcite{vulic2017morph}{{76}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
-\bibcite{welbl2017crowdsourcing}{{77}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
-\bibcite{williams2017broad}{{78}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
-\bibcite{xu2014rc}{{79}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
-\bibcite{yang2017character}{{80}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
-\bibcite{young2014image}{{81}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
-\bibcite{zesch2008extracting}{{82}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
+\bibcite{gulccehre2016knowledge}{{27}{2016}{{G{\"u}l{\c {c}}ehre and Bengio}}{{}}}
+\bibcite{gurevych2012uby}{{28}{2012}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, Hartmann, Matuschek, Meyer, and Wirth}}}
+\bibcite{gurevych2016linked}{{29}{2016}{{Gurevych et~al.}}{{Gurevych, Eckle-Kohler, and Matuschek}}}
+\bibcite{gururangan2018annotation}{{30}{2018}{{Gururangan et~al.}}{{Gururangan, Swayamdipta, Levy, Schwartz, Bowman, and Smith}}}
+\bibcite{hochreiter1997long}{{31}{1997}{{Hochreiter and Schmidhuber}}{{}}}
+\bibcite{hu2016deep}{{32}{2016}{{Hu et~al.}}{{Hu, Yang, Salakhutdinov, and Xing}}}
+\bibcite{ide2001american}{{33}{2001}{{Ide and Macleod}}{{}}}
+\bibcite{ide2004american}{{34}{2004}{{Ide and Suderman}}{{}}}
+\bibcite{ide2006integrating}{{35}{2006}{{Ide and Suderman}}{{}}}
+\bibcite{im2017distance}{{36}{2017}{{Im and Cho}}{{}}}
+\bibcite{jia-liang:2017:EMNLP2017}{{37}{2017}{{Jia and Liang}}{{}}}
+\bibcite{Jurafsky2008May}{{38}{2008}{{Jurafsky and Martin}}{{}}}
+\bibcite{scitail}{{39}{2018}{{Khot et~al.}}{{Khot, Sabharwal, and Clark}}}
+\bibcite{kingma2014adam}{{40}{2014}{{Kingma and Ba}}{{}}}
+\bibcite{kruszewski2015so}{{41}{2015}{{Kruszewski and Baroni}}{{}}}
+\bibcite{landis1977measurement}{{42}{1977}{{Landis and Koch}}{{}}}
+\bibcite{lecun2015deep}{{43}{2015}{{LeCun et~al.}}{{LeCun, Bengio, and Hinton}}}
+\bibcite{levy2015improving}{{44}{2015}{{Levy et~al.}}{{Levy, Goldberg, and Dagan}}}
+\bibcite{liu2015learning}{{45}{2015}{{Liu et~al.}}{{Liu, Jiang, Wei, Ling, and Hu}}}
+\bibcite{maccartney2008phrase}{{46}{2008}{{MacCartney et~al.}}{{MacCartney, Galley, and Manning}}}
+\bibcite{maccartney2007natural}{{47}{2007}{{MacCartney and Manning}}{{}}}
+\bibcite{marcus1993building}{{48}{1993}{{Marcus et~al.}}{{Marcus, Marcinkiewicz, and Santorini}}}
+\bibcite{marelli2014semeval}{{49}{2014}{{Marelli et~al.}}{{Marelli, Bentivogli, Baroni, Bernardi, Menini, and Zamparelli}}}
+\bibcite{mccarthy2004using}{{50}{2004}{{McCarthy et~al.}}{{McCarthy, Koeling, Weeds, and Carroll}}}
+\bibcite{mikolov2013distributed}{{51}{2013{a}}{{Mikolov et~al.}}{{Mikolov, Sutskever, Chen, Corrado, and Dean}}}
+\bibcite{mikolov2013linguistic}{{52}{2013{b}}{{Mikolov et~al.}}{{Mikolov, Yih, and Zweig}}}
+\bibcite{miller1995wordnet}{{53}{1995}{{Miller}}{{}}}
+\bibcite{mou2015natural}{{54}{2015}{{Mou et~al.}}{{Mou, Men, Li, Xu, Zhang, Yan, and Jin}}}
+\bibcite{mrkvsic2017semantic}{{55}{2017}{{Mrk{\v {s}}i{\'c} et~al.}}{{Mrk{\v {s}}i{\'c}, Vuli{\'c}, S{\'e}aghdha, Leviant, Reichart, Ga{\v {s}}i{\'c}, Korhonen, and Young}}}
+\bibcite{munkhdalai2017neural}{{56}{2017}{{Munkhdalai and Yu}}{{}}}
+\bibcite{murphy2003semantic}{{57}{2003}{{Murphy}}{{}}}
+\bibcite{nangia2017repeval}{{58}{2017}{{Nangia et~al.}}{{Nangia, Williams, Lazaridou, and Bowman}}}
+\bibcite{nie2017shortcut}{{59}{2017}{{Nie and Bansal}}{{}}}
+\bibcite{pantel2005inducing}{{60}{2005}{{Pantel}}{{}}}
+\bibcite{parikh2016decomposable}{{61}{2016}{{Parikh et~al.}}{{Parikh, T{\"a}ckstr{\"o}m, Das, and Uszkoreit}}}
+\bibcite{pennington2014glove}{{62}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
+\bibcite{peters2018deep}{{63}{2018}{{Peters et~al.}}{{Peters, Neumann, Iyyer, Gardner, Clark, Lee, and Zettlemoyer}}}
+\bibcite{prakash2007learning}{{64}{2007}{{Prakash et~al.}}{{Prakash, Jurafsky, and Ng}}}
+\bibcite{resnik1995using}{{65}{1995}{{Resnik}}{{}}}
+\bibcite{rocktaschel2015reasoning}{{66}{2015}{{Rockt{\"a}schel et~al.}}{{Rockt{\"a}schel, Grefenstette, Hermann, Ko{\v {c}}isk{\`y}, and Blunsom}}}
+\bibcite{rubinstein2015well}{{67}{2015}{{Rubinstein et~al.}}{{Rubinstein, Levi, Schwartz, and Rappoport}}}
+\bibcite{ruckle2018concatenated}{{68}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
+\bibcite{sahlgren2008distributional}{{69}{2008}{{Sahlgren}}{{}}}
+\bibcite{shen2018reinforced}{{70}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
+\bibcite{shwartz2016adding}{{71}{2016}{{Shwartz and Dagan}}{{}}}
+\bibcite{shwartz2015learning}{{72}{2015}{{Shwartz et~al.}}{{Shwartz, Levy, Dagan, and Goldberger}}}
+\bibcite{suchanek2007yago}{{73}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
+\bibcite{tatu2005semantic}{{74}{2005}{{Tatu and Moldovan}}{{}}}
+\bibcite{tay2017compare}{{75}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
+\bibcite{vulic2017specialising}{{76}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
+\bibcite{vulic2017morph}{{77}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
+\bibcite{welbl2017crowdsourcing}{{78}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
+\bibcite{williams2017broad}{{79}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
+\bibcite{xu2014rc}{{80}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
+\bibcite{yang2017character}{{81}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
+\bibcite{young2014image}{{82}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
+\bibcite{zesch2008extracting}{{83}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
 \citation{nie2017shortcut}
 \acronymused{RNN}
 \acronymused{RNN}

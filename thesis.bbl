@@ -1,4 +1,4 @@
-\begin{thebibliography}{82}
+\begin{thebibliography}{83}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Balazs et~al.(2017)Balazs, Marrese-Taylor, Loyola, and
@@ -185,6 +185,11 @@ Alex Graves and J{\"u}rgen Schmidhuber. 2005.
 \newblock Framewise phoneme classification with bidirectional lstm and other
   neural network architectures.
 \newblock \emph{Neural Networks}, 18(5-6):602--610.
+
+\bibitem[{G{\"u}l{\c{c}}ehre and Bengio(2016)}]{gulccehre2016knowledge}
+{\c{C}}aǧlar G{\"u}l{\c{c}}ehre and Yoshua Bengio. 2016.
+\newblock Knowledge matters: Importance of prior information for optimization.
+\newblock \emph{The Journal of Machine Learning Research}, 17(1):226--257.
 
 \bibitem[{Gurevych et~al.(2012)Gurevych, Eckle-Kohler, Hartmann, Matuschek,
   Meyer, and Wirth}]{gurevych2012uby}
@@ -397,7 +402,7 @@ M~Lynne Murphy. 2003.
 Nikita Nangia, Adina Williams, Angeliki Lazaridou, and Samuel~R Bowman. 2017.
 \newblock The repeval 2017 shared task: Multi-genre natural language inference
   with sentence representations.
-\newblock \emph{arXiv preprint arXiv:1707.08172}.
+\newblock \emph{RepEval 2017}, page~1.
 
 \bibitem[{Nie and Bansal(2017)}]{nie2017shortcut}
 Yixin Nie and Mohit Bansal. 2017.

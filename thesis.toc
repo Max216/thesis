@@ -63,21 +63,21 @@
 \contentsline {subsubsection}{\numberline {6.1.1}Drawbacks of using insights of max-pooled sentence representations}{52}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}Fuse WordNet information within the embedding-layer}{52}{subsubsection.6.1.2}
 \contentsline {subsubsection}{\numberline {6.1.3}Fuse WordNet information within the sentence-representations}{53}{subsubsection.6.1.3}
-\contentsline {subsection}{\numberline {6.2}Extraction of WordNet data}{53}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Integrating information into word-embeddings}{53}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{53}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Concatenating pre-trained word-embeddings}{53}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Concatenation categorical information}{53}{subsubsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{53}{subsubsection.6.3.4}
-\contentsline {subsection}{\numberline {6.4}Multitask Learning}{53}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Motivation}{53}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Architecture}{53}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}Approaches}{53}{subsubsection.6.4.3}
-\contentsline {paragraph}{\numberline {6.4.3.1}Different sizes of multitask MLP}{53}{paragraph.6.4.3.1}
-\contentsline {paragraph}{\numberline {6.4.3.2}Introducing Dropout}{53}{paragraph.6.4.3.2}
-\contentsline {paragraph}{\numberline {6.4.3.3}Introducing an additional shared layer}{53}{paragraph.6.4.3.3}
-\contentsline {paragraph}{\numberline {6.4.3.4}Fixing multitasking network during training}{53}{paragraph.6.4.3.4}
-\contentsline {paragraph}{\numberline {6.4.3.5}Focusing on original words within sentence representation}{53}{paragraph.6.4.3.5}
-\contentsline {subsubsection}{\numberline {6.4.4}Analysis}{53}{subsubsection.6.4.4}
-\contentsline {subsubsection}{\numberline {6.4.5}Evaluation}{53}{subsubsection.6.4.5}
-\contentsline {section}{\numberline {7}Conclusion}{54}{section.7}
+\contentsline {subsection}{\numberline {6.2}Extraction of WordNet data}{55}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Integrating information into word-embeddings}{55}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{55}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Concatenating pre-trained word-embeddings}{55}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Concatenation categorical information}{55}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{55}{subsubsection.6.3.4}
+\contentsline {subsection}{\numberline {6.4}Multitask Learning}{55}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Motivation}{55}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Architecture}{55}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}Approaches}{55}{subsubsection.6.4.3}
+\contentsline {paragraph}{\numberline {6.4.3.1}Different sizes of multitask MLP}{55}{paragraph.6.4.3.1}
+\contentsline {paragraph}{\numberline {6.4.3.2}Introducing Dropout}{55}{paragraph.6.4.3.2}
+\contentsline {paragraph}{\numberline {6.4.3.3}Introducing an additional shared layer}{55}{paragraph.6.4.3.3}
+\contentsline {paragraph}{\numberline {6.4.3.4}Fixing multitasking network during training}{55}{paragraph.6.4.3.4}
+\contentsline {paragraph}{\numberline {6.4.3.5}Focusing on original words within sentence representation}{55}{paragraph.6.4.3.5}
+\contentsline {subsubsection}{\numberline {6.4.4}Analysis}{55}{subsubsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.5}Evaluation}{55}{subsubsection.6.4.5}
+\contentsline {section}{\numberline {7}Conclusion}{56}{section.7}

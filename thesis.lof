@@ -24,3 +24,4 @@
 \contentsline {figure}{\numberline {23}{\ignorespaces Example of a \ac {HIT} in Amazon Mechanical Turk.}}{45}{figure.23}
 \contentsline {figure}{\numberline {24}{\ignorespaces Accuracy by cosine similarity reached by Decomposable Attention (without fine-tuned embeddings).}}{49}{figure.24}
 \contentsline {figure}{\numberline {25}{\ignorespaces Accuracy by word freqency for Residual-Stacked Encoder and ESIM.}}{50}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Architecture of the Residual-Stacked Encoder with multitask learning for the sentence-representations.}}{54}{figure.26}
