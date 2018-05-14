@@ -39,13 +39,13 @@
 \BOOKMARK [3][-]{subsubsection.4.3.2}{Approach for a general alignment understanding}{subsection.4.3}% 39
 \BOOKMARK [3][-]{subsubsection.4.3.3}{Entailment analysis}{subsection.4.3}% 40
 \BOOKMARK [3][-]{subsubsection.4.3.4}{Neutral and contradiction analysis}{subsection.4.3}% 41
-\BOOKMARK [3][-]{subsubsection.4.3.5}{Summarizing the inisghts onmMax-pooled sentence representations}{subsection.4.3}% 42
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Summarizing the insights on max-pooled sentence-representations}{subsection.4.3}% 42
 \BOOKMARK [2][-]{subsection.4.4}{Identification of missing knowledge}{section.4}% 43
 \BOOKMARK [3][-]{subsubsection.4.4.1}{Approach}{subsection.4.4}% 44
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Quantitative results}{subsection.4.4}% 45
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Results}{subsection.4.4}% 45
 \BOOKMARK [3][-]{subsubsection.4.4.3}{Conclusions}{subsection.4.4}% 46
 \BOOKMARK [1][-]{section.5}{Additional SNLI test-set}{}% 47
-\BOOKMARK [2][-]{subsection.5.1}{Goal of the new test-set}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.1}{Goal of the new test set}{section.5}% 48
 \BOOKMARK [2][-]{subsection.5.2}{Dataset}{section.5}% 49
 \BOOKMARK [3][-]{subsubsection.5.2.1}{Creation of adversarial samples}{subsection.5.2}% 50
 \BOOKMARK [3][-]{subsubsection.5.2.2}{Validation}{subsection.5.2}% 51
@@ -58,16 +58,20 @@
 \BOOKMARK [3][-]{subsubsection.5.4.2}{Impact on the word embeddings}{subsection.5.4}% 58
 \BOOKMARK [2][-]{subsection.5.5}{Conclusion of the adversarial dataset}{section.5}% 59
 \BOOKMARK [1][-]{section.6}{Approaches to incorporate WordNet information}{}% 60
-\BOOKMARK [2][-]{subsection.6.1}{Extraction of WordNet data}{section.6}% 61
-\BOOKMARK [2][-]{subsection.6.2}{Integrating information into word-embeddings}{section.6}% 62
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Motivation}{subsection.6.2}% 63
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Concatenating pre-trained word-embeddings}{subsection.6.2}% 64
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Concatenation categorical information}{subsection.6.2}% 65
-\BOOKMARK [3][-]{subsubsection.6.2.4}{Analysis}{subsection.6.2}% 66
-\BOOKMARK [2][-]{subsection.6.3}{Multitask Learning}{section.6}% 67
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Motivation}{subsection.6.3}% 68
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Architecture}{subsection.6.3}% 69
-\BOOKMARK [3][-]{subsubsection.6.3.3}{Approaches}{subsection.6.3}% 70
-\BOOKMARK [3][-]{subsubsection.6.3.4}{Analysis}{subsection.6.3}% 71
-\BOOKMARK [3][-]{subsubsection.6.3.5}{Evaluation}{subsection.6.3}% 72
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 73
+\BOOKMARK [2][-]{subsection.6.1}{Methods}{section.6}% 61
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Drawbacks of using insights of max-pooled sentence representations}{subsection.6.1}% 62
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Fuse WordNet information within the embedding-layer}{subsection.6.1}% 63
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Fuse WordNet information within the sentence-representations}{subsection.6.1}% 64
+\BOOKMARK [2][-]{subsection.6.2}{Extraction of WordNet data}{section.6}% 65
+\BOOKMARK [2][-]{subsection.6.3}{Integrating information into word-embeddings}{section.6}% 66
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Motivation}{subsection.6.3}% 67
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Concatenating pre-trained word-embeddings}{subsection.6.3}% 68
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Concatenation categorical information}{subsection.6.3}% 69
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Analysis}{subsection.6.3}% 70
+\BOOKMARK [2][-]{subsection.6.4}{Multitask Learning}{section.6}% 71
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Motivation}{subsection.6.4}% 72
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Architecture}{subsection.6.4}% 73
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Approaches}{subsection.6.4}% 74
+\BOOKMARK [3][-]{subsubsection.6.4.4}{Analysis}{subsection.6.4}% 75
+\BOOKMARK [3][-]{subsubsection.6.4.5}{Evaluation}{subsection.6.4}% 76
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 77

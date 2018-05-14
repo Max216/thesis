@@ -1,4 +1,4 @@
-\begin{thebibliography}{81}
+\begin{thebibliography}{82}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Balazs et~al.(2017)Balazs, Marrese-Taylor, Loyola, and
@@ -481,6 +481,12 @@ Tao Shen, Tianyi Zhou, Guodong Long, Jing Jiang, Sen Wang, and Chengqi Zhang.
 \newblock Reinforced self-attention network: a hybrid of hard and soft
   attention for sequence modeling.
 \newblock \emph{arXiv preprint arXiv:1801.10296}.
+
+\bibitem[{Shwartz and Dagan(2016)}]{shwartz2016adding}
+Vered Shwartz and Ido Dagan. 2016.
+\newblock Adding context to semantic data-driven paraphrasing.
+\newblock In \emph{Proceedings of the Fifth Joint Conference on Lexical and
+  Computational Semantics}, pages 108--113.
 
 \bibitem[{Shwartz et~al.(2015)Shwartz, Levy, Dagan, and
   Goldberger}]{shwartz2015learning}

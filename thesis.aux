@@ -29,6 +29,7 @@
 \newacro{KIM}[\AC@hyperlink{KIM}{KIM}]{Knowledge-based Inference Model}
 \newacro{LSTM}[\AC@hyperlink{LSTM}{LSTM}]{Long-Short-Term-Memory}
 \newacro{MLP}[\AC@hyperlink{MLP}{MLP}]{Multi Layer Perceptron}
+\newacro{MSE}[\AC@hyperlink{MSE}{MSE}]{Mean Squared Error}
 \newacro{MultiNLI}[\AC@hyperlink{MultiNLI}{MultiNLI}]{MultiGenre Natural Language Inference Corpus}
 \newacro{NLI}[\AC@hyperlink{NLI}{NLI}]{Natural Language Inference}
 \newacro{NLP}[\AC@hyperlink{NLP}{NLP}]{Natural Language Processing}
@@ -528,8 +529,9 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Visualitation of a sample sentence pair with explanatory guides for interpretation.}}{35}{figure.19}}
 \newlabel{fig:sample_coverage_prob}{{19}{35}{Visualitation of a sample sentence pair with explanatory guides for interpretation}{figure.19}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Entailment analysis}{35}{subsubsection.4.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Visualitation of 150 sentence pairs ($p$, $h$), correctly labelled as entailment.}}{36}{figure.20}}
-\newlabel{fig:entailment_uninversed}{{20}{36}{Visualitation of 150 sentence pairs ($p$, $h$), correctly labelled as entailment}{figure.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Visualization of 150 sentence pairs ($p$, $h$), correctly labelled as entailment.}}{36}{figure.20}}
+\newlabel{fig:entailment_uninversed}{{20}{36}{Visualization of 150 sentence pairs ($p$, $h$), correctly labelled as entailment}{figure.20}{}}
+\acronymused{SNLI}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Visualization of samples predicted as entailment (left) and neutral (right) after swapping $p$ and $h$.}}{36}{figure.21}}
 \newlabel{fig:alignment_entailment_inversed}{{21}{36}{Visualization of samples predicted as entailment (left) and neutral (right) after swapping $p$ and $h$}{figure.21}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Neutral and contradiction analysis}{37}{subsubsection.4.3.4}}
@@ -537,13 +539,13 @@
 \newlabel{fig:neutr_contr_uninversed}{{22}{37}{Visualitazion of 150 sentence pairs ($p$, $h$) correctly labelled as \textit {neutral} (left) and \textit {contradiction} (right)}{figure.22}{}}
 \acronymused{MLP}
 \citation{nie2017shortcut}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Summarizing the inisghts onmMax-pooled sentence representations}{38}{subsubsection.4.3.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Summarizing the insights on max-pooled sentence-representations}{38}{subsubsection.4.3.5}}
 \acronymused{SNLI}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Identification of missing knowledge}{38}{subsection.4.4}}
 \acronymused{SNLI}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Approach}{38}{subsubsection.4.4.1}}
 \acronymused{SNLI}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Quantitative results}{38}{subsubsection.4.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Results}{38}{subsubsection.4.4.2}}
 \acronymused{POS}
 \acronymused{BoW}
 \newlabel{tab:misclassified_orig_contr}{{4.4.2}{39}{}{subsubsection.4.4.2}{}}
@@ -567,27 +569,30 @@
 \acronymused{NLI}
 \acronymused{NLU}
 \acronymused{NLU}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Goal of the new test-set}{41}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Goal of the new test set}{41}{subsection.5.1}}
 \acronymused{SNLI}
 \acronymused{SNLI}
 \acronymused{SNLI}
 \acronymused{NLU}
 \acronymused{NLU}
 \acronymused{SNLI}
-\acronymused{SNLI}
+\acronymused{NLU}
 \citation{goldberg2017Apr}
 \citation{bowman2015large}
+\citation{kruszewski2015so}
+\acronymused{SNLI}
+\acronymused{SNLI}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dataset}{42}{subsection.5.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Creation of adversarial samples}{42}{subsubsection.5.2.1}}
+\acronymused{SNLI}
 \acronymused{SNLI}
 \acronymused{RTE}
 \newlabel{tab:new_testset_samples}{{5.2.1}{42}{Creation of adversarial samples}{subsubsection.5.2.1}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Examples from the newly generated test set.}}{42}{table.12}}
 \acronymused{SNLI}
-\citation{kruszewski2015so}
+\acronymused{SNLI}
 \acronymused{SNLI}
 \acronymused{POS}
-\acronymused{SNLI}
 \acronymused{SNLI}
 \acronymused{SNLI}
 \citation{maccartney2007natural}
@@ -596,17 +601,18 @@
 \citation{bowman2015large}
 \newlabel{tab:monoton_samples}{{5.2.1}{44}{}{table.12}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Comparison of co-hyponyms in upward-monotone and downward-monone sentences.}}{44}{table.13}}
+\acronymused{SNLI}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Validation}{44}{subsubsection.5.2.2}}
 \AC@undonewlabel{acro:HIT}
 \newlabel{acro:HIT}{{5.2.2}{44}{Validation}{section*.24}{}}
 \acronymused{HIT}
 \acronymused{HIT}
 \acronymused{HIT}
+\acronymused{HIT}
+\acronymused{SNLI}
 \citation{landis1977measurement}
 \citation{bowman2015large}
 \citation{gong2017natural}
-\acronymused{HIT}
-\acronymused{SNLI}
 \acronymused{HIT}
 \acronymused{SNLI}
 \acronymused{SNLI}
@@ -615,6 +621,13 @@
 \acronymused{HIT}
 \newlabel{fig:example_hit}{{23}{45}{Example of a \ac {HIT} in Amazon Mechanical Turk}{figure.23}{}}
 \acronymused{HIT}
+\acronymused{HIT}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Statistics of \ac {SNLI} testset compared with the newly generated testset.}}{45}{table.14}}
+\acronymused{SNLI}
+\newlabel{tab:newtest_stats}{{14}{45}{Statistics of \ac {SNLI} testset compared with the newly generated testset}{table.14}{}}
+\acronymused{NLU}
+\acronymused{SNLI}
+\acronymused{SNLI}
 \acronymused{SNLI}
 \citation{gong2017natural}
 \citation{nie2017shortcut}
@@ -623,11 +636,6 @@
 \citation{parikh2016decomposable}
 \citation{nie2017shortcut}
 \citation{chen2017enhanced}
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Statistics of \ac {SNLI} testset compared with the newly generated testset.}}{46}{table.14}}
-\acronymused{SNLI}
-\newlabel{tab:newtest_stats}{{14}{46}{Statistics of \ac {SNLI} testset compared with the newly generated testset}{table.14}{}}
-\acronymused{SNLI}
-\acronymused{SNLI}
 \acronymused{SNLI}
 \acronymused{HIT}
 \acronymused{SNLI}
@@ -638,13 +646,14 @@
 \acronymused{biLSTM}
 \acronymused{biLSTM}
 \acronymused{SNLI}
+\newlabel{tab:compare_architecture_models}{{5.3.1}{46}{}{subsubsection.5.3.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Architectural comparison of tested neural models without external knowledge.}}{46}{table.15}}
+\citation{mccarthy2004using}
 \citation{chen2017natural}
 \citation{parikh2016decomposable}
 \citation{chen2017enhanced}
 \citation{nie2017shortcut}
 \citation{chen2017natural}
-\newlabel{tab:compare_architecture_models}{{5.3.1}{47}{}{subsubsection.5.3.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Architectural comparison of tested neural models without external knowledge.}}{47}{table.15}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Models with external knowledge}{47}{subsubsection.5.3.2}}
 \acronymused{KIM}
 \acronymused{SNLI}
@@ -655,61 +664,82 @@
 \acronymused{NLU}
 \acronymused{MultiNLI}
 \acronymused{KIM}
-\citation{gururangan2018annotation}
-\newlabel{tab:adv_results}{{5.3.3}{48}{Results}{subsubsection.5.3.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Results of models on the new test set compared with the original \ac {SNLI} test set.}}{48}{table.16}}
 \acronymused{SNLI}
-\acronymused{KIM}
+\acronymused{SNLI}
+\acronymused{NLU}
 \acronymused{SNLI}
 \acronymused{KIM}
 \acronymused{KIM}
 \acronymused{KIM}
 \acronymused{NLU}
+\acronymused{KIM}
+\citation{gururangan2018annotation}
+\newlabel{tab:adv_results}{{5.3.3}{48}{Results}{subsubsection.5.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Results of models on the new test set compared with the original \ac {SNLI} test set.}}{48}{table.16}}
+\acronymused{SNLI}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Analysis}{48}{subsection.5.4}}
 \acronymused{MultiNLI}
 \acronymused{SNLI}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}Accuracy by category}{48}{subsubsection.5.4.1}}
 \acronymused{KIM}
 \acronymused{SNLI}
+\newlabel{tab:acc_by_cat}{{5.4.1}{48}{Accuracy by category}{subsubsection.5.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}}{48}{table.17}}
 \acronymused{SNLI}
 \acronymused{SNLI}
-\newlabel{tab:acc_by_cat}{{5.4.1}{49}{Accuracy by category}{subsubsection.5.4.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}}{49}{table.17}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}Impact on the word embeddings}{49}{subsubsection.5.4.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Accuracy by cosine similarity reached by Decomposable Attention (without fine-tuned embeddings).}}{49}{figure.24}}
 \newlabel{fig:decomp_acc_per_cos_sim}{{24}{49}{Accuracy by cosine similarity reached by Decomposable Attention (without fine-tuned embeddings)}{figure.24}{}}
 \acronymused{SNLI}
+\acronymused{SNLI}
+\citation{williams2017broad}
+\citation{shwartz2016adding}
 \@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Accuracy by word freqency for Residual-Stacked Encoder and ESIM.}}{50}{figure.25}}
 \newlabel{fig:esim_res_acc_by_freq}{{25}{50}{Accuracy by word freqency for Residual-Stacked Encoder and ESIM}{figure.25}{}}
-\acronymused{SNLI}
-\acronymused{ESIM}
 \newlabel{tab:esim_acc_by_sim_samples}{{5.4.2}{50}{}{figure.25}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Accuracy by the amount of similar samples in \ac {SNLI} train data for ESIM on contradicting samples.}}{50}{table.18}}
 \acronymused{SNLI}
+\acronymused{ESIM}
 \acronymused{MultiNLI}
 \acronymused{SNLI}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Conclusion of the adversarial dataset}{51}{subsection.5.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Conclusion of the adversarial dataset}{50}{subsection.5.5}}
+\acronymused{NLI}
+\acronymused{NLU}
+\acronymused{SNLI}
+\citation{nangia2017repeval}
+\citation{bengio2013representation}
+\citation{ruckle2018concatenated}
+\citation{ruckle2018concatenated}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{52}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Methods}{52}{subsection.6.1}}
+\acronymused{KIM}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Drawbacks of using insights of max-pooled sentence representations}{52}{subsubsection.6.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Fuse WordNet information within the embedding-layer}{52}{subsubsection.6.1.2}}
+\acronymused{MLP}
 \citation{rubinstein2015well}
 \citation{levy2015improving}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Approaches to incorporate WordNet information}{52}{section.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Extraction of WordNet data}{52}{subsection.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Integrating information into word-embeddings}{52}{subsection.6.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Motivation}{52}{subsubsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Concatenating pre-trained word-embeddings}{52}{subsubsection.6.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Concatenation categorical information}{52}{subsubsection.6.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Analysis}{52}{subsubsection.6.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multitask Learning}{52}{subsection.6.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{52}{subsubsection.6.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Architecture}{52}{subsubsection.6.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Approaches}{52}{subsubsection.6.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.1}Different sizes of multitask MLP}{52}{paragraph.6.3.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.2}Introducing Dropout}{52}{paragraph.6.3.3.2}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.3}Introducing an additional shared layer}{52}{paragraph.6.3.3.3}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.4}Fixing multitasking network during training}{52}{paragraph.6.3.3.4}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {6.3.3.5}Focusing on original words within sentence representation}{52}{paragraph.6.3.3.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{52}{subsubsection.6.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.5}Evaluation}{52}{subsubsection.6.3.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{53}{section.7}}
+\AC@undonewlabel{acro:MSE}
+\newlabel{acro:MSE}{{6.1.2}{53}{}{section*.25}{}}
+\acronymused{MSE}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}Fuse WordNet information within the sentence-representations}{53}{subsubsection.6.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Extraction of WordNet data}{53}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Integrating information into word-embeddings}{53}{subsection.6.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Motivation}{53}{subsubsection.6.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Concatenating pre-trained word-embeddings}{53}{subsubsection.6.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Concatenation categorical information}{53}{subsubsection.6.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Analysis}{53}{subsubsection.6.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Multitask Learning}{53}{subsection.6.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}Motivation}{53}{subsubsection.6.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}Architecture}{53}{subsubsection.6.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}Approaches}{53}{subsubsection.6.4.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.1}Different sizes of multitask MLP}{53}{paragraph.6.4.3.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.2}Introducing Dropout}{53}{paragraph.6.4.3.2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.3}Introducing an additional shared layer}{53}{paragraph.6.4.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.4}Fixing multitasking network during training}{53}{paragraph.6.4.3.4}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {6.4.3.5}Focusing on original words within sentence representation}{53}{paragraph.6.4.3.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}Analysis}{53}{subsubsection.6.4.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}Evaluation}{53}{subsubsection.6.4.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{54}{section.7}}
 \bibdata{bib/literature}
 \bibcite{balazs2017refining}{{1}{2017}{{Balazs et~al.}}{{Balazs, Marrese-Taylor, Loyola, and Matsuo}}}
 \bibcite{bengio2013representation}{{2}{2013}{{Bengio et~al.}}{{Bengio, Courville, and Vincent}}}
@@ -780,18 +810,19 @@
 \bibcite{ruckle2018concatenated}{{67}{2018}{{R{\"u}ckl{\'e} et~al.}}{{R{\"u}ckl{\'e}, Eger, Peyrard, and Gurevych}}}
 \bibcite{sahlgren2008distributional}{{68}{2008}{{Sahlgren}}{{}}}
 \bibcite{shen2018reinforced}{{69}{2018}{{Shen et~al.}}{{Shen, Zhou, Long, Jiang, Wang, and Zhang}}}
-\bibcite{shwartz2015learning}{{70}{2015}{{Shwartz et~al.}}{{Shwartz, Levy, Dagan, and Goldberger}}}
-\bibcite{suchanek2007yago}{{71}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
-\bibcite{tatu2005semantic}{{72}{2005}{{Tatu and Moldovan}}{{}}}
-\bibcite{tay2017compare}{{73}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
-\bibcite{vulic2017specialising}{{74}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
-\bibcite{vulic2017morph}{{75}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
-\bibcite{welbl2017crowdsourcing}{{76}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
-\bibcite{williams2017broad}{{77}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
-\bibcite{xu2014rc}{{78}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
-\bibcite{yang2017character}{{79}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
-\bibcite{young2014image}{{80}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
-\bibcite{zesch2008extracting}{{81}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
+\bibcite{shwartz2016adding}{{70}{2016}{{Shwartz and Dagan}}{{}}}
+\bibcite{shwartz2015learning}{{71}{2015}{{Shwartz et~al.}}{{Shwartz, Levy, Dagan, and Goldberger}}}
+\bibcite{suchanek2007yago}{{72}{2007}{{Suchanek et~al.}}{{Suchanek, Kasneci, and Weikum}}}
+\bibcite{tatu2005semantic}{{73}{2005}{{Tatu and Moldovan}}{{}}}
+\bibcite{tay2017compare}{{74}{2017}{{Tay et~al.}}{{Tay, Tuan, and Hui}}}
+\bibcite{vulic2017specialising}{{75}{2017}{{Vuli{\'c} and Mrk{\v {s}}i{\'c}}}{{}}}
+\bibcite{vulic2017morph}{{76}{2017}{{Vuli{\'c} et~al.}}{{Vuli{\'c}, Mrk{\v {s}}i{\'c}, Reichart, S{\'e}aghdha, Young, and Korhonen}}}
+\bibcite{welbl2017crowdsourcing}{{77}{2017}{{Welbl et~al.}}{{Welbl, Liu, and Gardner}}}
+\bibcite{williams2017broad}{{78}{2017}{{Williams et~al.}}{{Williams, Nangia, and Bowman}}}
+\bibcite{xu2014rc}{{79}{2014}{{Xu et~al.}}{{Xu, Bai, Bian, Gao, Wang, Liu, and Liu}}}
+\bibcite{yang2017character}{{80}{2017}{{Yang et~al.}}{{Yang, Costa-juss{\`a}, and Fonollosa}}}
+\bibcite{young2014image}{{81}{2014}{{Young et~al.}}{{Young, Lai, Hodosh, and Hockenmaier}}}
+\bibcite{zesch2008extracting}{{82}{2008}{{Zesch et~al.}}{{Zesch, M{\"u}ller, and Gurevych}}}
 \citation{nie2017shortcut}
 \acronymused{RNN}
 \acronymused{RNN}
