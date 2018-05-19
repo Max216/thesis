@@ -132,7 +132,6 @@ As for the male-encoding dimensions, all higher values within both dimensions ar
 \begin{wraptable}[12]{r}{7cm}
 %\begin{table}[]
 \centering
-\label{tab:relevance_mf_nn}
 \begin{tabular}{llll}
 \textbf{$|r|$} & \begin{tabular}[c]{@{}l@{}}\textbf{MLP}\\ \textbf{size}\end{tabular} & \textbf{Acc. (train)} & \textbf{Acc. (dev)} \\
 \toprule
@@ -143,6 +142,7 @@ As for the male-encoding dimensions, all higher values within both dimensions ar
 \bottomrule      
 \end{tabular}
 \caption{Accuracies achieved on \ac{SNLI} using $|r|$-dimensional sentence representations of gender-specific dimensions.}
+\label{tab:relevance_mf_nn}
 %\end{table}
 \end{wraptable}
 We now closer examine, how relevant those identified dimensions actually are, when the predicting the relations on \ac{SNLI}. We conduct an experiment with sentence representations, solely consisting of dimensions that we identified to encode gender-specific information. Specifically we found four dimensions to encode each gender respectively. In the first experiment, we only consider subsets of these dimensions as sentence representations, and train a new neural network for each subset, consisting of an equal amount of female and male dimensions \footnote{We select those dimensions of all sentence-representations from the fully trained Shortcut-Stacked Encoder\textsuperscript{$\dagger$}}. We train the model for 5 iterations using the same hyperparamters as in the Shortcut-Stacked Encoder\textsuperscript{$\dagger$}. Solely the size of the hidden layer is changed with respect to the size of the sentence representation, due to being tremendously reduced (by only considering male and female dimensions). The results in Table \ref{tab:relevance_mf_nn} show, that a sentence representation, solely consisting of one dimension per gender, reaches an improvement of about 9 points in accuracy over a random baseline with 33.33\%. Adding more dimensions somehow reduced the additional improvements, indicating some redundancy, but also some distinct information is encoded within those dimensions. About half of the data can be classified correctly based on only 8 dimensional sentence-representations, encoding the gender-information of the sentence. This indicates, that these dimensions are highly relevant within the model, however all these observations may also arise from the newly trained model, learning patterns, that are not considered by the original model. We thus conduct another experiment to shed more light into the impact of the detected dimensions for the Shortcut-Stacked Encoder\textsuperscript{$\dagger$}.
@@ -165,7 +165,6 @@ Rather than using the sample mean from all sentences, which would be heavily inf
 We use the proposed method for the full \ac{SNLI} train and dev data and report our results in Table \ref{tab:inverted_mf_results_acc}, together with the original performance of the used Shortcut-Stacked Encoder\textsuperscript{$\dagger$}. 
 \begin{table}[tph!]
 \centering
-\label{tab:inverted_mf_results_acc}
 \begin{tabular}{cccccc}
 \textbf{Inverted dimensions} & \textbf{Inverted sentences}  & \textbf{Acc. (train)} & \textbf{Acc. (train) +/-} & \textbf{Acc. (dev)} & \textbf{Acc (dev) +/-} \\
 \toprule
@@ -183,6 +182,7 @@ None                   & None                   & 87.41        & 0.0            
 \bottomrule    
 \end{tabular}
 \caption{Results in terms of accuracy of inverted gender-specific dimensions on \ac{SNLI} train and dev set.}
+\label{tab:inverted_mf_results_acc}
 \end{table}
 The table shows a range of experiments with an increasing number of dimensions being inverted, on either both sentences or only on the hypothesis. It can be seen, that even after inverting all four dimensions for each gender, the performance only slightly drops, when applied on both sentenes. This indicates that the performed equation (\ref{eq:invert}) indeed is sufficient to invert the encoded information to a high degree, since inverting the gender in $p$ and $h$ simultaneously should not have a large impact on the final prediction\footnote{We select only 8 out of 2048 dimensions, that are highly representative for the gender-specific meaning. Correlated information however also has an impact on other dimensions, that we left untouched. Thus we don't claim to have inverted the full gender-specific meaning, but a crucial amount of it.}. More importantly, when only the hypothesis' representation is changed, we observe, that inverting a single dimension reduces the model's performance only slightly. Increasing amount of inverted dimensions, also increases the negative impact on the overall accuracy. We conclude that this is due to redundant information, most likely coming from dropout. 
 \paragraph*{Analysis of inverted gender-dimensions}
@@ -190,7 +190,6 @@ In order to actually see, that sentence-meanings shifted, according to our expec
 \begin{table}[tph!]
 \resizebox{\textwidth}{!}{%
 \centering
-\label{tab:inverted_mf_results_samples}
 \begin{tabular}{llcc}
 \textbf{Premise} & \textbf{Hypothesis}  & \specialcell{\textbf{Prediction}\\\textbf{(original)}} & \specialcell{\textbf{Prediction}\\\textbf{(inverted)}} \\
 \toprule
@@ -212,6 +211,7 @@ A country band is playing. & A group is playing music. & entailment & contradict
 \bottomrule    
 \end{tabular}}
 \caption{Comparison of samples between their predictions based on the original and gender-inverted sentence representations.}
+\label{tab:inverted_mf_results_samples}
 \end{table}
 Especially for human main actors without a specific gender, we observe unexpected predictions. One possible explanation could be, that since words like ``band'' or ``people'' have no specified gender, the inversion of the hypothesis suggests that people of both gender are present in the sentence. Unlike ``dog'', those terms are encoded similarily to humans with a specified gender, since both refer to human actors, which yields in according information in other dimensions. Hence, an example regarding a ``dog'' is less likely to have unwanted side-effects, as the gender presumeably is only considered by the model in conjunction with other dimensions, representing human-beings.
 \newline
@@ -373,7 +373,7 @@ This should definetly falls into the case of our assumption (2), and be classifi
 	\label{fig:alignment_entailment_inversed}
 \end{figure}
 Indeed, samples that seemingly are paraphrased, based on the model's prediction, show highly identical meaning representations over all dimensions. Similarily, all samples that are now labelled as neutral and before swapping were considered entailment, show a hight tendency of encoding only a subset of information of the new hypothesis within the new premise. Both plots show, that our assumptions (1) and (2) are correct, accepting the fact that other scenarios exist, as shown by some swapped contradicting samples.
-\subsubsection{Neutral and contradiction analysis}
+\subsubsection{Neutral and contradiction analysis}\label{sec:understanding_align_neutral_contr}
 We have shown, that we indeed are able to observe, how the model identifies the entailing label, and how this differs from neutral, which in fact follows a very intuitive pattern. We also try to get more insights how neutral sentence-pairs  differ from contradiction based on the sentence representations, especially, w.r.t. assumtion (3). The results (without swapping) for 150 correctly classified neutral and contradicting examples respectively are displayed in Figure \ref{fig:neutr_contr_uninversed}.
 \begin{figure}[tph!]	\centering
 \includegraphics[totalheight=7cm]{fig/neutr_contr_uninversed.png}
@@ -403,7 +403,7 @@ In both cases, premise and hypothesis do contain distinct information, yet this 
 Also in this case, both sentences encode different information, this time however it is not compatible, as the baby is either ``laughing'' or ``crying'' and the boy is either ``eating'' or ``coloring'', but not both things. We see that assumption (3) holds for contradiction in terms of recall, however it is not sufficient to distinguish between neutral and entailment. We conclude that in order to do so, one must identify, which dimensions can be true simultaneously, indicating neutral, and which dimensions exclude each other, indicating contradiction. Yet, to see how this is done within the model, we need to understand the \ac{MLP} on top of the sentence representation. This goes back to the main drawback of standard neural networks, being hard to interpret. We found, some useful insights, how the model leverages from the encoded sentence representations, following simple human intuitions. We do not further investigate in the differntiation of those dimensions and end our model understanding analysis at this point.
 
 %\subsubsection{Experiments}
-\subsubsection{Summarizing the insights on max-pooled sentence-representations}
+\subsection{Summarizing the insights on max-pooled sentence-representations}
 We have shown that it is possible, to identify the general meaning of a dimension based on the words, that are responsible for the dimensions value. We observe that high values within dimensions encode the presence of information, which intuitively goes with the nature of the max-pooling mechanism, while low values indicate the absence of information. In our experiment, we additionally have shown, that knowing the encoding-scheme and information of a dimension, it is possible to change sentence-representations in meaningful and intended way, yet observed minor side-effects. In the second section, we showed that by aligning dimensions and knowing their encoded information, it is possible to understand sentence representations well enough, to interpret criteria, leaing to the prediction. In the last part we analysed, how the model actually performs the alignment between the sentence representations, and observed an intuitive explanation for several different types, how sentences relate to each other w.r.t. label.
 \newline
 
@@ -418,7 +418,7 @@ We show our results with the identified categories, incuding sample sentence-pai
 
 \paragraph*{Misclassified contradicting samples}
 Table \ref{tab:misclassified_orig_contr} shows the misclassifications of samples, labelled incorrectly as entailment.
-\begin{table}[tph!]\label{tab:misclassified_orig_contr}
+\begin{table}[tph!]
 \centering
 \begin{tabular}{cccl}
 \textbf{Problem} & \textbf{Type} & \textbf{Amount} & \textbf{Example} \\
@@ -439,6 +439,7 @@ common sense & All & 20 & \specialcell{Someone in a 3ft swimming pool.\\A person
 \bottomrule      
 \end{tabular}
 \caption{Misclassified samples with gold label \textit{contradiction}, predicted as \textit{entailment}.}
+\label{tab:misclassified_orig_contr}
 \end{table}
 We find that most problems arise from words sharing lexical relations, namely antonomy or cohyponomy, for different kind of \ac{POS}. We opt to show ``amounts'' as a seperate category, due to its high frequency. While Verb antonyms may also be considered as cohyponyms, we also list them seperately, if they refer to the opposite meaning. Some samples, listed under ``structure'', require the model to take word-order into consideration, and is mostly represented by semantic role reversal. We assign all samples to ``common sense'', that require information, that cannot be retrieved using lexical semantic relations and usually need additional information, which is only \textit{implied} by the described entity or activity. Any sentence-pair, where we could not identify the required knowledge, due to not agreeing with the label or due to being highly ungrammatical, or some rare very specific details, are ignored in our results, categorized as ``ignored''.
 
@@ -446,7 +447,6 @@ We find that most problems arise from words sharing lexical relations, namely an
 Analysing the required knowledge for misclassified entailing samples as contradtiong, we identify different categories, depicted in Table \ref{tab:misclassified_orig_ent}.
 \begin{table}[tph!]
 \centering
-\label{tab:misclassified_orig_ent}
 \begin{tabular}{cccl}
 \textbf{Problem} & \textbf{Required knowledge} & \textbf{Amount} & \textbf{Example} \\
 \toprule
@@ -462,6 +462,7 @@ Implication & world knowledge & 53 & \specialcell{A hockey player makes a shot.\
 \bottomrule      
 \end{tabular}
 \caption{Misclassified samples with gold label \textit{entailment}, predicted as \textit{contradiction}.}
+\label{tab:misclassified_orig_ent}
 \end{table}
 Essentially, we find three different ways of how the relation between $p$ and $h$ can be described, and differentiate between lexical- and world-knowldge, being required for the correct prediction. In the example of paraphrasing, for ``foosball'' and ``table soccer'' or ``sleeping and ``awake'', it is sufficient to detect that they are synonyms or antonyms respectively. The third case requires some actual understanding of the process of ``opening'' in the context with a ``bottle''. While some of these samples may be understood by knowing several meronyms, we consider them to require a deeper conceptual understanding of how thing work, hence world knowledge. The largest group, ``implication'',   is interesting, as all $h$ contain additional information, not directly given by $p$. While this case should usually be labelled as neutral, in this case the additional information is automatically implied\footnote{For the given sample, we assume that Americans see \textit{hockey} in the sense of \textit{ice-hockey}.} (even though not textual) by $p$. This implication also requires other external knowledge than lexical relations.
 

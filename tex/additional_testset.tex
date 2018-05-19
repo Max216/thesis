@@ -11,9 +11,9 @@ In the previous section we have identified several lexical inferences, that have
 \midrule
 \specialcell{A woman testing a comfortable pillow.\\The woman 's head is in contact with the pillow.} & \textit{entailment} \\
 \bottomrule
-\label{table:correct_samples}
 \end{tabular}
 \caption{Correctly classified examples.}
+\label{table:correct_samples}
 \end{center}
 \end{table}
 In the first example humans see, that both sentences describe the same scenario with only the main actor changing. Aiming for \ac{NLI} and thus \ac{NLU}, the model should proceed similarily. It cannot be said, whether the model identifies the paraphrasing of ``mowing''. Yet, we can see that the only required information for the correct label is the gender of the mowing person. This is, as we have seen in Section §\ref{sec:understanding}, a very important feature within the model. In the second sentence, an average human knows, that ``doing a cannon ball'' is a special form of ``jumping'' (in the water). However, a simple heuristic that $h$ is entailed by $p$ if it describes a more general scenario, would be sufficient for a correct prediction, if the model is able to identify that a ``man'' is a ``person'' and ``pool'' is somehow related to ``water''. Even the alignment to ``jumping'' and ``ball'' may be given in the representation, since the model mixed words in sportif/activity dimensions. Similarily, in the last sentence pair, we intuitively find it hard to believe, the process of ``putting the head in contact with the pillow'' is known to be implied when ``testing'' it to the model. Again, it seems more likely that the high overlap (and potentially the semantic relatedness of ``head'' and ``pillow'') are causing the correct prediction rather than actual \ac{NLU}. 
@@ -46,8 +46,8 @@ We derive all new sentence pairs from the original \ac{SNLI} train set, by repla
         A couple drinking champagne &  \\
     \bottomrule
   \end{tabular}
-  \label{tab:new_testset_samples}
   \caption{Examples from the newly generated test set.}
+    \label{tab:new_testset_samples}
 \end{table}
 Note that traditional \ac{RTE} systems would consider the first example as neutral, since a man may hold both instruments at the same time. However for being conform with the labelling scheme in \ac{SNLI}, this is considered as contradicting\footnote{We verified this by finding similar samples within the actual \ac{SNLI} dataset, also labelled as contradiction.}, based on the event-coreference assumption and the most dominant aspects of the image being  described within the sentence. This was introduced by \cite{bowman2015large} for exactly this purpose of distinguishing between different interpretations and hence reducing ambiguity of different possible labels.
 
@@ -87,8 +87,9 @@ Furthermore, we need to assign the correct label for the relationship between bo
 \specialcellc{\textbf{Downward}\\\textbf{monotone}} & \specialcell{John is hiking outside of \textit{France}\\John is hiking outside of \textit{Italy}} & neutral \\
 \bottomrule
 \end{tabular}
-\label{tab:monoton_samples}
  \caption{Comparison of co-hyponyms in upward-monotone and downward-monone sentences.}
+ \label{tab:monoton_samples}
+
 \end{table}
 In both examples ``France'' is replaced by its co-hyponym ``Italy''. Even though both words are mutually exclusive only for the upward-monotone sample, the sentence relation reflects the relation between both words. The same implication does not hold anymore for the downward-monotone sentence. Even though we can assume that most premises in \ac{SNLI} are upward monotone, especially since image captionas are more likely to explicitly describe the content of the picture, we must take into account, that whether the sentence relations corresponds to the relation of ($w_p$,$w_h$) or not, depends on the context of these words.
 
@@ -153,8 +154,8 @@ Residual-Stacked Encoder \cite{nie2017shortcut} &\textit{yes}  &\textit{yes} & $
 ESIM \citep{chen2017enhanced} &\textit{yes} &\textit{yes} & \textit{yes}\\
 \bottomrule
 \end{tabular}
-\label{tab:compare_architecture_models}
 \caption{Architectural comparison of tested neural models without external knowledge.}
+\label{tab:compare_architecture_models}
 \end{table}
 
 \subsubsection{Models with external knowledge}
@@ -192,8 +193,8 @@ WordNet Baseline & - & - & 85.8\% & - \\
 KIM \citep{chen2017natural} & SNLI & 88.6\% & 83.5\% & -5.1 \\ 
 \bottomrule
 \end{tabular}
-\label{tab:adv_results}
 \caption{Results of models on the new test set compared with the original \ac{SNLI} test set.}
+\label{tab:adv_results}
 \end{table}
 There is a clear trend, that adding \ac{MultiNLI} to the training data boosts the model's performance on the new test set. At the same time it decreases the test accuracy on SNLI, indicating that the performance, gained on \ac{SNLI} test, does not reflect the true \ac{NLU} capabilities, since clearly less lexical semantic relations are understood. Yet, compared with the original estimated performance, even by almost doubling the amount of train data with \ac{MultiNLI}, all models without external knowledge show a significant drop in performance. While MultiNLI follows the same labelling scheme as SNLI, and thus is compatible, SciTail does not specifically assume event coeference and lacks having the label \textit{contradiction}, which is dominant in the new test set. Hence, the models seem to not be able to leverage from the extended amount of data in this case. Both models with WordNet information perform significantly better than the ones without. This shows, that the lexical relations, as contained in WordNet, are sufficient to gain strong improvements on the new dataset. In addition to that, those relations have also shown to be useful for \ac{KIM} in training on \ac{SNLI} (as they are considered for the prediction). This especially shows some crucial drawbacks in the neural models without WordNet, as they clearly lack to extract those features when trained solely with textual input, by learning features based on arbitrary patterns at the cost of also meaningful (for \ac{SNLI} and naturally for \ac{NLU}) features of lexical relations. Only dropping by 5.1 points in accuracy w.r.t. the performance on \ac{SNLI}, \ac{KIM} seems substentially more stable, when sentences are adapted, forcing the model to predict based on a language understanding rather than dataset specific patterns. This of course may be due to the fact, that the new testset, being closely related to the train data and requiring the same knowledge, as added for \ac{KIM}, is highly suitable for\ac{KIM}. Thus, it still does not prove truely superior \ac{NLU}, yet it shows that they found a successful strategy of integrating this resource into neural models.
 
@@ -225,8 +226,8 @@ synonyms & 894 & \textit{happy - joyful} & 97.5\% & 99.7\% & 86.1\% & 70.5\% & 9
 total & 8,193 &  & 51.9\% &65.6\% & 62.2\% & 85.8\% & 83.5\% \\ 
 \bottomrule
 \end{tabular}
-\label{tab:acc_by_cat}
 \caption{Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}
+\label{tab:acc_by_cat}
 \end{table}
 All neural models achieve good results on categories that occur very frequently within \ac{SNLI} in general, like \textit{colors}. Also \textit{instruments} are well captures. We find that muscic instruments often occur in SNLI in very similar sentences containing some kind of \texttt{actor} and in conjunction with the instrument and the verbs "hold" or especially "play". In contradicting samples of the train data, in most cases the instrument changes. Thus our newly created sentence-pairs are very similar to those within the train data, explaining the good performance within that category. On the other hand, categories that are rare in \ac{SNLI}, like \textit{planets} or \textit{ordinals}, are not well understood by those models. As opposed to to \textit{instruments}, the relevance of \textit{ordinals} within a sentence in \ac{SNLI} usually is less crucial. Yet this originates only the commonly applied strategies by the annotators, as identified by \cite{gururangan2018annotation}. Consider for instance the sentence ``"A man racing his motorcycle comes in \textit{first}."'', which naturally yields in contradiction if we replace ``first'' by ``eights''. Yet the model without external information seemingly do not differentitate between both ordinal numbers, as annotators rather tend to change ``man'' or even ``motorcycle'', but not ``first''. Also \textit{drinks}, \textit{vegetables} and \textit{rooms} are generally harder for the model to predict for similar reasons. The reason for \textit{antonyms} being more difficult  than \textit{antonyms\_WordNet} most like arises from the fact, that they include gender-related antonyms, appearing in SNLI in abundance, that we do not include within the hand-crafted word pairs. As \textit{synonym} examples have large lexical overlap and differ only by one word, occuring in similar contexts (and subsequentially having a similar word-vector), it is no surprise, that all models achieve a good performance here. Inter-sentence-attention seems to have an advantage in this case, since only the Residual-Stacked Encoders does not improve significantly over its original test performance. We thus focus the remaining part of the analysis on contradicting sentence-pairs only.
 
@@ -263,8 +264,8 @@ The numbers on the x-axis show the upper bound of word occurences of the word-pa
 \textbf{Accuracy} & 40.2\% & 70.6\% & 91.4\% & 92.1\% & 97.5\% & 98.5\% \\
 \bottomrule
 \end{tabular}
-\label{tab:esim_acc_by_sim_samples}
 \caption{Accuracy by the amount of similar samples in \ac{SNLI} train data for ESIM on contradicting samples.}
+\label{tab:esim_acc_by_sim_samples}
 \end{table}
 The results are shown in Table \ref{tab:esim_acc_by_sim_samples}.
 It can be seen, that indeed, the performance of \ac{ESIM} is high, if it has seen $w_p$ and $w_h$ in a contradicting context in a sufficiently high amount, whereas it performs poorly, if it has not seen both words within a contradiction-labelled sample at least once. This shows, that the comparably higher performance of ESIM is matter of memorizing ($w_p$,$w_h$) as being contradictive, rather than generalization over similar constructs. Similarily, this explains the increase in accuracy when adding \ac{MultiNLI}, not because it learns to generalize better, but because it has seen slightly more contradictive word-pairs in a contradicting context. While this is sufficient to achieve a high performance on \ac{SNLI}, we show that the main goal of machine learning, to generalize over unseen textual constructions, in this case is not met. 

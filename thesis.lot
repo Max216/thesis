@@ -17,3 +17,9 @@
 \contentsline {table}{\numberline {16}{\ignorespaces Results of models on the new test set compared with the original \ac {SNLI} test set.}}{48}{table.16}
 \contentsline {table}{\numberline {17}{\ignorespaces Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}}{48}{table.17}
 \contentsline {table}{\numberline {18}{\ignorespaces Accuracy by the amount of similar samples in \ac {SNLI} train data for ESIM on contradicting samples.}}{50}{table.18}
+\contentsline {table}{\numberline {19}{\ignorespaces Examples of extracted word-pairs ($w_1$,$w_2$) for both categories, being represented by the sentence containing $w_1$ ( thus $A$) or not (thus $B$).}}{56}{table.19}
+\contentsline {table}{\numberline {20}{\ignorespaces Evaluation of experiments with additional information in the word-representations, compared to the Residual-Stacked Encoder\textsuperscript {$\dagger $} (bottom).}}{57}{table.20}
+\contentsline {table}{\numberline {21}{\ignorespaces Evaluation of experiments using multitask-learning, compared with the Residual-Stacked Encoder\textsuperscript {$\dagger $.}}}{58}{table.21}
+\contentsline {table}{\numberline {22}{\ignorespaces Accuracy per category for concatenated embeddings using Attract-Repel or Hyponyms-5.}}{59}{table.22}
+\contentsline {table}{\numberline {23}{\ignorespaces Accuracy per category for selected models using multitask-learning.}}{60}{table.23}
+\contentsline {table}{\numberline {24}{\ignorespaces Accuracy per category of three selected multitask-learning experiments compared with Residual-Stacked Encoder\textsuperscript {$\dagger $} on samples covered by extracted word-pairs.}}{61}{table.24}

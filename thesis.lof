@@ -25,3 +25,7 @@
 \contentsline {figure}{\numberline {24}{\ignorespaces Accuracy by cosine similarity reached by Decomposable Attention (without fine-tuned embeddings).}}{49}{figure.24}
 \contentsline {figure}{\numberline {25}{\ignorespaces Accuracy by word freqency for Residual-Stacked Encoder and ESIM.}}{50}{figure.25}
 \contentsline {figure}{\numberline {26}{\ignorespaces Architecture of the Residual-Stacked Encoder with multitask learning for the sentence-representations.}}{54}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Comparison of contradicting samples (different w.r.t. correctness from Residual-Stacked Encoder\textsuperscript {$\dagger $}). for Hypernyms-5, by the amont of shared hypernym embeddings.}}{59}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Aligned $p$ and $h$ for all contradicting sampes, covered by the fused WordNet information, correctly predicted (left) or mis-predicted (right).}}{62}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Aligned $p$ and $h$, correctly predicted (left) and mis-predicted (right) for multitask-learned \textit {300D-0.75 STD}.}}{62}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Aligned $p$ and $h$, of contradicting (left) and entailing (right) samples for multitask-learned \textit {300D-0.75 max-pool}.}}{63}{figure.30}

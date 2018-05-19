@@ -457,16 +457,6 @@ Tim Rockt{\"a}schel, Edward Grefenstette, Karl~Moritz Hermann, Tom{\'a}{\v{s}}
 \newblock Reasoning about entailment with neural attention.
 \newblock \emph{arXiv preprint arXiv:1509.06664}.
 
-\bibitem[{Rubinstein et~al.(2015)Rubinstein, Levi, Schwartz, and
-  Rappoport}]{rubinstein2015well}
-Dana Rubinstein, Effi Levi, Roy Schwartz, and Ari Rappoport. 2015.
-\newblock How well do distributional models capture different types of semantic
-  knowledge?
-\newblock In \emph{Proceedings of the 53rd Annual Meeting of the Association
-  for Computational Linguistics and the 7th International Joint Conference on
-  Natural Language Processing (Volume 2: Short Papers)}, volume~2, pages
-  726--730.
-
 \bibitem[{R{\"u}ckl{\'e} et~al.(2018)R{\"u}ckl{\'e}, Eger, Peyrard, and
   Gurevych}]{ruckle2018concatenated}
 Andreas R{\"u}ckl{\'e}, Steffen Eger, Maxime Peyrard, and Iryna Gurevych. 2018.
@@ -506,6 +496,13 @@ Fabian~M Suchanek, Gjergji Kasneci, and Gerhard Weikum. 2007.
 \newblock Yago: a core of semantic knowledge.
 \newblock In \emph{Proceedings of the 16th international conference on World
   Wide Web}, pages 697--706. ACM.
+
+\bibitem[{Sukhbaatar et~al.(2015)Sukhbaatar, Weston, Fergus
+  et~al.}]{sukhbaatar2015end}
+Sainbayar Sukhbaatar, Jason Weston, Rob Fergus, et~al. 2015.
+\newblock End-to-end memory networks.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  2440--2448.
 
 \bibitem[{Tatu and Moldovan(2005)}]{tatu2005semantic}
 Marta Tatu and Dan Moldovan. 2005.

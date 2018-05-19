@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.13)  14 MAY 2018 23:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.13)  19 MAY 2018 22:03
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1204,7 +1204,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 5
 0.
 
-<tud_logo.pdf, id=311, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=307, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
 <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf  used on input line 50.
@@ -1240,7 +1240,7 @@ LaTeX Font Info:    Try loading font information for T1+5sf on input line 50.
 (/home/max/mytexmf/tex/latex/tex-tudfonts/softmake/stafford/t15sf.fd
 File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
 )
-<by-nc-nd.pdf, id=325, 121.45375pt x 43.16125pt>
+<by-nc-nd.pdf, id=321, 121.45375pt x 43.16125pt>
 File: by-nc-nd.pdf Graphic file (type pdf)
 <use by-nc-nd.pdf>
 Package pdftex.def Info: by-nc-nd.pdf  used on input line 50.
@@ -1392,7 +1392,7 @@ although it is yet undefined on input line 30.
 
 
 ]
-<fig/lexical_relations.png, id=582, 831.105pt x 375.4025pt>
+<fig/lexical_relations.png, id=577, 831.105pt x 375.4025pt>
 File: fig/lexical_relations.png Graphic file (type png)
 <use fig/lexical_relations.png>
 Package pdftex.def Info: fig/lexical_relations.png  used on input line 36.
@@ -1405,7 +1405,7 @@ although it is yet undefined on input line 55.
 Package acronym Info: Label `acro:biLSTM' newly defined as it shall be overridd
 en
 although it is yet undefined on input line 58.
-<fig/sentence_encoder_shortcut.png, id=626, 619.31375pt x 450.68375pt>
+<fig/sentence_encoder_shortcut.png, id=621, 619.31375pt x 450.68375pt>
 File: fig/sentence_encoder_shortcut.png Graphic file (type png)
 <use fig/sentence_encoder_shortcut.png>
 Package pdftex.def Info: fig/sentence_encoder_shortcut.png  used on input line 
@@ -1458,7 +1458,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 3.89163pt on input line 105.
  [10]) [11] (tex/related_work.tex
-<fig/wordnet_example.png, id=757, 625.33624pt x 256.96pt>
+<fig/wordnet_example.png, id=752, 625.33624pt x 256.96pt>
 File: fig/wordnet_example.png Graphic file (type png)
 <use fig/wordnet_example.png>
 Package pdftex.def Info: fig/wordnet_example.png  used on input line 9.
@@ -1530,12 +1530,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-<fig/rnn.png, id=1157, 912.40875pt x 309.155pt>
+<fig/rnn.png, id=1152, 912.40875pt x 309.155pt>
 File: fig/rnn.png Graphic file (type png)
 <use fig/rnn.png>
 Package pdftex.def Info: fig/rnn.png  used on input line 19.
 (pdftex.def)             Requested size: 461.85568pt x 156.49014pt.
-<fig/example_process_understanding.png, id=1171, 612.2875pt x 106.3975pt>
+<fig/example_process_understanding.png, id=1166, 612.2875pt x 106.3975pt>
 File: fig/example_process_understanding.png Graphic file (type png)
 <use fig/example_process_understanding.png>
 Package pdftex.def Info: fig/example_process_understanding.png  used on input l
@@ -1551,13 +1551,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
 Package acronym Info: Label `acro:SD' newly defined as it shall be overridden
 although it is yet undefined on input line 48.
-<fig/sd.png, id=1192, 876.27374pt x 480.79625pt>
+<fig/sd.png, id=1187, 876.27374pt x 480.79625pt>
 File: fig/sd.png Graphic file (type png)
 <use fig/sd.png>
 Package pdftex.def Info: fig/sd.png  used on input line 51.
 (pdftex.def)             Requested size: 414.85715pt x 227.62204pt.
 [21 <./fig/example_process_understanding.png>]
-<fig/finpone.png, id=1208, 773.89125pt x 183.68625pt>
+<fig/finpone.png, id=1203, 773.89125pt x 183.68625pt>
 File: fig/finpone.png Graphic file (type png)
 <use fig/finpone.png>
 Package pdftex.def Info: fig/finpone.png  used on input line 64.
@@ -1567,24 +1567,24 @@ LaTeX Font Info:    Try loading font information for T1+txtt on input line 68.
 (/home/max/.miktex/texmfs/install/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 ) [22 <./fig/sd.png>]
-<fig/finsynpos3.png, id=1238, 963.6pt x 393.47pt>
+<fig/finsynpos3.png, id=1233, 963.6pt x 393.47pt>
 File: fig/finsynpos3.png Graphic file (type png)
 <use fig/finsynpos3.png>
 Package pdftex.def Info: fig/finsynpos3.png  used on input line 77.
 (pdftex.def)             Requested size: 487.75368pt x 199.16928pt.
  [23 <./fig/finpone.png>]
-<fig/findmf.png, id=1258, 894.34125pt x 256.96pt>
+<fig/findmf.png, id=1253, 894.34125pt x 256.96pt>
 File: fig/findmf.png Graphic file (type png)
 <use fig/findmf.png>
 Package pdftex.def Info: fig/findmf.png  used on input line 94.
 (pdftex.def)             Requested size: 495.15073pt x 142.26378pt.
  [24 <./fig/finsynpos3.png>]
-<fig/mf_basic.png, id=1275, 1537.745pt x 422.57875pt>
+<fig/mf_basic.png, id=1270, 1537.745pt x 422.57875pt>
 File: fig/mf_basic.png Graphic file (type png)
 <use fig/mf_basic.png>
 Package pdftex.def Info: fig/mf_basic.png  used on input line 106.
 (pdftex.def)             Requested size: 465.92603pt x 128.0374pt.
-<fig/mf_detailed.png, id=1278, 1386.17876pt x 416.55624pt>
+<fig/mf_detailed.png, id=1273, 1386.17876pt x 416.55624pt>
 File: fig/mf_detailed.png Graphic file (type png)
 <use fig/mf_detailed.png>
 Package pdftex.def Info: fig/mf_detailed.png  used on input line 114.
@@ -1595,13 +1595,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--120
  []
 
 [25 <./fig/findmf.png> <./fig/mf_basic.png>]
-<fig/mf_detailed_f.png, id=1290, 1194.4625pt x 420.57124pt>
+<fig/mf_detailed_f.png, id=1285, 1194.4625pt x 420.57124pt>
 File: fig/mf_detailed_f.png Graphic file (type png)
 <use fig/mf_detailed_f.png>
 Package pdftex.def Info: fig/mf_detailed_f.png  used on input line 125.
 (pdftex.def)             Requested size: 404.0341pt x 142.26378pt.
  [26 <./fig/mf_detailed.png> <./fig/mf_detailed_f.png>]
-Underfull \hbox (badness 2245) in paragraph at lines 145--145
+Underfull \hbox (badness 2245) in paragraph at lines 144--144
 \T1/5fp/m/n/9.5 dimensional sentence representations
  []
 
@@ -1649,7 +1649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--218
  []
 
 [28] [29]
-<fig/find_syntax_vb.png, id=1343, 1304.875pt x 440.64626pt>
+<fig/find_syntax_vb.png, id=1338, 1304.875pt x 440.64626pt>
 File: fig/find_syntax_vb.png Graphic file (type png)
 <use fig/find_syntax_vb.png>
 Package pdftex.def Info: fig/find_syntax_vb.png  used on input line 243.
@@ -1659,7 +1659,7 @@ Overfull \hbox (7.61104pt too wide) in paragraph at lines 243--244
  [][] 
  []
 
-<fig/find_syntax_subj_obj.png, id=1353, 1377.145pt x 431.6125pt>
+<fig/find_syntax_subj_obj.png, id=1348, 1377.145pt x 431.6125pt>
 File: fig/find_syntax_subj_obj.png Graphic file (type png)
 <use fig/find_syntax_subj_obj.png>
 Package pdftex.def Info: fig/find_syntax_subj_obj.png  used on input line 252.
@@ -1670,7 +1670,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--258
  []
 
 [30 <./fig/find_syntax_vb.png>] [31 <./fig/find_syntax_subj_obj.png>]
-<fig/alignment_entailment_sample_general.png, id=1376, 788.9475pt x 333.245pt>
+<fig/alignment_entailment_sample_general.png, id=1371, 788.9475pt x 333.245pt>
 File: fig/alignment_entailment_sample_general.png Graphic file (type png)
 <use fig/alignment_entailment_sample_general.png>
 Package pdftex.def Info: fig/alignment_entailment_sample_general.png  used on i
@@ -1681,14 +1681,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--292
 
  []
 
-<fig/alignment_entailment_sample_mult.png, id=1379, 812.03375pt x 336.25626pt>
+<fig/alignment_entailment_sample_mult.png, id=1374, 812.03375pt x 336.25626pt>
 File: fig/alignment_entailment_sample_mult.png Graphic file (type png)
 <use fig/alignment_entailment_sample_mult.png>
 Package pdftex.def Info: fig/alignment_entailment_sample_mult.png  used on inpu
 t line 297.
 (pdftex.def)             Requested size: 480.97914pt x 199.16928pt.
 [32 <./fig/alignment_entailment_sample_general.png>]
-<fig/alignment_contr_sample_general.png, id=1393, 900.36375pt x 377.41pt>
+<fig/alignment_contr_sample_general.png, id=1388, 900.36375pt x 377.41pt>
 File: fig/alignment_contr_sample_general.png Graphic file (type png)
 <use fig/alignment_contr_sample_general.png>
 Package pdftex.def Info: fig/alignment_contr_sample_general.png  used on input 
@@ -1696,7 +1696,7 @@ line 307.
 (pdftex.def)             Requested size: 475.1435pt x 199.16928pt.
  [33 <./fig/alignment_entailment_sample_mult.png> <./fig/alignment_contr_sample
 _general.png>]
-<fig/contradiction_alignment_unshared_dimwise.png, id=1403, 709.65125pt x 508.9
+<fig/contradiction_alignment_unshared_dimwise.png, id=1398, 709.65125pt x 508.9
 0125pt>
 File: fig/contradiction_alignment_unshared_dimwise.png Graphic file (type png)
 <use fig/contradiction_alignment_unshared_dimwise.png>
@@ -1704,19 +1704,19 @@ Package pdftex.def Info: fig/contradiction_alignment_unshared_dimwise.png  used
  on input line 319.
 (pdftex.def)             Requested size: 277.73743pt x 199.16928pt.
  [34 <./fig/contradiction_alignment_unshared_dimwise.png>]
-<fig/sample_coverage_prob.png, id=1413, 909.3975pt x 496.85625pt>
+<fig/sample_coverage_prob.png, id=1408, 909.3975pt x 496.85625pt>
 File: fig/sample_coverage_prob.png Graphic file (type png)
 <use fig/sample_coverage_prob.png>
 Package pdftex.def Info: fig/sample_coverage_prob.png  used on input line 342.
 (pdftex.def)             Requested size: 312.46587pt x 170.71652pt.
-<fig/entailment_uninversed.png, id=1417, 537.00626pt x 454.69875pt>
+<fig/entailment_uninversed.png, id=1412, 537.00626pt x 454.69875pt>
 File: fig/entailment_uninversed.png Graphic file (type png)
 <use fig/entailment_uninversed.png>
 Package pdftex.def Info: fig/entailment_uninversed.png  used on input line 352.
 
 (pdftex.def)             Requested size: 218.42046pt x 184.9429pt.
  [35 <./fig/sample_coverage_prob.png>]
-<fig/alignment_entailment_inversed.png, id=1430, 1105.12875pt x 456.70625pt>
+<fig/alignment_entailment_inversed.png, id=1425, 1105.12875pt x 456.70625pt>
 File: fig/alignment_entailment_inversed.png Graphic file (type png)
 <use fig/alignment_entailment_inversed.png>
 Package pdftex.def Info: fig/alignment_entailment_inversed.png  used on input l
@@ -1724,7 +1724,7 @@ ine 371.
 (pdftex.def)             Requested size: 481.94127pt x 199.16928pt.
  [36 <./fig/entailment_uninversed.png> <./fig/alignment_entailment_inversed.png
 >]
-<fig/neutr_contr_uninversed.png, id=1439, 1099.10625pt x 451.6875pt>
+<fig/neutr_contr_uninversed.png, id=1434, 1099.10625pt x 451.6875pt>
 File: fig/neutr_contr_uninversed.png Graphic file (type png)
 <use fig/neutr_contr_uninversed.png>
 Package pdftex.def Info: fig/neutr_contr_uninversed.png  used on input line 379
@@ -1736,7 +1736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--409
  []
 
 [38] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 470--472
 
  []
 
@@ -1750,27 +1750,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
 [43]
 Package acronym Info: Label `acro:HIT' newly defined as it shall be overridden
-although it is yet undefined on input line 96.
-<fig/sample_hit.png, id=1591, 1026.83624pt x 573.14125pt>
+although it is yet undefined on input line 97.
+<fig/sample_hit.png, id=1586, 1026.83624pt x 573.14125pt>
 File: fig/sample_hit.png Graphic file (type png)
 <use fig/sample_hit.png>
-Package pdftex.def Info: fig/sample_hit.png  used on input line 107.
+Package pdftex.def Info: fig/sample_hit.png  used on input line 108.
 (pdftex.def)             Requested size: 356.82848pt x 199.16928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--113
+Underfull \hbox (badness 10000) in paragraph at lines 105--114
 
  []
 
 [44] [45 <./fig/sample_hit.png>] [46] [47] [48]
-<fig/acc_by_cos.png, id=1728, 337.86224pt x 253.54726pt>
+<fig/acc_by_cos.png, id=1723, 337.86224pt x 253.54726pt>
 File: fig/acc_by_cos.png Graphic file (type png)
 <use fig/acc_by_cos.png>
-Package pdftex.def Info: fig/acc_by_cos.png  used on input line 239.
+Package pdftex.def Info: fig/acc_by_cos.png  used on input line 240.
 (pdftex.def)             Requested size: 189.58305pt x 142.26378pt.
-<fig/esim_res_acc_by_freq.png, id=1731, 462.528pt x 346.896pt>
+<fig/esim_res_acc_by_freq.png, id=1726, 462.528pt x 346.896pt>
 File: fig/esim_res_acc_by_freq.png Graphic file (type png)
 <use fig/esim_res_acc_by_freq.png>
-Package pdftex.def Info: fig/esim_res_acc_by_freq.png  used on input line 252.
+Package pdftex.def Info: fig/esim_res_acc_by_freq.png  used on input line 253.
 (pdftex.def)             Requested size: 227.6217pt x 170.71652pt.
  [49 <./fig/acc_by_cos.png>])
 [50 <./fig/esim_res_acc_by_freq.png>] [51] (tex/approaches_ext_res.tex [52
@@ -1779,49 +1779,103 @@ Package pdftex.def Info: fig/esim_res_acc_by_freq.png  used on input line 252.
 ]
 Package acronym Info: Label `acro:MSE' newly defined as it shall be overridden
 although it is yet undefined on input line 21.
-<fig/mt_architecture.png, id=1796, 665.48625pt x 401.5pt>
+<fig/mt_architecture.png, id=1792, 665.48625pt x 401.5pt>
 File: fig/mt_architecture.png Graphic file (type png)
 <use fig/mt_architecture.png>
 Package pdftex.def Info: fig/mt_architecture.png  used on input line 34.
 (pdftex.def)             Requested size: 259.38628pt x 156.49014pt.
 
-[53] [54 <./fig/mt_architecture.png>]) [55] (tex/conclusion.tex) [56
+[53] [54 <./fig/mt_architecture.png>] [55]
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 9.50406pt on input line 78.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 6.62404pt on input line 78.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 5.66403pt on input line 78.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 7.87204pt on input line 96.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 5.56804pt on input line 96.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 4.70403pt on input line 96.
+ [56]
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 4.6368pt on input line 101.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 3.97444pt on input line 101.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--162
+
+ []
+
+[57]
+<fig/analyse_hypern5.png, id=1888, 892.33376pt x 372.39125pt>
+File: fig/analyse_hypern5.png Graphic file (type png)
+<use fig/analyse_hypern5.png>
+Package pdftex.def Info: fig/analyse_hypern5.png  used on input line 203.
+(pdftex.def)             Requested size: 374.99548pt x 156.49014pt.
+ [58] [59 <./fig/analyse_hypern5.png>] [60]
+<fig/base_correct_incorrect_c.png, id=1935, 1054.94125pt x 456.70625pt>
+File: fig/base_correct_incorrect_c.png Graphic file (type png)
+<use fig/base_correct_incorrect_c.png>
+Package pdftex.def Info: fig/base_correct_incorrect_c.png  used on input line 2
+76.
+(pdftex.def)             Requested size: 460.05473pt x 199.16928pt.
+<fig/300d75_correct_incorrect_c.png, id=1939, 1111.15125pt x 481.8pt>
+File: fig/300d75_correct_incorrect_c.png Graphic file (type png)
+<use fig/300d75_correct_incorrect_c.png>
+Package pdftex.def Info: fig/300d75_correct_incorrect_c.png  used on input line
+ 283.
+(pdftex.def)             Requested size: 459.32196pt x 199.16928pt.
 
 
-]
-(thesis.bbl [57
+LaTeX Warning: Reference `masking_e_c' on page 61 undefined on input line 287.
+
+<fig/masking_e_c.png, id=1941, 1107.13625pt x 450.68375pt>
+File: fig/masking_e_c.png Graphic file (type png)
+<use fig/masking_e_c.png>
+Package pdftex.def Info: fig/masking_e_c.png  used on input line 290.
+(pdftex.def)             Requested size: 489.27003pt x 199.16928pt.
+[61] [62 <./fig/base_correct_incorrect_c.png> <./fig/300d75_correct_incorrect_c
+.png>]) [63 <./fig/masking_e_c.png>] [64] (tex/conclusion.tex) [65
 
 
-] [58] [59] [60]) [61] (thesis.lof)
+] (thesis.bbl [66
+
+
+] [67] [68] [69]) [70] (thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [62
+ [71
 
 
 ] (thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [63
+ [72
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
-
-(thesis.aux)
+ (thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D3E2FBA3BFA6D840C83966EADF25A849;6089.
+(rerunfilecheck)             Checksum: 1D0AF54FE6128A2453B42DC44B80EE8F;6069.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15308 strings out of 494894
- 242949 string characters out of 3178852
- 443563 words of memory out of 3000000
- 18085 multiletter control sequences out of 15000+200000
- 234914 words of font info for 220 fonts, out of 3000000 for 9000
+ 15381 strings out of 494894
+ 244202 string characters out of 3178852
+ 451237 words of memory out of 3000000
+ 18122 multiletter control sequences out of 15000+200000
+ 271589 words of font info for 235 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  65i,23n,77p,9147b,674s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/max/.miktex/texmfs/install/fonts/enc/dvips/ly1/texnansi.enc}{/home/max
@@ -1831,20 +1885,21 @@ pe1/softmake/charter/5chb8a.pfb></home/max/mytexmf/fonts/type1/softmake/charter
 max/mytexmf/fonts/type1/softmake/frontpage/5fpm8a.pfb></home/max/mytexmf/fonts/
 type1/softmake/frontpage/5fpr8a.pfb></home/max/mytexmf/fonts/type1/softmake/fro
 ntpage/5fpr8a.pfb></home/max/mytexmf/fonts/type1/softmake/stafford/5sfr8a.pfb><
-/home/max/.miktex/texmfs/install/fonts/type1/bitstrea/charter/bchr8a.pfb></home
-/max/.miktex/texmfs/install/fonts/type1/bitstrea/charter/bchri8a.pfb></home/max
-/.miktex/texmfs/install/fonts/type1/mathdesign/mdbch/md-chr7m.pfb></home/max/.m
-iktex/texmfs/install/fonts/type1/mathdesign/mdbch/md-chr7t.pfb></home/max/.mikt
-ex/texmfs/install/fonts/type1/mathdesign/mdbch/md-chr7v.pfb></home/max/.miktex/
-texmfs/install/fonts/type1/mathdesign/mdbch/md-chr7y.pfb></home/max/.miktex/tex
-mfs/install/fonts/type1/mathdesign/mdbch/md-chri7m.pfb></home/max/.miktex/texmf
-s/install/fonts/type1/mathdesign/mdbch/md-chrma.pfb></home/max/.miktex/texmfs/i
-nstall/fonts/type1/mathdesign/mdbch/md-chrmb.pfb></home/max/.miktex/texmfs/inst
-all/fonts/type1/adobe/utopia/putri8a.pfb></home/max/.miktex/texmfs/install/font
-s/type1/public/txfonts/t1xtt.pfb>
-Output written on thesis.pdf (65 pages, 1806298 bytes).
+/home/max/.miktex/texmfs/install/fonts/type1/bitstrea/charter/bchb8a.pfb></home
+/max/.miktex/texmfs/install/fonts/type1/bitstrea/charter/bchr8a.pfb></home/max/
+.miktex/texmfs/install/fonts/type1/bitstrea/charter/bchri8a.pfb></home/max/.mik
+tex/texmfs/install/fonts/type1/mathdesign/mdbch/md-chr7m.pfb></home/max/.miktex
+/texmfs/install/fonts/type1/mathdesign/mdbch/md-chr7t.pfb></home/max/.miktex/te
+xmfs/install/fonts/type1/mathdesign/mdbch/md-chr7v.pfb></home/max/.miktex/texmf
+s/install/fonts/type1/mathdesign/mdbch/md-chr7y.pfb></home/max/.miktex/texmfs/i
+nstall/fonts/type1/mathdesign/mdbch/md-chri7m.pfb></home/max/.miktex/texmfs/ins
+tall/fonts/type1/mathdesign/mdbch/md-chrma.pfb></home/max/.miktex/texmfs/instal
+l/fonts/type1/mathdesign/mdbch/md-chrmb.pfb></home/max/.miktex/texmfs/install/f
+onts/type1/adobe/utopia/putri8a.pfb></home/max/.miktex/texmfs/install/fonts/typ
+e1/public/txfonts/t1xtt.pfb>
+Output written on thesis.pdf (74 pages, 2098896 bytes).
 PDF statistics:
- 2093 PDF objects out of 2487 (max. 8388607)
- 411 named destinations out of 1000 (max. 500000)
- 769 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2275 PDF objects out of 2487 (max. 8388607)
+ 437 named destinations out of 1000 (max. 500000)
+ 781 words of extra memory for PDF output out of 10000 (max. 10000000)
 

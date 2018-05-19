@@ -21,8 +21,8 @@ the model is required to correctly align ``Donald Trump'' with ``The president o
 \specialcell{A man inspects the uniform of a figure in some East Asian country.\\The man is sleeping.} & contradiction\\
 \bottomrule
 \end{tabular}
-\label{tab:label_examples}
 \caption{Example sentence-pairs for each possible label, taken from \href{https://nlp.stanford.edu/projects/snli/}{SNLI Leaderboard}}.
+\label{tab:label_examples}
 \end{table}
 If a human can infer that $h$ is very likely to be true, given the fact that $p$ is true, the gold label is entailment. In the first example, the hypothesis describes men ``playing sport'', which amongs other includes playing the ``soccer game'', and thus definetly still holds. In the second sentence pair, both sentences describe two smiling man, however the hypothesis adds information, that they are smiling ``at the cats''. While this new information may be true, it only is one of many potential scenarios and unkown, given the premise, thus the sample is labelled as neutral. Ih $h$ cannot be true if $p$ is true, the label is contradiction. In the last example, obviously the man cannot ``inspect'' anything and ``sleep'' at the same time, thus the labelling as contradiction.
 
