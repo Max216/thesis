@@ -1,5 +1,5 @@
 \section{Related Work}\label{sec:related_work}
-Much work has been done to create strong models for \ac{NLI} and we show some successful strategies in Section §\ref{sec:models_snli}. Relevant datasets for \ac{NLI} are introduced in Section §\ref{sec:basics_datasets}. Before the excessive usage of neural networks, many models heavily relied on external resources, that have either been manually created in order to improve tools for \ac{NLP}, or arised in a crowd sourced manner for a different purpose, but can also be exploited. In §\ref{sec:ext_resources} we show an overview of some external resources that might improve the performance of neural models on \ac{NLI}. While most neural models rely solely on distributed word-representations as external information and perform quite good, prior work \citep{bos2005recognising,tatu2005semantic} depended to large degree on those resources. In Section§\ref{sec:ext_res_in_nn} we show several approaches trying to combine the power of well structured, knowledge-rich resources with the generalization power, coming from neural models with distributed word embeddings.
+Much work has been done to create strong models for \ac{NLI} and we show some successful strategies in Section §\ref{sec:models_snli}. Relevant datasets for \ac{NLI} are introduced in Section §\ref{sec:basics_datasets}. Before the excessive usage of neural networks, many models heavily relied on external resources, that have either been manually created in order to improve tools for \ac{NLP}, or arised in a crowd sourced manner for a different purpose, but can also be exploited. In Section §\ref{sec:ext_resources} we show an overview of some external resources that might improve the performance of neural models on \ac{NLI}. While most neural models rely solely on distributed word-representations as external information and perform quite good, prior work \citep{bos2005recognising,tatu2005semantic} depended to large degree on those resources. In Section §\ref{sec:ext_res_in_nn} we show several approaches trying to combine the power of well structured, knowledge-rich resources with the generalization power, coming from neural models with distributed word embeddings.
 \subsection{External Resources}\label{sec:ext_resources}
 A large variety of knowledge bases exist, containing for instance lexical relations or commonly known world knowledge, which can be helpful for improving the performance on \ac{NLI}. Research has shown that both, manually created and crowd-sourced resources, can successfully be applied in many tasks of \ac{NLP}. In this section we only show WordNet and Wikipedia, containing different information that we consider to be useful for \ac{NLI} and \ac{NLU}, as well as two resources combining multiple resources and thus providing a huge amount of readily-available knowledge.
 
@@ -57,6 +57,7 @@ As we conduct most of the experiments of this work on \ac{SNLI}, it is important
 \begin{center}
 \begin{table}[htt]
 \begin{center}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lll}
 \textbf{Premise} & \textbf{Hypothesis} & \textbf{Label} \\
 \toprule
@@ -71,7 +72,7 @@ As we conduct most of the experiments of this work on \ac{SNLI}, it is important
 &A basketball game between rivals. & \textit{neutral} \\
 &A volleyball game. & \textit{contradiction} \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{center}
 \caption{Example sentence pairs, taken from \ac{SNLI}, showing typical sentences within the dataset.}
 \label{table:snli_example}
@@ -97,6 +98,7 @@ Table \ref{table:multinli_example} depicts a few samples of different genres\foo
 \begin{center}
 \begin{table}[h]
 \begin{center}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llll}
 \textbf{Premise} & \textbf{Hypothesis} & \textbf{Label}  & \textbf{Genre} \\
 \toprule
@@ -113,7 +115,7 @@ Table \ref{table:multinli_example} depicts a few samples of different genres\foo
 & & & \\
 
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{center}
 \caption{Example sentence pairs from \ac{MultiNLI}, taken from RepEval 2017 Shared Task, showing samples of different genres.}
 \label{table:multinli_example}
@@ -188,7 +190,7 @@ There have been several approaches to integrate knowledge of different kind (as 
 A very intuitive way to integrate external resources is, to enrich word-embeddings with additional information. As most neural models depend on vector representations for words anyway, any imrovement of word-representations can be adapted with very limited effort to most models.
 
 \paragraph*{Joint learning of distributional embeddings with external information}
-\cite{xu2014rc} differentiate between \textit{categorical} (attributes of words like the ``gender'') and \textit{relational} (relations between words, like ``child-of'', ``is-a'', e.t.c.) knowledge and train the word-embeddings from scratch, using three objective functions simultaneously. They use skip-gram to encode distributional properties. At the same time, they minimize the distance between words, that share the same category, thus clustering words by their categorical similarities. Third, they represent a relation as a vect or $r$,  and optimize word vectors, such that for a word $w_1$, connected to another word $w_2$ via relation $r$ the equation $w_1 + r \simeq w_2$ holds. \cite{liu2015learning} construct enriched embeddings by defining it as a constrained optimization problem. Specifically, they create constraints by ranking word similarities such that for instance synonyms should be more similar than antonyms or hyponyms should be more similar to close hypernyms than to distant hypernyms. Finally they include those contraints into the training process with skip-gram. 
+\cite{xu2014rc} differentiate between \textit{categorical} (attributes of words like the ``gender'') and \textit{relational} (relations between words, like ``child-of'', ``is-a'', e.t.c.) knowledge and train the word-embeddings from scratch, using three objective functions simultaneously. They use skip-gram\footnote{Skip-gram essentially optimizes the prediction of the probability of context-words appearing in the (close) context of a target word \citep{goldberg2014word2vec}.} to encode distributional properties. At the same time, they minimize the distance between words, that share the same category, thus clustering words by their categorical similarities. Third, they represent a relation as a vect or $r$,  and optimize word vectors, such that for a word $w_1$, connected to another word $w_2$ via relation $r$ the equation $w_1 + r \simeq w_2$ holds. \cite{liu2015learning} construct enriched embeddings by defining it as a constrained optimization problem. Specifically, they create constraints by ranking word similarities such that for instance synonyms should be more similar than antonyms or hyponyms should be more similar to close hypernyms than to distant hypernyms. Finally they include those contraints into the training process with skip-gram. 
 \paragraph*{Post-processing existing representations}
  \cite{faruqui2015retrofitting} propose a method called \textit{Retrofitting}, a post-processing method than can be applied on any pre-trained word-representations. They reduce the eucledian distance between words, that are connected with a lexical semantic relation within a resource, while also keeping the representations close to the original neighbouring word-representations. Attract-Repel \citep{mrkvsic2017semantic} is another retrofitting method, essentially pulling synonyms closer to each other while pushing antonyms further apart in vector space, while trying to keep the original distributional information. Similarily \cite{vulic2017specialising} build on attract-repel, adding hypernym relations for the context of lexical entailment, by using an asymmetric distance measure between hypernym-hyponym pairs.
  

@@ -204,6 +204,7 @@ We take a closer look on the performance achieved by the models without external
 Table \ref{tab:acc_by_cat} shows the accuracy per category, as defined when creating the word-pairs, for all models, including \ac{KIM} and the WordNet baseline. As not all categories contain an even amont of sanples, we additionally supply information about this figure, together with sample words for a better understanding, what each category represents. Originating from our word-pairs, almost all categories are majority labelled contradiction, solely synonyms mostly are labelled as entailment.
 \begin{table}[tph!]
 \centering
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lrc|ccccc} 
 \toprule
 \textbf{Category} & \textbf{Amount} & \specialcellc{\textbf{Example}\\\textbf{Words}} & \specialcellc{\textbf{Decomposable}\\\textbf{Attention}} & \textbf{ESIM} & \specialcellc{\textbf{Residual}\\\textbf{Encoders}} & \specialcellc{\textbf{WordNet}\\\textbf{Baseline}} & \textbf{KIM}  \\ \midrule
@@ -225,7 +226,7 @@ synonyms & 894 & \textit{happy - joyful} & 97.5\% & 99.7\% & 86.1\% & 70.5\% & 9
 \midrule
 total & 8,193 &  & 51.9\% &65.6\% & 62.2\% & 85.8\% & 83.5\% \\ 
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}
 \label{tab:acc_by_cat}
 \end{table}

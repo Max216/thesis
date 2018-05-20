@@ -1,4 +1,4 @@
-\documentclass[article,type=msc,colorback,accentcolor=tud9c]{tudthesis}
+\documentclass[article,type=msc,11pt,colorback,accentcolor=tud9c]{tudthesis}
 \usepackage[english]{babel}
 \usepackage{titlesec}
 \usepackage{natbib}
@@ -38,25 +38,29 @@
 \newcommand{\specialcellc}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
+\setinstitutionlogo{UKP_logo}
+
 \begin{document}
   \thesistitle{Understanding and Improving Neural Models for Natural Language Interference using External Resources}%
     {Verständnis und Verbesserung Neuronaler Modelle für Natural languge inference}
   \author{Max Glockner}
-  \referee{Prof. Dr. Iryna Gurevych}{Dr. Yoav Goldberg}[Dr. Andreas R\"ucké]
+  \referee{Prof. Dr. Iryna Gurevych}{Andreas R\"ucklé}[Dr.-Ing. Andreas Hanselowski]
   \department{Fachbereich Physik}
   \group{Institut f"ur Angewandte Festkernphysik\\Speerspitze der Elite}
-  \dateofexam{\today}{\today}
-  \tuprints{12345}{1234}
+  %\dateofexam{\today}{\today}
+  %\tuprints{2616926}{2616926}
   \makethesistitle
-  \affidavit{J. Walker}
+  \affidavit{Max Glockner}
 
 \section*{Abstract}
 \addtocounter{section}{0}
-TODO in English...
+In recent years, neural approaches relying on distributed word-representations reached state-of-the-art performances on many tasks of Natural Language Processing. Even though these representations lack many information that is present within lexical resources, most neural models to date neglect these resourses. In this work we analyse one specific model for the task of Natural Language Inference, in order to identify ways to incorporate lexical semantic relations from WordNet. We exploit the max-pooling mechanism, used to generate the fixed length sentence representations, to identify what information is encoded by the model, how this is done and how the identified encoding scheme can finally be used to derive the prediction label. Even though the high performance of neural networks for Natural Lnguage Inference suggests, that this task is well understood, we show by creating an additional testset, derived from the trainset, that several state-of-the-art models can easily be failed with simple lexical inferences, Doing so, we show that the performance does not stem from a good Natural Language Understanding but relies on dataset-specific pattern, indicating the need to infer this information from external resources. We target tis problem by inferring WordNet information by either concatenating new vord-vectors to the orignal word-representations, or by changing sentence-representations, based on this information, using multitask-learning. While both experiments do not yield any improvements, we identify the need include external information in a general and easy-to-exploit way for the network, in order to overcome problems from dominant arbitrary dataset-specific patterns and enable the generalization of specific word-relations, even if some are not directly used within the train data.
+\newpage\cleardoublepage
 \section*{Zusammenfassung}
+In den letzten Jahren erreichten neuronale Netzwerke State-of-the-Art Ergebnisse in vielen Bereichen von Natural Language Processing, indem sie ausschließlich auf Informationen aus kontextbezogenen Wortrepräsentationen zurückgreifen. Obwohl diese Repräsentationen ein Defizit an vielen Informationen aufweisen, die in lexikalischen Ressourcen verfügbar sind, werden diese Ressourcen weitgehend bei neuronalen Ansätzen ignoriert. In dieser Arbeit widmen wir uns der Analyse eines speziellen Models für Natural Language Inference, mit dem ZielStrategien zu identifizieren, lexikalisch-semantische Beziehungen aus WordNet zu integrieren. Hierzu nutzen wir den max-pooling Mechanismus aus, der verwendet wird, um Vektor Repräsentationen fester Länge für Sätze zu erstellen. Somit untersuchen wir, welche informationen vom Model enkodiert werden, wie dies getan wird und wie diese Art von Kodierung zur Herleitung der Klassifizierung genutzt werden kann. Obwohl die starken Ergebnisse neuronaler Netze für Natural Language Inference nahelegen, dass dieser Bereich  weitgehend gelöst ist, zeigen wir mithilfe eines neuen Testsets, basierend auf den Trainingsdaten, dass einfache lexikalische Schlussfolgerungen bereits große Probleme für State-of-the-Art Modelle darstellen.  Wir zeigen somit, dass die guten Ergebnisse nicht Folge eines stabilen Sprachverständnisses der Models sind, sondern Folge der Ausnutzung diverser häufig auftretender Muster im Datensatz sind, und die integration dieser Informationen relevant für die Verbesserung ist. Wir versuchen dieses Problem zu lösen, indem wir zusätzliche Informationen de Wortrepräsentationen anhängen oder die Satzrepräsentationen basierend auf jenen Informationen mithile von Multitask-Learning anzupassen. Beide Experimente resultieren nicht in der gewünschten Verbesserung. Jedoch idenifizieren wir den Bedarf, externe Informationen möglichst allgemein und zu integrieren, sodass diese einfach vom Model erkannt und genutzt werden. So kann das neuronale Netzwerk das Problem dominanter datensatzspezifischer Muster überkommen, und über Wortrelationen generalisieren, ohne, dass jede einzelne direkt in den Trainingsdaten verwendet werden muss.
 \addtocounter{section}{0}
-TODO in Deutsch...
 
+\newpage\cleardoublepage
 \section*{List of abbreviations}
 \addtocounter{section}{0}
 
@@ -89,6 +93,7 @@ TODO in Deutsch...
 
 
 \end{acronym}
+\newpage\cleardoublepage
 \tableofcontents
 \newpage\cleardoublepage
 \input{tex/introduction}\newpage\cleardoublepage

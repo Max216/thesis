@@ -55,7 +55,7 @@ As commonly done, when analysing data, we start by showing a quick overview for 
 We plot the standard deviations in a discrete space, using a bin size 0.05. For each of the 2048 dimensions we calculate its \ac{SD} to assign them to the correct bin. The amount of dimensions with the given \ac{SD} is shown on the y-axis. Note that the upper part of the plot is truncated for the sake of compactness. As can be seen, only a very tiny fraction of the dimensions shows a large variation, the vast majority contains more or less the same value, regardless of the sentence. This obviously does not mean, they contain no information at all, as they may only be used to encode information that is rarly present within the data (and not captured within the rather small subset of samples), however itserves as a reliable source, what dimensions are relevant to the model and which are not.
 
 \paragraph*{A naive approach to identify dimensional encoding}
-An intuitive approach to identify, what is encoded within the sentence representation, is, to find common similarities between the words across all sentences, that are responsible for the same dimension, neglecting the actual value, reached by each word. Especially, for the task of \ac{NLI}, we assume \textit{semantic}, \textit{syntactic} and \textit{positional} information to be required. Those can all be inferred using the features we extraced in Section §\ref{sec:understanding1_analysed_data}. Similarities between words heavily depend on the context they appear in \citep{dagan2000contextual}. For instance one could consider a car and an identical reconstruction in original size, but all made of plastic, as similar, whereas a horse is very distinct. Adding additional information, that one needs to reach a destination in short time, he or she is more likely to consider the horse similar to the car, desiding between those two options. This essentially comes to a major problem when investigating semantic similarities, without prior knowledge, of what attributes may be considered relevant. We therefore investigate the sentence representation, using excessive manual search, in a top down manner: We first search for patterns across many dimensions and many sentences in this section. In Section §\ref{sec:understanding2} we will look into some dimensions in detail.
+An intuitive approach to identify, what is encoded within the sentence representation, is, to find common similarities between the words across all sentences, that are responsible for the same dimension, neglecting the actual value, reached by each word. Especially, for the task of \ac{NLI}, we assume \textit{semantic}, \textit{syntactic} and \textit{positional} information to be required. Those can all be inferred using the features we extraced in Section §\ref{sec:understanding1_analysed_data}. Similarities between words heavily depend on the context they appear in \citep{dagan2000contextual}. For instance one could consider a brand-new red ferrari more similar to the same red ferrari with a flat tire, compared to an old, green minivan. Adding additional information, that one needs to reach a destination in short time, he or she is more likely to consider the minivan similar to the brand-new ferrari, desiding between those two options. Under these new circumstances, the broken Ferrari however is unsimilar for this decision. This essentially comes to a major problem when investigating semantic similarities, without prior knowledge, of what attributes may be considered relevant. We therefore investigate the sentence representation, using excessive manual search, in a top down manner: We first search for patterns across many dimensions and many sentences in this section. In Section §\ref{sec:understanding2} we will look into some dimensions in detail.
 
 \paragraph*{A tool for sentence representation visualization}
 In order to evaluate many patterns with minimal time effort, we create a visualization tool, capable of dynamically generating any labelling scheme for responsible words, based on the features described previously. A sample visualitation is shown in Figure \ref{fig:find_position_1}.
@@ -165,6 +165,7 @@ Rather than using the sample mean from all sentences, which would be heavily inf
 We use the proposed method for the full \ac{SNLI} train and dev data and report our results in Table \ref{tab:inverted_mf_results_acc}, together with the original performance of the used Shortcut-Stacked Encoder\textsuperscript{$\dagger$}. 
 \begin{table}[tph!]
 \centering
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{cccccc}
 \textbf{Inverted dimensions} & \textbf{Inverted sentences}  & \textbf{Acc. (train)} & \textbf{Acc. (train) +/-} & \textbf{Acc. (dev)} & \textbf{Acc (dev) +/-} \\
 \toprule
@@ -180,7 +181,7 @@ None                   & None                   & 87.41        & 0.0            
 3 female, 3 male    & hypothesis          & 80.23        & -7.18            & 78.28      & -7.03         \\
 4 female, 4 male    & hypothesis           & 73.20        & \textbf{-14.21}           & 71.69      & \textbf{-13.62}    \\
 \bottomrule    
-\end{tabular}
+\end{tabular}}
 \caption{Results in terms of accuracy of inverted gender-specific dimensions on \ac{SNLI} train and dev set.}
 \label{tab:inverted_mf_results_acc}
 \end{table}
@@ -423,9 +424,9 @@ Table \ref{tab:misclassified_orig_contr} shows the misclassifications of samples
 \begin{tabular}{cccl}
 \textbf{Problem} & \textbf{Type} & \textbf{Amount} & \textbf{Example} \\
 \toprule
-cohyponym & Nouns & 29 & \specialcell{A \textit{creek} runs through the grassy area.\\A \textit{lake} appears in the grassy area.}\\
-cohyponym & Verbs & 32 & \specialcell{The boy is \textit{riding} his skateboard.\\The boy is \textit{carrying} his skateboard with him.}\\
-cohyponym & Amounts & 33 & \specialcell{\textit{Three} people resting on a snowy mountain.\\\textit{Four} people are on a snowy mountain.}\\
+co-hyponym & Nouns & 29 & \specialcell{A \textit{creek} runs through the grassy area.\\A \textit{lake} appears in the grassy area.}\\
+co-hyponym & Verbs & 32 & \specialcell{The boy is \textit{riding} his skateboard.\\The boy is \textit{carrying} his skateboard with him.}\\
+co-hyponym & Amounts & 33 & \specialcell{\textit{Three} people resting on a snowy mountain.\\\textit{Four} people are on a snowy mountain.}\\
 antonym & Adjectives & 13 & \specialcell{The ground is \textit{covered} in snow.\\The ground is \textit{visible}.}\\
 antonym & Verbs & 14 & \specialcell{boy \textit{pushing} wagon with two pumpkins in it\\A boy is \textit{pulling} a wagon with two pumpkins in it.}\\
 antonym & Prepositions & 17 & \specialcell{A man walking \textit{down} stairs.\\The man is walking \textit{up} the stairs.}\\
@@ -441,7 +442,7 @@ common sense & All & 20 & \specialcell{Someone in a 3ft swimming pool.\\A person
 \caption{Misclassified samples with gold label \textit{contradiction}, predicted as \textit{entailment}.}
 \label{tab:misclassified_orig_contr}
 \end{table}
-We find that most problems arise from words sharing lexical relations, namely antonomy or cohyponomy, for different kind of \ac{POS}. We opt to show ``amounts'' as a seperate category, due to its high frequency. While Verb antonyms may also be considered as cohyponyms, we also list them seperately, if they refer to the opposite meaning. Some samples, listed under ``structure'', require the model to take word-order into consideration, and is mostly represented by semantic role reversal. We assign all samples to ``common sense'', that require information, that cannot be retrieved using lexical semantic relations and usually need additional information, which is only \textit{implied} by the described entity or activity. Any sentence-pair, where we could not identify the required knowledge, due to not agreeing with the label or due to being highly ungrammatical, or some rare very specific details, are ignored in our results, categorized as ``ignored''.
+We find that most problems arise from words sharing lexical relations, namely antonomy or cohyponomy\footnote{We also consider verbs as co-hyponyms, if they may take the same arguments.}, for different kind of \ac{POS}. We opt to show ``amounts'' as a seperate category, due to its high frequency. While Verb antonyms may also be considered as co-hyponyms, we also list them seperately, if they refer to the opposite meaning. Some samples, listed under ``structure'', require the model to take word-order into consideration, and is mostly represented by semantic role reversal. We assign all samples to ``common sense'', that require information, that cannot be retrieved using lexical semantic relations and usually need additional information, which is only \textit{implied} by the described entity or activity. Any sentence-pair, where we could not identify the required knowledge, due to not agreeing with the label or due to being highly ungrammatical, or some rare very specific details, are ignored in our results, categorized as ``ignored''.
 
 \paragraph*{Misclassified entailing samples}
 Analysing the required knowledge for misclassified entailing samples as contradtiong, we identify different categories, depicted in Table \ref{tab:misclassified_orig_ent}.
