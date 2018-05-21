@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.13)  20 MAY 2018 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.13)  21 MAY 2018 21:16
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1385,7 +1385,7 @@ although it is yet undefined on input line 55.
 Package acronym Info: Label `acro:biLSTM' newly defined as it shall be overridd
 en
 although it is yet undefined on input line 58.
-<fig/sentence_encoder_shortcut.png, id=662, 619.31375pt x 450.68375pt>
+<fig/sentence_encoder_shortcut.png, id=663, 619.31375pt x 450.68375pt>
 File: fig/sentence_encoder_shortcut.png Graphic file (type png)
 <use fig/sentence_encoder_shortcut.png>
 Package pdftex.def Info: fig/sentence_encoder_shortcut.png  used on input line 
@@ -1435,7 +1435,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 4.70001pt on input line 105.
  [14]) [15]
 (tex/related_work.tex
-<fig/wordnet_example.png, id=787, 625.33624pt x 256.96pt>
+<fig/wordnet_example.png, id=788, 625.33624pt x 256.96pt>
 File: fig/wordnet_example.png Graphic file (type png)
 <use fig/wordnet_example.png>
 Package pdftex.def Info: fig/wordnet_example.png  used on input line 9.
@@ -1507,55 +1507,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [20]
 Package acronym Info: Label `acro:IR' newly defined as it shall be overridden
-although it is yet undefined on input line 134.
-
-Underfull \hbox (badness 2781) in paragraph at lines 149--149
-[]\T1/5ch/m/n/11 Bone, Joint, and Muscle Disorders Chapter 54
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[]\T1/5ch/m/n/11 Range is the maximum
- []
-
-
-Overfull \hbox (7.12878pt too wide) in paragraph at lines 154--154
-[]\T1/5ch/m/it/11 entailment 
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 157--157
-[]\T1/5ch/m/n/11 First, finding the launch angle for maximum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-[]\T1/5ch/m/n/11 Range is the maximum
- []
-
-[21] [22]
+although it is yet undefined on input line 133.
+ [21]
 Package acronym Info: Label `acro:ESIM' newly defined as it shall be overridden
 
-although it is yet undefined on input line 179.
- [23]
+although it is yet undefined on input line 151.
+ [22]
 Package acronym Info: Label `acro:KIM' newly defined as it shall be overridden
-although it is yet undefined on input line 182.
-
+although it is yet undefined on input line 154.
+ [23]
 
 Package natbib Warning: Citation `goldberg2014word2vec' on page 24 undefined on
- input line 193.
+ input line 165.
 
-[24]) [25] (tex/understanding.tex
+) [24] [25] (tex/understanding.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-<fig/rnn.png, id=1206, 912.40875pt x 309.155pt>
+<fig/rnn.png, id=1199, 912.40875pt x 309.155pt>
 File: fig/rnn.png Graphic file (type png)
 <use fig/rnn.png>
 Package pdftex.def Info: fig/rnn.png  used on input line 19.
 (pdftex.def)             Requested size: 461.85568pt x 156.49014pt.
-<fig/example_process_understanding.png, id=1220, 612.2875pt x 106.3975pt>
+<fig/example_process_understanding.png, id=1213, 612.2875pt x 106.3975pt>
 File: fig/example_process_understanding.png Graphic file (type png)
 <use fig/example_process_understanding.png>
 Package pdftex.def Info: fig/example_process_understanding.png  used on input l
@@ -1572,13 +1547,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--35
 [27 <./fig/rnn.png> <./fig/example_process_understanding.png>]
 Package acronym Info: Label `acro:SD' newly defined as it shall be overridden
 although it is yet undefined on input line 48.
-<fig/sd.png, id=1248, 876.27374pt x 480.79625pt>
+<fig/sd.png, id=1240, 876.27374pt x 480.79625pt>
 File: fig/sd.png Graphic file (type png)
 <use fig/sd.png>
 Package pdftex.def Info: fig/sd.png  used on input line 51.
 (pdftex.def)             Requested size: 414.85715pt x 227.62204pt.
  [28 <./fig/sd.png>]
-<fig/finpone.png, id=1266, 773.89125pt x 183.68625pt>
+<fig/finpone.png, id=1258, 773.89125pt x 183.68625pt>
 File: fig/finpone.png Graphic file (type png)
 <use fig/finpone.png>
 Package pdftex.def Info: fig/finpone.png  used on input line 64.
@@ -1587,24 +1562,24 @@ LaTeX Font Info:    Try loading font information for T1+txtt on input line 68.
  (/home/max/.miktex/texmfs/install/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 ) [29 <./fig/finpone.png>]
-<fig/finsynpos3.png, id=1296, 963.6pt x 393.47pt>
+<fig/finsynpos3.png, id=1288, 963.6pt x 393.47pt>
 File: fig/finsynpos3.png Graphic file (type png)
 <use fig/finsynpos3.png>
 Package pdftex.def Info: fig/finsynpos3.png  used on input line 77.
 (pdftex.def)             Requested size: 487.75368pt x 199.16928pt.
  [30]
-<fig/findmf.png, id=1314, 894.34125pt x 256.96pt>
+<fig/findmf.png, id=1306, 894.34125pt x 256.96pt>
 File: fig/findmf.png Graphic file (type png)
 <use fig/findmf.png>
 Package pdftex.def Info: fig/findmf.png  used on input line 94.
 (pdftex.def)             Requested size: 495.15073pt x 142.26378pt.
  [31 <./fig/finsynpos3.png>]
-<fig/mf_basic.png, id=1329, 1537.745pt x 422.57875pt>
+<fig/mf_basic.png, id=1322, 1537.745pt x 422.57875pt>
 File: fig/mf_basic.png Graphic file (type png)
 <use fig/mf_basic.png>
 Package pdftex.def Info: fig/mf_basic.png  used on input line 106.
 (pdftex.def)             Requested size: 465.92603pt x 128.0374pt.
-<fig/mf_detailed.png, id=1332, 1386.17876pt x 416.55624pt>
+<fig/mf_detailed.png, id=1325, 1386.17876pt x 416.55624pt>
 File: fig/mf_detailed.png Graphic file (type png)
 <use fig/mf_detailed.png>
 Package pdftex.def Info: fig/mf_detailed.png  used on input line 114.
@@ -1615,7 +1590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--120
  []
 
 [32 <./fig/findmf.png>]
-<fig/mf_detailed_f.png, id=1342, 1194.4625pt x 420.57124pt>
+<fig/mf_detailed_f.png, id=1336, 1194.4625pt x 420.57124pt>
 File: fig/mf_detailed_f.png Graphic file (type png)
 <use fig/mf_detailed_f.png>
 Package pdftex.def Info: fig/mf_detailed_f.png  used on input line 125.
@@ -1670,21 +1645,6 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 3.77884pt on input line 148.
 
-Underfull \hbox (badness 1895) in paragraph at lines 148--149
-\T1/5ch/m/n/11 on [][]. We conduct an experiment with sentence
- []
-
-
-Underfull \hbox (badness 5460) in paragraph at lines 148--149
-\T1/5ch/m/n/11 representations, solely consisting of dimensions that
- []
-
-
-Underfull \hbox (badness 6348) in paragraph at lines 148--149
-\T1/5ch/m/n/11 we identified to encode gender-specific information.
- []
-
-
 Underfull \hbox (badness 6675) in paragraph at lines 148--149
 \T1/5ch/m/n/11 gender respectively. In the first experiment, we
  []
@@ -1695,7 +1655,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--219
  []
 
 [36] [37]
-<fig/find_syntax_vb.png, id=1400, 1304.875pt x 440.64626pt>
+<fig/find_syntax_vb.png, id=1393, 1304.875pt x 440.64626pt>
 File: fig/find_syntax_vb.png Graphic file (type png)
 <use fig/find_syntax_vb.png>
 Package pdftex.def Info: fig/find_syntax_vb.png  used on input line 244.
@@ -1706,7 +1666,7 @@ Overfull \hbox (7.61104pt too wide) in paragraph at lines 244--245
  []
 
 [38 <./fig/find_syntax_vb.png>]
-<fig/find_syntax_subj_obj.png, id=1416, 1377.145pt x 431.6125pt>
+<fig/find_syntax_subj_obj.png, id=1412, 1377.145pt x 431.6125pt>
 File: fig/find_syntax_subj_obj.png Graphic file (type png)
 <use fig/find_syntax_subj_obj.png>
 Package pdftex.def Info: fig/find_syntax_subj_obj.png  used on input line 253.
@@ -1717,7 +1677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--259
  []
 
 [39 <./fig/find_syntax_subj_obj.png>]
-<fig/alignment_entailment_sample_general.png, id=1432, 788.9475pt x 333.245pt>
+<fig/alignment_entailment_sample_general.png, id=1426, 788.9475pt x 333.245pt>
 File: fig/alignment_entailment_sample_general.png Graphic file (type png)
 <use fig/alignment_entailment_sample_general.png>
 Package pdftex.def Info: fig/alignment_entailment_sample_general.png  used on i
@@ -1728,68 +1688,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--293
 
  []
 
-[40]
-<fig/alignment_entailment_sample_mult.png, id=1442, 812.03375pt x 336.25626pt>
+<fig/alignment_entailment_sample_mult.png, id=1429, 812.03375pt x 336.25626pt>
 File: fig/alignment_entailment_sample_mult.png Graphic file (type png)
 <use fig/alignment_entailment_sample_mult.png>
 Package pdftex.def Info: fig/alignment_entailment_sample_mult.png  used on inpu
 t line 298.
 (pdftex.def)             Requested size: 480.97914pt x 199.16928pt.
-<fig/alignment_contr_sample_general.png, id=1448, 900.36375pt x 377.41pt>
+[40]
+<fig/alignment_contr_sample_general.png, id=1441, 900.36375pt x 377.41pt>
 File: fig/alignment_contr_sample_general.png Graphic file (type png)
 <use fig/alignment_contr_sample_general.png>
 Package pdftex.def Info: fig/alignment_contr_sample_general.png  used on input 
 line 308.
 (pdftex.def)             Requested size: 475.1435pt x 199.16928pt.
- [41 <./fig/alignment_entailment_sample_general.png>] [42 <./fig/alignment_enta
-ilment_sample_mult.png> <./fig/alignment_contr_sample_general.png>]
-<fig/contradiction_alignment_unshared_dimwise.png, id=1465, 709.65125pt x 508.9
+ [41 <./fig/alignment_entailment_sample_general.png> <./fig/alignment_entailmen
+t_sample_mult.png>]
+<fig/contradiction_alignment_unshared_dimwise.png, id=1452, 709.65125pt x 508.9
 0125pt>
 File: fig/contradiction_alignment_unshared_dimwise.png Graphic file (type png)
 <use fig/contradiction_alignment_unshared_dimwise.png>
 Package pdftex.def Info: fig/contradiction_alignment_unshared_dimwise.png  used
  on input line 320.
 (pdftex.def)             Requested size: 277.73743pt x 199.16928pt.
-
-Underfull \vbox (badness 1137) has occurred while \output is active []
-
- [43 <./fig/contradiction_alignment_unshared_dimwise.png>]
-<fig/sample_coverage_prob.png, id=1473, 909.3975pt x 496.85625pt>
+ [42 <./fig/alignment_contr_sample_general.png>]
+<fig/sample_coverage_prob.png, id=1461, 909.3975pt x 496.85625pt>
 File: fig/sample_coverage_prob.png Graphic file (type png)
 <use fig/sample_coverage_prob.png>
 Package pdftex.def Info: fig/sample_coverage_prob.png  used on input line 343.
 (pdftex.def)             Requested size: 312.46587pt x 170.71652pt.
- [44 <./fig/sample_coverage_prob.png>]
-<fig/entailment_uninversed.png, id=1487, 537.00626pt x 454.69875pt>
+
+[43 <./fig/contradiction_alignment_unshared_dimwise.png>]
+<fig/entailment_uninversed.png, id=1473, 537.00626pt x 454.69875pt>
 File: fig/entailment_uninversed.png Graphic file (type png)
 <use fig/entailment_uninversed.png>
 Package pdftex.def Info: fig/entailment_uninversed.png  used on input line 353.
 
 (pdftex.def)             Requested size: 218.42046pt x 184.9429pt.
- [45 <./fig/entailment_uninversed.png>]
-<fig/alignment_entailment_inversed.png, id=1496, 1105.12875pt x 456.70625pt>
+ [44 <./fig/sample_coverage_prob.png>]
+<fig/alignment_entailment_inversed.png, id=1481, 1105.12875pt x 456.70625pt>
 File: fig/alignment_entailment_inversed.png Graphic file (type png)
 <use fig/alignment_entailment_inversed.png>
 Package pdftex.def Info: fig/alignment_entailment_inversed.png  used on input l
 ine 372.
 (pdftex.def)             Requested size: 481.94127pt x 199.16928pt.
-<fig/neutr_contr_uninversed.png, id=1498, 1099.10625pt x 451.6875pt>
+ [45 <./fig/entailment_uninversed.png> <./fig/alignment_entailment_inversed.png
+>]
+<fig/neutr_contr_uninversed.png, id=1491, 1099.10625pt x 451.6875pt>
 File: fig/neutr_contr_uninversed.png Graphic file (type png)
 <use fig/neutr_contr_uninversed.png>
-Package pdftex.def Info: fig/neutr_contr_uninversed.png  used on input line 380
+Package pdftex.def Info: fig/neutr_contr_uninversed.png  used on input line 379
 .
 (pdftex.def)             Requested size: 484.64804pt x 199.16928pt.
- [46 <./fig/alignment_entailment_inversed.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 408--410
+ [46 <./fig/neutr_contr_uninversed.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
  []
 
-[47 <./fig/neutr_contr_uninversed.png>] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 471--473
+[47] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 470--472
 
  []
 
-[49]) [50] (tex/additional_testset.tex [51
+) [49] [50] (tex/additional_testset.tex [51
 
 
 ] [52] [53]
@@ -1800,7 +1760,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 [54]
 Package acronym Info: Label `acro:HIT' newly defined as it shall be overridden
 although it is yet undefined on input line 97.
-<fig/sample_hit.png, id=1663, 1026.83624pt x 573.14125pt>
+<fig/sample_hit.png, id=1655, 1026.83624pt x 573.14125pt>
 File: fig/sample_hit.png Graphic file (type png)
 <use fig/sample_hit.png>
 Package pdftex.def Info: fig/sample_hit.png  used on input line 108.
@@ -1810,87 +1770,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--114
 
  []
 
-[55] [56 <./fig/sample_hit.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-[58] [59] [60]
-<fig/acc_by_cos.png, id=1804, 337.86224pt x 253.54726pt>
+[55] [56 <./fig/sample_hit.png>] [57] [58] [59] [60]
+<fig/acc_by_cos.png, id=1797, 337.86224pt x 253.54726pt>
 File: fig/acc_by_cos.png Graphic file (type png)
 <use fig/acc_by_cos.png>
 Package pdftex.def Info: fig/acc_by_cos.png  used on input line 241.
 (pdftex.def)             Requested size: 189.58305pt x 142.26378pt.
- [61 <./fig/acc_by_cos.png>]
-<fig/esim_res_acc_by_freq.png, id=1814, 462.528pt x 346.896pt>
+<fig/esim_res_acc_by_freq.png, id=1800, 462.528pt x 346.896pt>
 File: fig/esim_res_acc_by_freq.png Graphic file (type png)
 <use fig/esim_res_acc_by_freq.png>
 Package pdftex.def Info: fig/esim_res_acc_by_freq.png  used on input line 254.
 (pdftex.def)             Requested size: 227.6217pt x 170.71652pt.
- [62 <./fig/esim_res_acc_by_freq.png>]) [63] (tex/approaches_ext_res.tex [64
+
+Underfull \vbox (badness 2158) has occurred while \output is active []
+
+ [61 <./fig/acc_by_cos.png>] [62 <./fig/esim_res_acc_by_freq.png>]) [63]
+(tex/approaches_ext_res.tex [64
 
 
 ]
 Package acronym Info: Label `acro:MSE' newly defined as it shall be overridden
-although it is yet undefined on input line 21.
+although it is yet undefined on input line 16.
  [65]
-<fig/mt_architecture.png, id=1881, 665.48625pt x 401.5pt>
+<fig/mt_architecture.png, id=1875, 665.48625pt x 401.5pt>
 File: fig/mt_architecture.png Graphic file (type png)
 <use fig/mt_architecture.png>
-Package pdftex.def Info: fig/mt_architecture.png  used on input line 34.
+Package pdftex.def Info: fig/mt_architecture.png  used on input line 29.
 (pdftex.def)             Requested size: 259.38628pt x 156.49014pt.
- [66 <./fig/mt_architecture.png>]
-[67] [68]
+ [66 <./fig/mt_architecture.png>] [67]
+[68]
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.04007pt on input line 77.
+(Font)              scaled to size 11.04007pt on input line 72.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 77.
+(Font)              scaled to size 7.68005pt on input line 72.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 77.
+(Font)              scaled to size 6.62404pt on input line 72.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 9.21606pt on input line 95.
+(Font)              scaled to size 9.21606pt on input line 90.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 6.43204pt on input line 95.
+(Font)              scaled to size 6.43204pt on input line 90.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 5.56804pt on input line 95.
- [69]
+(Font)              scaled to size 5.56804pt on input line 90.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 5.76004pt on input line 100.
+(Font)              scaled to size 5.76004pt on input line 95.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 4.80003pt on input line 100.
- [70] [71]
-<fig/analyse_hypern5.png, id=1974, 892.33376pt x 372.39125pt>
+(Font)              scaled to size 4.80003pt on input line 95.
+ [69] [70] [71]
+<fig/analyse_hypern5.png, id=1967, 892.33376pt x 372.39125pt>
 File: fig/analyse_hypern5.png Graphic file (type png)
 <use fig/analyse_hypern5.png>
-Package pdftex.def Info: fig/analyse_hypern5.png  used on input line 199.
+Package pdftex.def Info: fig/analyse_hypern5.png  used on input line 194.
 (pdftex.def)             Requested size: 374.99548pt x 156.49014pt.
+ [72 <./fig/analyse_hypern5.png>] [73]
+Underfull \vbox (badness 1609) has occurred while \output is active []
 
-Underfull \vbox (badness 4872) has occurred while \output is active []
-
- [72]
-[73 <./fig/analyse_hypern5.png>] [74]
-<fig/base_correct_incorrect_c.png, id=2019, 1054.94125pt x 456.70625pt>
+ [74]
+<fig/base_correct_incorrect_c.png, id=2012, 1054.94125pt x 456.70625pt>
 File: fig/base_correct_incorrect_c.png Graphic file (type png)
 <use fig/base_correct_incorrect_c.png>
 Package pdftex.def Info: fig/base_correct_incorrect_c.png  used on input line 2
-73.
+68.
 (pdftex.def)             Requested size: 460.05473pt x 199.16928pt.
-<fig/300d75_correct_incorrect_c.png, id=2023, 1111.15125pt x 481.8pt>
+<fig/300d75_correct_incorrect_c.png, id=2016, 1111.15125pt x 481.8pt>
 File: fig/300d75_correct_incorrect_c.png Graphic file (type png)
 <use fig/300d75_correct_incorrect_c.png>
 Package pdftex.def Info: fig/300d75_correct_incorrect_c.png  used on input line
- 280.
+ 275.
 (pdftex.def)             Requested size: 459.32196pt x 199.16928pt.
-
-
-LaTeX Warning: Reference `masking_e_c' on page 75 undefined on input line 284.
-
-<fig/masking_e_c.png, id=2027, 1107.13625pt x 450.68375pt>
+<fig/masking_e_c.png, id=2021, 1107.13625pt x 450.68375pt>
 File: fig/masking_e_c.png Graphic file (type png)
 <use fig/masking_e_c.png>
-Package pdftex.def Info: fig/masking_e_c.png  used on input line 287.
+Package pdftex.def Info: fig/masking_e_c.png  used on input line 282.
 (pdftex.def)             Requested size: 489.27003pt x 199.16928pt.
-[75] [76 <./fig/base_correct_incorrect_c.png> <./fig/300d75_correct_incorrect_c
-.png>] [77 <./fig/masking_e_c.png>]) [78] (tex/conclusion.tex) [79
+
+[75 <./fig/base_correct_incorrect_c.png>] [76 <./fig/300d75_correct_incorrect_c
+.png>]) [77 <./fig/masking_e_c.png>] [78] (tex/conclusion.tex) [79
 
 
 ] (thesis.bbl [80
@@ -1925,16 +1879,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 42E11E8A83FF56B4AE781D9893776AD0;6160.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 15405 strings out of 494894
- 244202 string characters out of 3178852
- 452729 words of memory out of 3000000
- 18125 multiletter control sequences out of 15000+200000
+ 15402 strings out of 494894
+ 244158 string characters out of 3178852
+ 454617 words of memory out of 3000000
+ 18123 multiletter control sequences out of 15000+200000
  252519 words of font info for 225 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  65i,23n,77p,9147b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1957,9 +1907,9 @@ tall/fonts/type1/mathdesign/mdbch/md-chrma.pfb></home/max/.miktex/texmfs/instal
 l/fonts/type1/mathdesign/mdbch/md-chrmb.pfb></home/max/.miktex/texmfs/install/f
 onts/type1/adobe/utopia/putri8a.pfb></home/max/.miktex/texmfs/install/fonts/typ
 e1/public/txfonts/t1xtt.pfb>
-Output written on thesis.pdf (90 pages, 2136466 bytes).
+Output written on thesis.pdf (90 pages, 2130936 bytes).
 PDF statistics:
- 2384 PDF objects out of 2487 (max. 8388607)
- 458 named destinations out of 1000 (max. 500000)
+ 2378 PDF objects out of 2487 (max. 8388607)
+ 457 named destinations out of 1000 (max. 500000)
  795 words of extra memory for PDF output out of 10000 (max. 10000000)
 

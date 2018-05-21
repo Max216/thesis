@@ -3,23 +3,22 @@
 \contentsline {table}{\numberline {2}{\ignorespaces Accuracy in percent of different implementations of the model from \cite {nie2017shortcut}, achieved on the SNLI dataset compared with human performance.}}{14}{table.2}
 \contentsline {table}{\numberline {3}{\ignorespaces Example sentence pairs, taken from \ac {SNLI}, showing typical sentences within the dataset.}}{19}{table.3}
 \contentsline {table}{\numberline {4}{\ignorespaces Example sentence pairs from \ac {MultiNLI}, taken from RepEval 2017 Shared Task, showing samples of different genres.}}{21}{table.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Example sentence pairs from SciTail Task, different premises retrieved for two hypothesis.}}{22}{table.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Accuracies achieved on \ac {SNLI} using $|r|$-dimensional sentence representations of gender-specific dimensions.}}{34}{table.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Results in terms of accuracy of inverted gender-specific dimensions on \ac {SNLI} train and dev set.}}{36}{table.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Comparison of samples between their predictions based on the original and gender-inverted sentence representations.}}{36}{table.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Misclassified samples with gold label \textit {contradiction}, predicted as \textit {entailment}.}}{49}{table.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Misclassified samples with gold label \textit {entailment}, predicted as \textit {contradiction}.}}{50}{table.10}
-\contentsline {table}{\numberline {11}{\ignorespaces Correctly classified examples.}}{51}{table.11}
-\contentsline {table}{\numberline {12}{\ignorespaces Examples from the newly generated test set.}}{53}{table.12}
-\contentsline {table}{\numberline {13}{\ignorespaces Comparison of co-hyponyms in upward-monotone and downward-monone sentences.}}{55}{table.13}
-\contentsline {table}{\numberline {14}{\ignorespaces Statistics of \ac {SNLI} testset compared with the newly generated testset.}}{57}{table.14}
-\contentsline {table}{\numberline {15}{\ignorespaces Architectural comparison of tested neural models without external knowledge.}}{58}{table.15}
-\contentsline {table}{\numberline {16}{\ignorespaces Results of models on the new test set compared with the original \ac {SNLI} test set.}}{59}{table.16}
-\contentsline {table}{\numberline {17}{\ignorespaces Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}}{60}{table.17}
-\contentsline {table}{\numberline {18}{\ignorespaces Accuracy by the amount of similar samples in \ac {SNLI} train data for ESIM on contradicting samples.}}{63}{table.18}
-\contentsline {table}{\numberline {19}{\ignorespaces Examples of extracted word-pairs ($w_1$,$w_2$) for both categories, being represented by the sentence containing $w_1$ ( thus $A$) or not (thus $B$).}}{69}{table.19}
-\contentsline {table}{\numberline {20}{\ignorespaces Evaluation of experiments with additional information in the word-representations, compared to the Residual-Stacked Encoder\textsuperscript {$\dagger $} (bottom).}}{70}{table.20}
-\contentsline {table}{\numberline {21}{\ignorespaces Evaluation of experiments using multitask-learning, compared with the Residual-Stacked Encoder\textsuperscript {$\dagger $.}}}{71}{table.21}
-\contentsline {table}{\numberline {22}{\ignorespaces Accuracy per category for concatenated embeddings using Attract-Repel or Hyponyms-5.}}{72}{table.22}
-\contentsline {table}{\numberline {23}{\ignorespaces Accuracy per category for selected models using multitask-learning.}}{74}{table.23}
-\contentsline {table}{\numberline {24}{\ignorespaces Accuracy per category of three selected multitask-learning experiments compared with Residual-Stacked Encoder\textsuperscript {$\dagger $} on samples covered by extracted word-pairs.}}{75}{table.24}
+\contentsline {table}{\numberline {5}{\ignorespaces Accuracies achieved on \ac {SNLI} using $|r|$-dimensional sentence representations of gender-specific dimensions.}}{34}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Results in terms of accuracy of inverted gender-specific dimensions on \ac {SNLI} train and dev set.}}{35}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Comparison of samples between their predictions based on the original and gender-inverted sentence representations.}}{36}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Misclassified samples with gold label \textit {contradiction}, predicted as \textit {entailment}.}}{48}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Misclassified samples with gold label \textit {entailment}, predicted as \textit {contradiction}.}}{49}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Correctly classified examples.}}{51}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Examples from the newly generated test set.}}{53}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Comparison of co-hyponyms in upward-monotone and downward-monone sentences.}}{55}{table.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Statistics of \ac {SNLI} testset compared with the newly generated testset.}}{57}{table.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Architectural comparison of tested neural models without external knowledge.}}{58}{table.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Results of models on the new test set compared with the original \ac {SNLI} test set.}}{59}{table.15}
+\contentsline {table}{\numberline {16}{\ignorespaces Accuracy reached for the tested models for each category with assoziated sample words and the amount of instances.}}{60}{table.16}
+\contentsline {table}{\numberline {17}{\ignorespaces Accuracy by the amount of similar samples in \ac {SNLI} train data for ESIM on contradicting samples.}}{62}{table.17}
+\contentsline {table}{\numberline {18}{\ignorespaces Examples of extracted word-pairs ($w_1$,$w_2$) for both categories, being represented by the sentence containing $w_1$ ( thus $A$) or not (thus $B$).}}{69}{table.18}
+\contentsline {table}{\numberline {19}{\ignorespaces Evaluation of experiments with additional information in the word-representations, compared to the Residual-Stacked Encoder\textsuperscript {$\dagger $} (bottom).}}{70}{table.19}
+\contentsline {table}{\numberline {20}{\ignorespaces Evaluation of experiments using multitask-learning, compared with the Residual-Stacked Encoder\textsuperscript {$\dagger $.}}}{70}{table.20}
+\contentsline {table}{\numberline {21}{\ignorespaces Accuracy per category for concatenated embeddings using Attract-Repel or Hyponyms-5.}}{71}{table.21}
+\contentsline {table}{\numberline {22}{\ignorespaces Accuracy per category for selected models using multitask-learning.}}{74}{table.22}
+\contentsline {table}{\numberline {23}{\ignorespaces Accuracy per category of three selected multitask-learning experiments compared with Residual-Stacked Encoder\textsuperscript {$\dagger $} on samples covered by extracted word-pairs.}}{74}{table.23}
